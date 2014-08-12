@@ -11,5 +11,5 @@ controller目录:处理业务逻辑的文件<br>
 dao目录:数据持久化文件，访问数据的文件<br>
 libs目录:smarty模板的核心文件<br>
 templates: 模板文件<br>
-templates_c:驳岸以后的模板文件<br>
+templates_c:编译后的模板文件<br>
 .htaccess文件:伪静态的访问规则<br>
