@@ -3,7 +3,7 @@
  * Example Application
  *
  * @package Example-application
- */
+ 
 
 require_once './libs/Smarty.class.php';
 
@@ -28,3 +28,6 @@ $smarty->assign("option_output", array("New York", "Nebraska", "Kansas", "Iowa",
 $smarty->assign("option_selected", "NE");
 
 $smarty->display('index.tpl');
+*/
+
+phpinfo();
