@@ -9,7 +9,6 @@ class DBHelper{
     	# 1.创建mysqli对象
 		$this->mysqli=new mysqli(MYSQL_HOST.'.:'.MYSQL_PORT,MYSQL_USER,MYSQL_PASS,MYSQL_DB) or die("Connect Error".$this->mysqli->connect_error);  
     }
-
 	# 2.数据库查询操作,返回数组
     public function exec_query($sql){
 		$result=$this->mysqli->query($sql);
