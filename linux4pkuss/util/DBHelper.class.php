@@ -28,8 +28,7 @@ class DBHelper{
         return $array;
         }else{
         return null;
-        }
-        
+        }       
     }
     #数据库的增删改操作，返回的是整型
     public function exec_other($sql){
