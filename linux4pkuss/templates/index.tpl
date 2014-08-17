@@ -33,7 +33,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="#">表白墙</a>
+            <a class="brand" href="#">Linux内核分析与驱动编程</a>
             <div class="nav-collapse collapse">
               <ul class="nav">
                
