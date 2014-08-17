@@ -1,5 +1,3 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-08-17 21:20:31
-         compiled from "./templates/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:100129807653f0ac1f3f8039-78400489%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -12,14 +10,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     ),
   ),
   'nocache_hash' => '100129807653f0ac1f3f8039-78400489',
-  'function' => 
-  array (
-  ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_53f0ac1f5ff855_92246535',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53f0ac1f5ff855_92246535')) {function content_53f0ac1f5ff855_92246535($_smarty_tpl) {?><!DOCTYPE html>
+  'unifunc' => 'content_53f0ac1f636e52_72971886',
+  'cache_lifetime' => 120,
+),true); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_53f0ac1f636e52_72971886')) {function content_53f0ac1f636e52_72971886($_smarty_tpl) {?><!DOCTYPE html>
 <html>
   <head>
     <title>用户登录</title>
