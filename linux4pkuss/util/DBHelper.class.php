@@ -1,7 +1,7 @@
 <?php
 class DBHelper{
     private $mysqli;
-    
+    #my test
     #构造函数，创建数据库链接
     public function __construct(){    
     	#获取数据配置文件
