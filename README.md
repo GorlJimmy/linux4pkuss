@@ -8,7 +8,7 @@ bootstrap.example目录：bootstrap的例子<br>
 cache目录:smarty模板的缓存文件<br>
 configs目录:配置文件<br>
 controller目录:处理业务逻辑的文件<br>
-service目录:处理实体对象的类
+service目录:处理实体对象的类<br>
 util目录:数据持久化文件，访问数据的文件<br>
 libs目录:smarty模板的核心文件<br>
 templates: 模板文件<br>
