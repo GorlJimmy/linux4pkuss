@@ -20,7 +20,7 @@ class FileHelper{
 // 		if($fileType!='image/jpg'){
 // 			return 2;
 // 		}
-		
+		#cao
 		#判断文件是否上传到服务器临时目录
 		if(is_uploaded_file($FILE['tmp_name'])){
 			
