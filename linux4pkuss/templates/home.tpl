@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset=utf-8>
     <!-- Bootstrap -->
-    <link href="./bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="./bootstrap/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <script src="./bootstrap/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./bootstrap/bootstrap/js/jquery.js"></script>
-    <script src="./bootstrap/bootstrap/js/bootstrap-transition.js"></script>
-    <script src="./bootstrap/bootstrap/js/bootstrap-alert.js"></script>
-    <script src="./bootstrap/bootstrap/js/bootstrap-modal.js"></script>
-    <script src="./bootstrap/bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="./bootstrap/bootstrap/js/bootstrap-scrollspy.js"></script>
-    <script src="./bootstrap/bootstrap/js/bootstrap-tab.js"></script>
-    <script src="./bootstrap/bootstrap/js/bootstrap-tooltip.js"></script>
-    <script src="./bootstrap/bootstrap/js/bootstrap-popover.js"></script>
-    <script src="./bootstrap/bootstrap/js/bootstrap-button.js"></script>
-    <script src="./bootstrap/bootstrap/js/bootstrap-collapse.js"></script>
-    <script src="./bootstrap/bootstrap/js/bootstrap-carousel.js"></script>
-    <script src="./bootstrap/bootstrap/js/bootstrap-typeahead.js"></script>
+    <link href="/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <script src="/bootstrap/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/bootstrap/bootstrap/js/jquery.js"></script>
+    <script src="/bootstrap/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/bootstrap/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="/bootstrap/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="/bootstrap/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="/bootstrap/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="/bootstrap/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="/bootstrap/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="/bootstrap/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="/bootstrap/bootstrap/js/bootstrap-button.js"></script>
+    <script src="/bootstrap/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/bootstrap/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="/bootstrap/bootstrap/js/bootstrap-typeahead.js"></script>
 
  </head>
   <body>
@@ -72,7 +72,7 @@
                   <input type="text" class="search-query" placeholder="Search">
                 </form>
                 <li class="divider-vertical"></li>
-                    <li><a href="#"><i class="icon-user"></i><{$smarty.session.USER.u_name}></a></li>
+                    <li><a href="#"><i class="icon-user"></i><></a></li>
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i></a>
                   <ul class="dropdown-menu">
@@ -128,5 +128,8 @@
     </div>
   </div>
 </div>
+<?php
+echo dirname(__DIR__);
+?>
 </body>
 </html>
