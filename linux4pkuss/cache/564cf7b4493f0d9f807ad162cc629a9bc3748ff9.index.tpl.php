@@ -1,24 +1,31 @@
-<?php /*%%SmartyHeaderCode:100129807653f0ac1f3f8039-78400489%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1333894853f0d01a4fab31-86532777%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '564cf7b4493f0d9f807ad162cc629a9bc3748ff9' => 
     array (
       0 => './templates/index.tpl',
-      1 => 1408281088,
+      1 => 1408290840,
+      2 => 'file',
+    ),
+    'db00dac0fc48babbe1488cc4317a4e2f722d2fbb' => 
+    array (
+      0 => './configs/totem.conf',
+      1 => 1408289140,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '100129807653f0ac1f3f8039-78400489',
+  'nocache_hash' => '1333894853f0d01a4fab31-86532777',
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_53f0ac1f636e52_72971886',
+  'unifunc' => 'content_53f0d01a559492_87297496',
   'cache_lifetime' => 120,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53f0ac1f636e52_72971886')) {function content_53f0ac1f636e52_72971886($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_53f0d01a559492_87297496')) {function content_53f0d01a559492_87297496($_smarty_tpl) {?><!DOCTYPE html>
 <html>
   <head>
-    <title>用户登录</title>
+
+    <title>北京大学-软件学院--荆琦</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset=utf-8>
     <!-- Bootstrap -->
@@ -50,13 +57,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="#">Linux内核分析与驱动编程</a>
+            <a class="brand" href="#">Linux</a>
             <div class="nav-collapse collapse">
               <ul class="nav">
                
                 <li class="active"><a href="#"><b class="icon-home"></b>首页</a></li>
-                <li><a href="#about"><b class="icon-bell"></b>关于我们</a></li>
-                <li><a href="#contact"><b class="icon-pencil"></b>联系我们</a></li>
+                <li><a href="#about"><b class="icon-comment"></b>课程简介</a></li>
+                <li><a href="#contact"><b class="icon-envelope"></b>项目信息</a></li>
+                <li><a href="#contact"><b class="icon-bell"></b>课程通知</a></li>
+                <li><a href="#contact"><b class="icon-book"></b>相关文章</a></li>
+                <li><a href="#contact"><b class="icon-download"></b>资源下载</a></li>
                 </ul>
               <ul class="nav pull-right">
                 <form class="navbar-search pull-left">
@@ -95,7 +105,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   <div class="span3">
     <div class="sugin-up" >
       <span class="label span12 text-center">快速注册</span>
-      <form style="padding:0 0 0 10%">
+      <div style="height:300px"></div>
+     <!--   <form style="padding:0 0 0 10%">
           <label>用户名</label>
           <input type="text" placeholder="UserName">
           <label>邮箱</label>
@@ -104,18 +115,33 @@ $_valid = $_smarty_tpl->decodeProperties(array (
           <input type="password">
           <button type="submit" class="btn">注册</button>
       
-      </form>
+      </form>-->
     </div>
+     <div class="sugin-up" >
+      <span class="label span12 text-center">最近文章</span>
+      <div style="height:300px"></div>
+     
+    </div>
+    <div class="sugin-up" >
+      <span class="label span12 text-center">最新资源</span>
+       <div style="height:300px"></div>
+    </div>
+   
   </div>
-    <div class="span6" style="height:1000px">
+    <div class="span6" >
       <!--Body content-->
       
      
     </div>
      <div class="span3">
        <div class="sugin-up">
-         <span class="label span12 text-center">热点新闻</span>
+         <span class="label span12 text-center">课程通知</span>
+         <div style="height:300px"></div>
        </div>
+     <div class="sugin-up" >
+      <span class="label span12 text-center">热门下载</span>
+       <div style="height:300px"></div>
+    </div>
       </div>
   </div>
 </div>
