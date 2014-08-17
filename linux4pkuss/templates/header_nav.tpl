@@ -32,8 +32,8 @@
                         <label class="checkbox">
                         <input type="checkbox">记住我？
                         </label>
-                        <button type="submit" class="btn btn-primary" data-loading-text="Loading...">登录</button>
-                        <span class="help-block" style="float:right;padding-right:10%"><a href="#">忘记密码？</a></span>
+                        <button type="submit" class="btn blue button-next" data-loading-text="Loading...">登录<i class="m-icon-swapright m-icon-white"></i></button>
+                        <span class="help-block" style="float:right;padding-right:5%"><a href="#">忘记密码？</a></span>
                   </form>
                 </li>
                   </ul>

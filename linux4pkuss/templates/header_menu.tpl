@@ -35,11 +35,11 @@
                 
                 <ul class="nav pull-right">
                 <li class="divider-vertical"></li>
-                    <li><a href="#"><i class="icon-user"></i>{}</a></li>
+                    <li><a href="#"><i class="icon-user"></i>{$smarty.session.user} </a></li>
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i></a>
                   <ul class="dropdown-menu">
-                      <li><a href="/personal/index.html"><i class="icon-user"></i> 个人信息</a></li>
+                      <li><a href="/templates/profile.html"><i class="icon-user"></i> 个人信息</a></li>
 
 					<li><a href="/personal/page_calendar.html"><i class="icon-calendar"></i> 我的日历</a></li>
 				
