@@ -10,11 +10,7 @@ $smarty->force_compile = true;
 //$smarty->debugging = true;
 $smarty->caching = true;
 $smarty->cache_lifetime = 120;
-session_start();
-if ($_SESSION['user']==null){
-	$smarty->display('index.tpl');
-	
-}else{
-	$smarty->display('index.tpl');
-}
+
+$smarty->display('index.tpl');
+
 
