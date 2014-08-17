@@ -7,7 +7,6 @@ class FileHelper{
 	public function __construct(){
 		$this->PATH=$_SERVER['DOCUMENT_ROOT'];
 	}
-	#kao wori
 	#文件上传:返回值：0表示文件上传成功，1表示文件太大，2表示文件类型不支持，3表示文件上传失败，
 	public function upLoad($FILE){
 		#获取文件的大小
@@ -20,7 +19,6 @@ class FileHelper{
 // 		if($fileType!='image/jpg'){
 // 			return 2;
 // 		}
-		#cao
 		#判断文件是否上传到服务器临时目录
 		if(is_uploaded_file($FILE['tmp_name'])){
 			

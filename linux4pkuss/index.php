@@ -12,9 +12,9 @@ $smarty->caching = true;
 $smarty->cache_lifetime = 120;
 session_start();
 if ($_SESSION['user']==null){
-	$smarty->display('index.html');
+	$smarty->display('index.tpl');
 	
 }else{
-	$smarty->display('index.html');
+	$smarty->display('index.tpl');
 }
 
