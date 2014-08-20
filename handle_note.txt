@@ -22,3 +22,10 @@
 	
 	
 关于PHP获取路径问题，直接干脆,获取相对与计算机的绝对路径$_SERVER['DOCUMENT_ROOT']
+
+
+smarty的调试信息
+$smarty->force_compile = true;
+$smarty->debugging = true;
+$smarty->caching = true;
+$smarty->cache_lifetime = 120;

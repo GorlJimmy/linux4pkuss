@@ -1,13 +1,12 @@
 <?php
-require_once '../libs/Smarty.class.php';
+
+$ROOT=$_SERVER['DOCUMENT_ROOT'];
+require_once $ROOT.'/libs/Smarty.class.php';
 $smarty = new Smarty;
-// $smarty->force_compile = true;
-//$smarty->debugging = true;
-// $smarty->caching = true;
-// $smarty->cache_lifetime = 120;
-$smarty->setTemplateDir('../templates');
-$smarty->setCompileDir('../templates_c');
-$smarty->setCacheDir('../cache');
+
+$smarty->setTemplateDir($ROOT.'/templates');
+$smarty->setCompileDir($ROOT.'/templates_c');
+$smarty->setCacheDir($ROOT.'/cache');
 
 session_start();
 $_SESSION['user']="Jimmy";

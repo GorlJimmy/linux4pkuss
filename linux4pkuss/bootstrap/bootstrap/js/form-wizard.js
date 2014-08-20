@@ -79,16 +79,6 @@ var FormWizard = function () {
                         maxlength: 16,
                         required: true
                     },
-                    card_cvc: {
-                        digits: true,
-                        required: true,
-                        minlength: 3,
-                        maxlength: 4
-                    },
-                    card_expiry_mm: {
-                        digits: true,
-                        required: true
-                    },
                     card_expiry_yyyy: {
                         digits: true,
                         required: true
@@ -261,7 +251,7 @@ var FormWizard = function () {
 
             $('#form_wizard_1').find('.button-previous').hide();
             $('#form_wizard_1 .button-submit').click(function () {
-                alert('Finished! Hope you like it :)');
+                alert('信息提交，请等待信息审核。');
             }).hide();
         }
 

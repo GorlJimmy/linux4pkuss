@@ -4,9 +4,9 @@ class DBHelper{
     #构造函数，创建数据库链接
     public function __construct(){    
     	#获取数据配置文件
-    	include_once '../configs/dbconfig.inc';
+    	include_once $_SERVER['DOCUMENT_ROOT'].'/configs/dbconfig.inc';
     	# 1.创建mysqli对象
-		$this->mysqli=new mysqli(MYSQL_HOST.':'.MYSQL_PORT,MYSQL_USER,MYSQL_PASS,MYSQL_DB) or die("Connect Error".$this->mysqli->connect_error);  
+		$this->mysqli=new mysqli(MYSQL_HOST,MYSQL_USER,MYSQL_PASS,MYSQL_DB) or die("Connect Error".$this->mysqli->connect_error);  
     }
 	# 2.数据库查询操作,返回数组
     public function exec_query($sql){
