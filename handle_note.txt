@@ -21,7 +21,7 @@
 	将SELINUX=enforcing改为SELINUX=disabled
 	
 	
-关于PHP获取路径问题，直接干脆,获取相对与计算机的绝对路径$_SERVER['DOCUMENT_ROOT']
+2. 关于PHP获取路径问题，直接干脆,获取相对与计算机的绝对路径$_SERVER['DOCUMENT_ROOT']
 
 
 smarty的调试信息
@@ -29,3 +29,6 @@ $smarty->force_compile = true;
 $smarty->debugging = true;
 $smarty->caching = true;
 $smarty->cache_lifetime = 120;
+
+
+3. 啊啊啊啊啊啊啊！可要注意了，执行sql语句的时候可不要在前面echo啊啊啊，因为echo会有缓存，导致语句执行出错。

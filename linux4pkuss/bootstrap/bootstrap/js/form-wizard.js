@@ -10,10 +10,28 @@ var FormWizard = function () {
 
             function format(state) {
                 if (!state.id) return state.text; // optgroup
-                return "<img class='flag' src='assets/img/flags/" + state.id.toLowerCase() + ".png'/>&nbsp;&nbsp;" + state.text;
-            }
+                return state.text;
+              }
 
-            $("#country_list").select2({
+            $("#province_list").select2({
+                placeholder: "Select",
+                allowClear: true,
+                formatResult: format,
+                formatSelection: format,
+                escapeMarkup: function (m) {
+                    return m;
+                }
+            });
+            $("#city_list").select2({
+                placeholder: "Select",
+                allowClear: true,
+                formatResult: format,
+                formatSelection: format,
+                escapeMarkup: function (m) {
+                    return m;
+                }
+            });
+            $("#area_list").select2({
                 placeholder: "Select",
                 allowClear: true,
                 formatResult: format,
@@ -48,7 +66,7 @@ var FormWizard = function () {
                         equalTo: "#submit_form_password"
                     },
                     //profile
-                    fullname: {
+                    realname: {
                         required: true
                     },
                     email: {
@@ -61,46 +79,37 @@ var FormWizard = function () {
                     gender: {
                         required: true
                     },
-                    address: {
+                    street: {
+                        required: true
+                    },
+                    province: {
                         required: true
                     },
                     city: {
                         required: true
                     },
-                    country: {
+                    area: {
                         required: true
                     },
                     //payment
-                    card_name: {
+                    studentid: {
                         required: true
                     },
-                    card_number: {
-                        minlength: 16,
-                        maxlength: 16,
+                    collage: {
+                        minlength: 4,
+                        maxlength: 50,
                         required: true
                     },
-                    card_expiry_yyyy: {
+                    expiry_yyyy: {
                         digits: true,
                         required: true
                     },
-                    'payment[]': {
-                        required: true,
-                        minlength: 1
-                    }
                 },
 
-                messages: { // custom messages for radio buttons and checkboxes
-                    'payment[]': {
-                        required: "Please select at least one option",
-                        minlength: jQuery.format("Please select at least one option")
-                    }
-                },
 
                 errorPlacement: function (error, element) { // render error placement for each input type
                     if (element.attr("name") == "gender") { // for uniform radio buttons, insert the after the given container
                         error.addClass("no-left-padding").insertAfter("#form_gender_error");
-                    } else if (element.attr("name") == "payment[]") { // for uniform radio buttons, insert the after the given container
-                        error.addClass("no-left-padding").insertAfter("#form_payment_error");
                     } else {
                         error.insertAfter(element); // for other inputs, just perform default behavoir
                     }
@@ -125,7 +134,7 @@ var FormWizard = function () {
                 },
 
                 success: function (label) {
-                    if (label.attr("for") == "gender" || label.attr("for") == "payment[]") { // for checkboxes and radip buttons, no need to show OK icon
+                    if (label.attr("for") == "gender") { // for checkboxes and radip buttons, no need to show OK icon
                         label
                             .closest('.control-group').removeClass('error').addClass('success');
                         label.remove(); // remove error label here
@@ -139,9 +148,11 @@ var FormWizard = function () {
                 submitHandler: function (form) {
                     success.show();
                     error.hide();
+                    form.submit(function(){
+                    	return true;
+                    });
                     //add here some ajax code to submit your form or just call form.submit() if you want to submit the form without ajax
                 }
-
             });
 
             var displayConfirm = function() {
@@ -153,14 +164,8 @@ var FormWizard = function () {
                         $(this).html(input.find('option:selected').text());
                     } else if (input.is(":radio") && input.is(":checked")) {
                         $(this).html(input.attr("data-title"));
-                    } else if ($(this).attr("data-display") == 'card_expiry') {
-                        $(this).html($('[name="card_expiry_mm"]', form).val() + '/' + $('[name="card_expiry_yyyy"]', form).val());
-                    } else if ($(this).attr("data-display") == 'payment') {
-                        var payment = [];
-                        $('[name="payment[]"]').each(function(){
-                            payment.push($(this).attr('data-title'));
-                        });
-                        $(this).html(payment.join("<br>"));
+                    } else if ($(this).attr("data-display") == 'expiry_mm') {
+                        $(this).html($('[name="expiry_mm"]', form).val() + '/' + $('[name="expiry_yyyy"]', form).val());
                     }
                 });
             }
@@ -170,7 +175,7 @@ var FormWizard = function () {
                 'nextSelector': '.button-next',
                 'previousSelector': '.button-previous',
                 onTabClick: function (tab, navigation, index) {
-                    alert('on tab click disabled');
+                   // alert('on tab click disabled');
                     return false;
                 },
                 onNext: function (tab, navigation, index) {
@@ -251,6 +256,9 @@ var FormWizard = function () {
 
             $('#form_wizard_1').find('.button-previous').hide();
             $('#form_wizard_1 .button-submit').click(function () {
+            	form.submit(function(){
+                	return true;
+                });
                 alert('信息提交，请等待信息审核。');
             }).hide();
         }

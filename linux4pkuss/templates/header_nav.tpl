@@ -9,7 +9,6 @@
             <a class="brand" href="#">Linux</a>
             <div class="nav-collapse collapse">
               <ul class="nav">
-               
                 <li><a href="#"><b class="icon-home"></b>首页</a></li>
                 <li><a href="#about"><b class="icon-comment"></b>课程简介</a></li>
                 <li><a href="#contact"><b class="icon-envelope"></b>项目信息</a></li>
@@ -23,7 +22,7 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">已有账户？登录<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li>
-                        <form action="/controller/login.php" method="post" style="width:300px;padding:3% 5% 0 5%">
+                        <form action="/controller/user/login.php" method="post" style="width:300px;padding:3% 5% 0 5%">
                         <label>用户名</label>
                         <input type="text" name="userName" placeholder="Email/UserName">
                          <label>密码</label>

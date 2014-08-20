@@ -6,7 +6,7 @@ class DBHelper{
     	#获取数据配置文件
     	include_once $_SERVER['DOCUMENT_ROOT'].'/configs/dbconfig.inc';
     	# 1.创建mysqli对象
-		$this->mysqli=new mysqli(MYSQL_HOST,MYSQL_USER,MYSQL_PASS,MYSQL_DB) or die("Connect Error".$this->mysqli->connect_error);  
+		$this->mysqli=new mysqli(MYSQL_HOST,MYSQL_USER,MYSQL_PASS,MYSQL_DB) or die("Connect Error".$this->mysqli->connect_error);
     }
 	# 2.数据库查询操作,返回数组
     public function exec_query($sql){
@@ -34,15 +34,13 @@ class DBHelper{
         $result=$this->mysqli->query($sql);
 		return $result;
     }
+    public function bulk_exec_other($sqls){
+    	$result = $mysqli->multi_query($sqls);
+    	return $result;
+    }
 	#析构函数，关闭数据库链接
     public function __destruct(){
     	$this->mysqli->close(); 
     }
-        
-
-
-
-
-
-
+ 
 }

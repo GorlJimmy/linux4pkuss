@@ -10,10 +10,9 @@ create table user_tb(
 	realname varchar(50) ,
 	password varchar(64) not null,
 	birthday datetime,
-	studentid varchar(20) not null,
+	gender varchar(10) not null,
 	identification varchar(20),
-	email varchar(40),
-	major varchar(50),
+	email varchar(40) not null,
 	imgurl varchar(20),
 	registerTime datetime not null,
 	auth_id int not null default 0,
@@ -21,6 +20,17 @@ create table user_tb(
 	status_id int default 1
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+drop table if exists school_tb;
+create table school_tb(
+	id int primary key not null auto_increment,
+	num varchar(64) not null,
+	name varchar(120),
+	studentid varchar(20) not null,
+	major varchar(50),
+	collage varchar(120) not null,
+	enterdate date not null,
+	user_id int not null
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 drop table if exists address_tb;
 create table address_tb(
@@ -37,7 +47,7 @@ drop table if exists province_tb;
 create table province_tb(
 	id int not null primary key auto_increment,
 	num varchar(64) not null,
-	code int not null,
+	province_code varchar(10) not null,
 	name varchar(65)
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -45,9 +55,9 @@ drop table if exists city_tb;
 create table city_tb(
     id int not null primary key auto_increment,
     num varchar(64) not null,
-    code int not null,
-    name varchar(65),
-	province_id int not null
+    province_code varchar(10) not null,
+    city_code varchar(10) not null,
+    name varchar(65)
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
@@ -55,9 +65,10 @@ drop table if exists area_tb;
 create table area_tb(
     id int not null primary key auto_increment,
     num varchar(64) not null,
-    code int not null,
-    name varchar(65),
-    city_id int not null
+    province_code varchar(10) not null,
+    city_code varchar(10) not null,
+    area_code varchar(10) not null,
+    name varchar(65)
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
