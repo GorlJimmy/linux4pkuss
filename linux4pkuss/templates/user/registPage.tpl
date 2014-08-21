@@ -87,9 +87,10 @@
 
 <script src="/bootstrap/bootstrap/js/app.js"></script>
 <script src="/bootstrap/bootstrap/js/form-wizard.js"></script>
-
 <!-- END PAGE LEVEL SCRIPTS -->
-
+<!-- DEFINED JS MYSELF -->
+<script src="/bootstrap/bootstrap/javascript/city.js"></script>
+<!-- END MYSELF -->
 <script>
 	jQuery(document).ready(function() {
 		// initiate layout and plugins
@@ -395,25 +396,20 @@
 												</div>
 											</div>
 											<div class="control-group">
-
 												<label class="control-label">省份信息</label>
-
 												<div class="controls">
-
-													<select name="province" id="province_list" class="span6">
-
-														<option value="">省份</option>
-
-														<option value="1026">安徽</option>
-
+													<select name="province" id="province_list" class="span6" onchange="showCityList();">
+														<option value="">请选择省份</option>
+														{foreach from=$provinces item=province key=k}
+														<option value="{$province['province_code']}">{$province['name']}</option>
+														{/foreach}
 													</select>
 													</div>
 													</div>
 													<div class="control-group">
-
 												<label class="control-label">城市信息</label>
 													<div class="controls">
-													<select name="city" id="city_list" class="span6" onchange="javascript:alert($('#city_list').val());">
+													<select name="city" id="city_list" class="span6">
 														<option value="">城市</option>
 														<option value="1026">安徽</option>
 														<option value="1021">tianjin</option>
