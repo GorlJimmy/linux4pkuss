@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 {include file="../../templates/SysTemManage/ManageInclude.tpl" title=foo} 
-<script src="../../libs/public.js" type="text/javascript"></script>
+<script src="../libs/public.js" type="text/javascript"></script>
 <script language='javascript'>
  function get()
  {
