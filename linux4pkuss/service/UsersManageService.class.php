@@ -8,7 +8,7 @@ require_once '../util/DBHelper.class.php';
  * @author xusong
  *        
  */
-class AttachmentCheckService {
+class UsersManageService {
 	// TODO - Insert your code here
 	function check_input($value)
 	{
@@ -28,25 +28,34 @@ class AttachmentCheckService {
 	public function GetList($strWhere)
 	{	
 		$param=self::check_input($strWhere);
-		$sql = "select * from attachment_tb where 1=$param ";
+		$sql = "select * from user_tb where 1=$param ";
 		$db=new DBHelper();
 		$result=$db->exec_query($sql);
 		return $result;
 	}
 	
-	public function PassCheck($strWhere)
+	public function ChangeToSysManager($strWhere)
 	{
 		$param=self::check_input($strWhere);
-		$sql = "update attachment_tb set isshare=1 where id=$param ";
+		$sql = "update user_tb set role_id=0 where id=$param ";
 		$db=new DBHelper();
 		$result=$db->exec_query($sql);
 		return $result;
 	}
 	
-	public function DeleteAttach($strWhere)
+	public function ChangeToNormalUser($strWhere)
 	{
 		$param=self::check_input($strWhere);
-		$sql = "delete from attachment_tb where id=$param ";
+		$sql = "update user_tb set role_id=1 where id=$param ";
+		$db=new DBHelper();
+		$result=$db->exec_query($sql);
+		return $result;
+	}
+	
+	public function DeleteUsers($strWhere)
+	{
+		$param=self::check_input($strWhere);
+		$sql = "delete from user_tb where id=$param ";
 		$db=new DBHelper();
 		$result=$db->exec_query($sql);
 		return $result;

@@ -14,10 +14,10 @@
 					</div>
 					<div class="portlet-body">
 						<p>
-							<a href="#">文章审核</a>
+							<a href="/linux4pkuss/linux4pkuss/controller/ArticleCheck.php">文章审核</a>
 						</p>
 						<p>
-							<a href="#">上传资料审核</a>
+							<a href="/linux4pkuss/linux4pkuss/controller/AttachmentCheck.php">上传资料审核</a>
 						</p>
 						<p>
 							<a href="#">课程信息维护</a>
@@ -26,7 +26,7 @@
 							<a href="#">教师简介维护</a>
 						</p>
 						<p>
-							<a href="#">用户维护</a>
+							<a href="/linux4pkuss/linux4pkuss/controller/UsersManage.php">用户维护</a>
 						</p>
 					</div>
 				</div>

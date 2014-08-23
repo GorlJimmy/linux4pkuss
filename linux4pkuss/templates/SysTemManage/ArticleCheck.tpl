@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 {include file="../../templates/SysTemManage/ManageInclude.tpl" title=foo} 
+<script src="../../libs/public.js" type="text/javascript"></script>
 <script language='javascript'>
  function get()
  {
@@ -69,24 +70,6 @@
 		location.reload();
 		}
  }
- 
- /* 请求Ajax 带返回值，并弹出提示框提醒
- --------------------------------------------------*/
- function getAjax(url, parm, callBack) {
-     $.ajax({
-         type: 'post',
-         dataType: "text",
-         contentType: "application/x-www-form-urlencoded;charset=UTF-8",
-         url: url,
-         data: parm,
-         cache: false,
-         async: false,
-         success: function (msg) {
-             callBack(msg);
-         }
-     });
- }
- 
 </script>
 </head>
 <body>
@@ -95,32 +78,15 @@
 		<div class="row-fluid">
 		{include file="../../templates/SysTemManage/ManageLeft.tpl" title=foo}
 			<div class="span6">
-				<div class="portlet box grey" style="width:800px;">
-
-					<div class="portlet-title">
-
-						<div class="caption">
-							<i class="icon-cogs"></i>网站维护
-						</div>
-
-						<div class="tools">
-
-							<a href="javascript:;" class="collapse"></a> <a
-								href="#portlet-config" data-toggle="modal" class="config"></a> <a
-								href="javascript:;" class="reload"></a> <a href="javascript:;"
-								class="remove"></a>
-
-						</div>
-
-					</div>
+				
 					<div class="row-fluid" >
 
 					<div class="span12">
-				<div class="portlet box light-grey">
+				<div class="portlet box light-grey" style="width:800px;">
 
 							<div class="portlet-title">
 
-								<div class="caption"><i class="icon-globe"></i>文章审核</div>
+								<div class="caption"><i class="icon-cogs"></i>文章审核</div>
 
 								<div class="tools">
 
@@ -205,7 +171,7 @@
 						</div>
 						</div>
 						</div>
-				</div>
+				
 
 			</div>
 		</div>

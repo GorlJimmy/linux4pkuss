@@ -36,40 +36,53 @@
            }
       }
  }
- function PassCheck(){
-	 var leg = $("#sample_1 tr").length - 1
+ function ChangeToSys(){
+	 var leg = $("#sample_1 tr").length - 1;
 	 $("#sample_1 tr:gt(0):lt(" + leg + ")").each(function () {
-		 //alert($(this).children("td").eq(1).html()+"  "+$(this).children("td").eq(0).html());
 		 var temp = $(this).children("td").eq(0);
 		 temp = temp.find("[type='checkbox']").is(":checked");
 		 if(temp) {
-			 var parm= 'Action=Check&ID='+$(this).children("td").eq(1).html();
-			 getAjax('AttachmentCheckPass.php', parm, function (rs) {
+			 var parm= 'Action=SysManager&ID='+$(this).children("td").eq(1).html();
+			 getAjax('UsersManageHandler.php', parm, function (rs) {
 			 });
 		 }
 	 });
-	//alert("审核通过");
+	location.reload();
+ }
+ 
+ function ChangeToNormal(){
+	 var leg = $("#sample_1 tr").length - 1;
+	 $("#sample_1 tr:gt(0):lt(" + leg + ")").each(function () {
+		 var temp = $(this).children("td").eq(0);
+		 temp = temp.find("[type='checkbox']").is(":checked");
+		 if(temp) {
+			 var parm= 'Action=NormalUser&ID='+$(this).children("td").eq(1).html();
+			 getAjax('UsersManageHandler.php', parm, function (rs) {
+			 });
+		 }
+	 });
 	location.reload();
  }
  
  function Delete(){
 	 if(confirm("确定要清空数据吗?"))
 		{
-		 var leg = $("#sample_1 tr").length - 1
+		 var leg = $("#sample_1 tr").length - 1;
 		 $("#sample_1 tr:gt(0):lt(" + leg + ")").each(function () {
-			 //alert($(this).children("td").eq(1).html()+"  "+$(this).children("td").eq(0).html());
 			 var temp = $(this).children("td").eq(0);
 			 temp = temp.find("[type='checkbox']").is(":checked");
 			 if(temp) {
 				 var parm= 'Action=Delete&ID='+$(this).children("td").eq(1).html();
-				 getAjax('AttachmentCheckPass.php', parm, function (rs) {
+				 getAjax('UsersManageHandler.php', parm, function (rs) {
 				 });
 			 }
 		 });
-		//alert("审核通过");
 		location.reload();
 		}
  }
+ 
+ 
+ 
 </script>
 </head>
 <body>
@@ -78,7 +91,7 @@
 		<div class="row-fluid">
 		{include file="../../templates/SysTemManage/ManageLeft.tpl" title=foo}
 			<div class="span6">
-			
+				
 					<div class="row-fluid" >
 
 					<div class="span12">
@@ -86,7 +99,7 @@
 
 							<div class="portlet-title">
 
-								<div class="caption"><i class="icon-cogs"></i>资料审核</div>
+								<div class="caption"><i class="icon-cogs"></i>用户查询管理</div>
 
 								<div class="tools">
 
@@ -107,12 +120,17 @@
 								<div class="clearfix">
 
 									<div class="btn-group">
+										<button id="sample_editable_1_new" class="btn blue"  onclick="ChangeToSys();">
 
-										<button id="sample_editable_1_new" class="btn blue" onclick="PassCheck();">
-
-										通过审核
+										改为管理员
 
 										</button>
+										<button id="sample_editable_1_new" class="btn green"  onclick="ChangeToNormal();">
+
+										改为一般用户
+
+										</button>
+										
 										<button id="sample_editable_1_new" class="btn red"  onclick="Delete();">
 
 										删除
@@ -129,13 +147,13 @@
 
 											<th style="width:8px;"><input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes" /></th>
 
-											<th>资料ID</th>
+											<th>用户ID</th>
 
-											<th class="hidden-480">资料标题</th>
+											<th class="hidden-480">用户名</th>
 
-											<th class="hidden-480">创建时间</th>
+											<th class="hidden-480">注册时间</th>
 
-											<th class="hidden-480">作者ID</th>
+											<th class="hidden-480">Email</th>
 
 											<th ></th>
 
@@ -151,15 +169,15 @@
 	
 												<td>{$artl.id}</td>
 	
-												<td class="hidden-480">{$artl.attachname}</td>
+												<td class="hidden-480">{$artl.username}</td>
 	
-												<td class="hidden-480">{$artl.createdate}</td>
+												<td class="hidden-480">{$artl.registerTime}</td>
 	
-												<td class="center hidden-480">{$artl.user_id}</td>
-												{if $artl.isshare eq "0"}
-													<td ><span class="label label-important">未审核</span></td>
+												<td class="center hidden-480">{$artl.email}</td>
+												{if $artl.role_id eq "1"}
+													<td ><span class="label label-success">普通用户</span></td>
 												{else}
-													<td ><span class="label label-success">审核通过</span></td>
+													<td ><span class="label label-important">管理员</span></td>
 												{/if}
 											</tr>
 										{/foreach}
