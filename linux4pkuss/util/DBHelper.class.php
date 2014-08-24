@@ -4,7 +4,7 @@ class DBHelper{
     #构造函数，创建数据库链接
     public function __construct(){    
     	#获取数据配置文件
-    	include_once $_SERVER['DOCUMENT_ROOT'].'/configs/dbconfig.inc';
+    	include_once $_SERVER['DOCUMENT_ROOT'].'/linux4pkuss/linux4pkuss/configs/dbconfig.inc';
     	# 1.创建mysqli对象
 		$this->mysqli=new mysqli(MYSQL_HOST,MYSQL_USER,MYSQL_PASS,MYSQL_DB) or die("Connect Error".$this->mysqli->connect_error);
     }
@@ -42,5 +42,15 @@ class DBHelper{
     public function __destruct(){
     	$this->mysqli->close(); 
     }
+    
+    public function exec_non_query($sql){
+    	$result=$this->mysqli->query($sql);
+    	# 3.处理结果
+    	if($result){
+    		return $result;
+    	}else{
+    	return null;
+    	}
+    	}
  
 }
