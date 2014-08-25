@@ -15,7 +15,7 @@ create table user_tb(
 	email varchar(40) not null,
 	imgurl varchar(20),
 	registerTime datetime not null,
-	auth_id int not null default 0,
+	#auth_id int not null default 0,
 	role_id int not null default 0,
 	status_id int default 1
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
