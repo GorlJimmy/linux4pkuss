@@ -88,6 +88,8 @@
 			</div>
 		</div>
 	</div>
-	<footer> {include file="footer.tpl"} </footer>
+	<div class="footer">
+{include file="footer.tpl"} 
+	</div>
 </body>
 </html>

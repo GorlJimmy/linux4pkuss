@@ -49,9 +49,9 @@
 
 					<li class="divider"></li>
 
-					<li><a href="/personal/extra_lock.html"><i class="icon-lock"></i> 锁屏</a></li>
+					<li><a href="/controller/user/util.php?type=lock"><i class="icon-lock"></i> 锁屏</a></li>
 
-					<li><a href="/personal/login.html"><i class="icon-remove-circle"></i> 注销登录</a></li>
+					<li><a href="/controller/user/util.php?type=logout"><i class="icon-remove-circle"></i> 注销登录</a></li>
                   </ul>
                 </li>
                 </ul>

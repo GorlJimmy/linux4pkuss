@@ -9,7 +9,7 @@
             <a class="brand" href="#">Linux</a>
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="#"><b class="icon-home"></b>首页</a></li>
+                <li><a href="/index.php"><b class="icon-home"></b>首页</a></li>
                 <li><a href="#about"><b class="icon-comment"></b>课程简介</a></li>
                 <li><a href="#contact"><b class="icon-envelope"></b>项目信息</a></li>
                 <li><a href="#contact"><b class="icon-bell"></b>课程通知</a></li>
@@ -27,12 +27,11 @@
                         <input type="text" name="userName" placeholder="Email/UserName">
                          <label>密码</label>
                         <input type="password" name="password">
-                              
                         <label class="checkbox">
                         <input type="checkbox">记住我？
                         </label>
                         <button type="submit" class="btn blue button-next" data-loading-text="Loading...">登录<i class="m-icon-swapright m-icon-white"></i></button>
-                        <span class="help-block" style="float:right;padding-right:5%"><a href="#">忘记密码？</a></span>
+                        <span class="help-block" style="float:right;padding-right:5%"><a href="/user/forget.html">忘记密码？</a></span>
                   </form>
                 </li>
                   </ul>

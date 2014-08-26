@@ -3,12 +3,18 @@
  * 欢迎页面首页
  * @package Example-application
 */
-require_once $_SERVER['DOCUMENT_ROOT'].'/libs/Smarty.class.php';
+$ROOT=$_SERVER['DOCUMENT_ROOT'];
+require_once $ROOT.'/libs/Smarty.class.php';
+$smarty = new Smarty;
 
-$smarty = new Smarty();
-$smarty->force_compile = true;
-//$smarty->debugging = true;
-$smarty->caching = true;
-$smarty->cache_lifetime = 120;
-// echo $smarty;
-$smarty->display('index.tpl');
+$smarty->setTemplateDir($ROOT.'/templates');
+$smarty->setCompileDir($ROOT.'/templates_c');
+$smarty->setCacheDir($ROOT.'/cache');
+
+session_start();
+if ($_SESSION['user']){
+	$smarty->display('home.tpl');
+}else{
+	$smarty->display('index.tpl');	
+}
+
