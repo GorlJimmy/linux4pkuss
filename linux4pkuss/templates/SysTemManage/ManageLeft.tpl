@@ -26,6 +26,15 @@
 							<a href="#">教师简介维护</a>
 						</p>
 						<p>
+							<a href="/linux4pkuss/linux4pkuss/controller/ProjectManage.php">项目信息维护</a>
+						</p>
+						<p>
+							<a href="/linux4pkuss/linux4pkuss/controller/NotifyManage.php">课程通知维护</a>
+						</p>
+						<p>
+							<a href="/linux4pkuss/linux4pkuss/controller/ThemeManage.php">网站标题维护</a>
+						</p>
+						<p>
 							<a href="/linux4pkuss/linux4pkuss/controller/UsersManage.php">用户维护</a>
 						</p>
 					</div>
