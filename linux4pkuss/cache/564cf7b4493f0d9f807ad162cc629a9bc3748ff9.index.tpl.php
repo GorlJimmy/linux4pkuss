@@ -1,33 +1,33 @@
-<?php /*%%SmartyHeaderCode:100785935653f3ebc084af10-97233137%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:164421504653fbb27d49e778-31384972%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '564cf7b4493f0d9f807ad162cc629a9bc3748ff9' => 
     array (
       0 => './templates/index.tpl',
-      1 => 1408461196,
+      1 => 1408929696,
       2 => 'file',
     ),
     'db00dac0fc48babbe1488cc4317a4e2f722d2fbb' => 
     array (
       0 => './configs/totem.conf',
-      1 => 1408289140,
+      1 => 1408929696,
       2 => 'file',
     ),
     '8a75506b43e5a0cc39fe27afe5b4ee0bc36211be' => 
     array (
       0 => './templates/header_nav.tpl',
-      1 => 1408305819,
+      1 => 1408929696,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '100785935653f3ebc084af10-97233137',
+  'nocache_hash' => '164421504653fbb27d49e778-31384972',
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_53f3ebc0b18053_66968604',
+  'unifunc' => 'content_53fbb27d9a3297_63054582',
   'cache_lifetime' => 120,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53f3ebc0b18053_66968604')) {function content_53f3ebc0b18053_66968604($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_53fbb27d9a3297_63054582')) {function content_53fbb27d9a3297_63054582($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
 <title>北京大学-软件学院--荆琦</title>
@@ -95,7 +95,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <a class="brand" href="#">Linux</a>
             <div class="nav-collapse collapse">
               <ul class="nav">
-               
                 <li><a href="#"><b class="icon-home"></b>首页</a></li>
                 <li><a href="#about"><b class="icon-comment"></b>课程简介</a></li>
                 <li><a href="#contact"><b class="icon-envelope"></b>项目信息</a></li>
@@ -109,7 +108,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">已有账户？登录<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li>
-                        <form action="/controller/login.php" method="post" style="width:300px;padding:3% 5% 0 5%">
+                        <form action="/controller/user/login.php" method="post" style="width:300px;padding:3% 5% 0 5%">
                         <label>用户名</label>
                         <input type="text" name="userName" placeholder="Email/UserName">
                          <label>密码</label>
@@ -146,7 +145,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					</div>
 					<div class="portlet-body">
 						<p>
-							<a href="/controller/registPage.php">Linux内存管理心得</a>
+							<a href="/controller/user/registPage.php">Linux内存管理心得</a>
 						</p>
 						<p>
 							<a href="#">Linux内存管理心得</a>
