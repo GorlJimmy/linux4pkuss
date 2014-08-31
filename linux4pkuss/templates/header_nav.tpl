@@ -22,9 +22,9 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">已有账户？登录<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li>
-                        <form action="/controller/user/login.php" method="post" style="width:300px;padding:3% 5% 0 5%">
+                        <form action="/controller/user/userHandler.php?type=login" method="post" style="width:300px;padding:3% 5% 0 5%">
                         <label>用户名</label>
-                        <input type="text" name="userName" placeholder="Email/UserName">
+                        <input type="text" name="username" placeholder="Email/UserName/RealName">
                          <label>密码</label>
                         <input type="password" name="password">
                         <label class="checkbox">

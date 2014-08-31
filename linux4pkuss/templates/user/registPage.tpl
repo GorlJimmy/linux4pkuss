@@ -88,8 +88,11 @@
 <script src="/bootstrap/bootstrap/js/app.js"></script>
 <script src="/bootstrap/bootstrap/js/form-wizard.js"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
+
 <!-- DEFINED JS MYSELF -->
-<script src="/bootstrap/bootstrap/javascript/city.js"></script>
+
+<!-- init the address information -->
+<script src="/bootstrap/bootstrap/javascript/regist.js"></script>
 <!-- END MYSELF -->
 <script>
 	jQuery(document).ready(function() {
@@ -99,11 +102,10 @@
 
 	});
 </script>
-
 <!-- END JAVASCRIPTS -->
 </head>
 <body>
-	<header> {include file="header_nav.tpl" title=foo} </header>
+	<header> {include file="header_nav.tpl"} </header>
 	<div class="container-fluid" style="padding: 60px 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
@@ -123,15 +125,7 @@
 						<p>
 							<a href="/controller/registPage.php">Linux内存管理心得</a>
 						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
+						
 					</div>
 				</div>
 				<div class="portlet box green">
@@ -150,15 +144,7 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
+						
 					</div>
 				</div>
 				<div class="portlet box purple">
@@ -177,15 +163,7 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
+						
 					</div>
 				</div>
 				<div class="portlet box yellow">
@@ -204,21 +182,13 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
+						
 					</div>
 				</div>
 			</div>
 			<div class="span9">
 				<div class="span12" style="display: none">
-					<h3 class="page-title"></h3>
+					<h3 class="page-title" style="dispaly:none;"></h3>
 				</div>
 				<div class="span12">
 					<div class="portlet box blue" id="form_wizard_1">
@@ -238,7 +208,7 @@
 							</div>
 						</div>
 						<div class="portlet-body form">
-							<form action="/controller/user/registInfoPage.php" method="post"
+							<form action="/controller/user/userHandler.php?type=submit" method="post"
 								class="form-horizontal" id="submit_form">
 								<div class="form-wizard">
 									<div class="navbar steps">
@@ -398,11 +368,8 @@
 											<div class="control-group">
 												<label class="control-label">省份信息</label>
 												<div class="controls">
-													<select name="province" id="province_list" class="span6" onchange="showCityList();">
+													<select name="province" id="province_list" class="span6">
 														<option value="">请选择省份</option>
-														{foreach from=$provinces item=province key=k}
-														<option value="{$province['province_code']}">{$province['name']}</option>
-														{/foreach}
 													</select>
 													</div>
 													</div>
@@ -410,10 +377,7 @@
 												<label class="control-label">城市信息</label>
 													<div class="controls">
 													<select name="city" id="city_list" class="span6">
-														<option value="">城市</option>
-														<option value="1026">安徽</option>
-														<option value="1021">tianjin</option>
-														<option value="1023">beijing</option>
+														<option value="">请选择城市</option>
 													</select>
 													</div>
 													</div>
@@ -422,8 +386,7 @@
 												<label class="control-label">地区信息</label>
 													<div class="controls">
 													<select name="area" id="area_list" class="span6">
-														<option value="">地区</option>
-														<option value="1026">安徽</option>
+														<option value="">请选择地区</option>
 													</select>
 
 												</div>
@@ -659,18 +622,8 @@
 			</div>
 		</div>
 	</div>
-
-
 	<div class="footer">
-
-		<div class="footer-inner">2013-2014 &copy; Peking University.</div>
-
-		<div class="footer-tools">
-			<span class="go-top"> <i class="icon-angle-up"></i>
-			</span>
-
-		</div>
-
+{include file="../footer.tpl"} 
 	</div>
 </body>
 </html>

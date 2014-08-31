@@ -74,16 +74,7 @@
 					</div>
 					<div class="portlet-body">
 						<p>
-							<a href="/controller/user/registPage.php">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
+							<a href="/controller/user/userHandler.php?type=regist">Linux内存管理心得</a>
 						</p>
 					</div>
 				</div>
@@ -103,15 +94,7 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
+						
 					</div>
 				</div>
 				<div class="portlet box purple">
@@ -130,15 +113,7 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
+						
 					</div>
 				</div>
 
@@ -441,15 +416,7 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
+						
 					</div>
 				</div>
 				<div class="portlet box yellow">
@@ -468,15 +435,7 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
+						
 					</div>
 				</div>
 			</div>
