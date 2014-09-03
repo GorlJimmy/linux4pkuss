@@ -62,18 +62,17 @@
 				<!--Sidebar content-->
 				<ul class="thumbnails">
 					<li class="span12">
-						<div class="thumbnail">
-							<img data-src="holder.js/300x200" class="img-polaroid" alt=""
-								src="">
-							<h3>Thumbnail label</h3>
-							<p>Thumbnail caption...</p>
+						<div>
+							<img data-src="holder.js/300x190" alt="{$smarty.session.user['username']}"
+								title="{$smarty.session.user['username']}" src="/photoes/{$smarty.session.user['imgurl']}">
+							<p style="text-align:center;background-color: gray;">{$smarty.session.user['realname']}</p>
 						</div>
 					</li>
 				</ul>
 			</div>
 			<div class="span10">
 				<!--Body content-->
-				<ul class="nav nav-tabs" style="margin-top: 40px">
+				<ul class="nav nav-tabs">
 					<li class="active"><a href="#tab1" data-toggle="tab">tab1</a>
 					<li><a href="#tab2" data-toggle="tab">tab2</a>
 					<li><a href="#tab3" data-toggle="tab">tab3</a>
@@ -88,6 +87,8 @@
 			</div>
 		</div>
 	</div>
-	<footer> {include file="footer.tpl"} </footer>
+	<div class="footer">
+	{include file="footer.tpl"} 
+	</div>
 </body>
 </html>

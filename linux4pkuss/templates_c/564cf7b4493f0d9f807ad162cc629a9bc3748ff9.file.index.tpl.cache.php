@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-08-20 08:28:48
+<?php /* Smarty version Smarty-3.1.19, created on 2014-08-25 22:49:49
          compiled from "./templates/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:100785935653f3ebc084af10-97233137%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:207169641753fbf5cd3438a0-27515387%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '564cf7b4493f0d9f807ad162cc629a9bc3748ff9' => 
     array (
       0 => './templates/index.tpl',
-      1 => 1408461196,
+      1 => 1408929696,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '100785935653f3ebc084af10-97233137',
+  'nocache_hash' => '207169641753fbf5cd3438a0-27515387',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_53f3ebc0a84d13_40646936',
+  'unifunc' => 'content_53fbf5cd37c597_83484679',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53f3ebc0a84d13_40646936')) {function content_53f3ebc0a84d13_40646936($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config("totem.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
+<?php if ($_valid && !is_callable('content_53fbf5cd37c597_83484679')) {function content_53fbf5cd37c597_83484679($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config("totem.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -98,7 +98,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					</div>
 					<div class="portlet-body">
 						<p>
-							<a href="/controller/registPage.php">Linux内存管理心得</a>
+							<a href="/controller/user/registPage.php">Linux内存管理心得</a>
 						</p>
 						<p>
 							<a href="#">Linux内存管理心得</a>
