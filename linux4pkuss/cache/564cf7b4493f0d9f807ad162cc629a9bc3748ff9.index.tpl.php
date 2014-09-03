@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:164421504653fbb27d49e778-31384972%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:207169641753fbf5cd3438a0-27515387%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,17 +17,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8a75506b43e5a0cc39fe27afe5b4ee0bc36211be' => 
     array (
       0 => './templates/header_nav.tpl',
-      1 => 1408929696,
+      1 => 1409021225,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '164421504653fbb27d49e778-31384972',
+  'nocache_hash' => '207169641753fbf5cd3438a0-27515387',
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_53fbb27d9a3297_63054582',
+  'unifunc' => 'content_53fbf5cd39e971_96245779',
   'cache_lifetime' => 120,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53fbb27d9a3297_63054582')) {function content_53fbb27d9a3297_63054582($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_53fbf5cd39e971_96245779')) {function content_53fbf5cd39e971_96245779($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
 <title>北京大学-软件学院--荆琦</title>
@@ -95,7 +95,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <a class="brand" href="#">Linux</a>
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="#"><b class="icon-home"></b>首页</a></li>
+                <li><a href="/index.php"><b class="icon-home"></b>首页</a></li>
                 <li><a href="#about"><b class="icon-comment"></b>课程简介</a></li>
                 <li><a href="#contact"><b class="icon-envelope"></b>项目信息</a></li>
                 <li><a href="#contact"><b class="icon-bell"></b>课程通知</a></li>
@@ -113,12 +113,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         <input type="text" name="userName" placeholder="Email/UserName">
                          <label>密码</label>
                         <input type="password" name="password">
-                              
                         <label class="checkbox">
                         <input type="checkbox">记住我？
                         </label>
                         <button type="submit" class="btn blue button-next" data-loading-text="Loading...">登录<i class="m-icon-swapright m-icon-white"></i></button>
-                        <span class="help-block" style="float:right;padding-right:5%"><a href="#">忘记密码？</a></span>
+                        <span class="help-block" style="float:right;padding-right:5%"><a href="/user/forget.html">忘记密码？</a></span>
                   </form>
                 </li>
                   </ul>

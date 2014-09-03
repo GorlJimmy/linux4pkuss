@@ -21,6 +21,9 @@ if ('regist' == $type) {
 	$user = $userService->createUser ( $_POST );
 	
 	if ($user) {
+		if(!$user['imgurl']){
+			$user['imgurl']='default/default.jpg';
+		}
 		session_start ();
 		$_SESSION ['user'] = $user;
 		header ( "location:/index.php" );
@@ -31,6 +34,9 @@ if ('regist' == $type) {
 	$userService = new UserService();
 	$user = $userService->login($_POST);
 	if ($user) {
+		if(!$user['imgurl']){
+			$user['imgurl']='default/default.jpg';
+		}
 		session_start ();
 		$_SESSION ['user'] = $user;
 		header ( "location:/index.php" );
@@ -49,6 +55,7 @@ if ('regist' == $type) {
 	header ( "Expires:-1" );
 	$smarty->display ( 'user/extra_lock.tpl' );
 } else if ('profile' == $type) {
+	session_start ();
 	$smarty->display ( 'user/profile.tpl' );
 }
 	

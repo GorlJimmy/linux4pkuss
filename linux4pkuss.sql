@@ -15,9 +15,9 @@ create table user_tb(
 	email varchar(40) not null,
 	imgurl varchar(20),
 	registerTime datetime not null,
-	#auth_id int not null default 0,
 	role_id int not null default 0,
-	status_id int default 1
+	status_id int default 1,
+	introdution text(140)
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 drop table if exists school_tb;
@@ -53,22 +53,22 @@ create table province_tb(
 
 drop table if exists city_tb;
 create table city_tb(
-    id int not null primary key auto_increment,
-    num varchar(64) not null,
-    province_code varchar(10) not null,
-    city_code varchar(10) not null,
-    name varchar(65)
+	id int not null primary key auto_increment,
+	num varchar(64) not null,
+	province_code varchar(10) not null,
+	city_code varchar(10) not null,
+	name varchar(65)
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
 drop table if exists area_tb;
 create table area_tb(
-    id int not null primary key auto_increment,
-    num varchar(64) not null,
-    province_code varchar(10) not null,
-    city_code varchar(10) not null,
-    area_code varchar(10) not null,
-    name varchar(65)
+	id int not null primary key auto_increment,
+    	num varchar(64) not null,
+    	province_code varchar(10) not null,
+    	city_code varchar(10) not null,
+    	area_code varchar(10) not null,
+    	name varchar(65)
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
@@ -162,7 +162,7 @@ create table log_tb(
 drop table if exists role_tb;
 create table role_tb(
 	id int  not null primary key auto_increment,
-    num varchar(64) not null,
+    	num varchar(64) not null,
 	createtime datetime not null,
 	name varchar(64) not null,
 	status int not null default 0,
@@ -174,9 +174,9 @@ create table role_tb(
 drop table if exists auth_tb;
 create table auth_tb(
 	id int  not null primary key auto_increment,
-    num varchar(64) not null,
-    createtime datetime not null,
-    name varchar(64) not null,
+    	num varchar(64) not null,
+    	createtime datetime not null,
+    	name varchar(64) not null,
 	user_id int not null
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -184,28 +184,28 @@ create table auth_tb(
 drop table if exists role_auth_tb;
 create table role_auth_tb(
 	id int  not null primary key auto_increment,
-    num varchar(64) not null,
-    createtime datetime not null,
-    role_id int not null,
+    	num varchar(64) not null,
+   	createtime datetime not null,
+    	role_id int not null,
 	auth_id int not null
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 drop table if exists user_auth_tb;
 create table user_auth_tb(
 	id int  not null primary key auto_increment,
-    num varchar(64) not null,
-    createtime datetime not null,
-    user_id int not null,
-    auth_id int not null
+    	num varchar(64) not null,
+    	createtime datetime not null,
+    	user_id int not null,
+    	auth_id int not null
 
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 drop table if exists status_tb;
 create table status_tb(
 	id int  not null primary key auto_increment,
-    num varchar(64) not null,
-    createtime datetime not null,
-    name varchar(64) not null
+    	num varchar(64) not null,
+    	createtime datetime not null,
+    	name varchar(64) not null
 
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -214,10 +214,23 @@ create table status_tb(
 drop table if exists settings_tb;
 create table settings_tb(
 	id int  not null primary key auto_increment,
-    num varchar(64) not null,
-    createtime datetime not null,
-    user_id int not null,
-    name varchar(64) not null
+    	num varchar(64) not null,
+    	createtime datetime not null,
+    	user_id int not null,
+    	name varchar(64) not null
 
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+drop table if exists notice_tb;
+create table notice_tb(
+	id int  not null primary key auto_increment,
+    	num varchar(64) not null,
+    	createtime datetime not null,
+    	user_id int not null,
+    	title varchar(64) not null,
+    	content text(400)
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+
 

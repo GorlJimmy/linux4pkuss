@@ -53,7 +53,7 @@
 <script src="/bootstrap/bootstrap/js/jquery.uniform.min.js"
 	type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
-<script src="/bootstrap/bootstrap/image/js" type="text/javascript"></script>
+<!--  <script src="/bootstrap/bootstrap/image/js" type="text/javascript"></script>-->
 <script src="/bootstrap/bootstrap/js/gmaps.js" type="text/javascript"></script>
 <script src="/bootstrap/bootstrap/js/app.js"></script>
 <script src="/bootstrap/bootstrap/js/contact-us.js"></script>
@@ -68,14 +68,16 @@
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
 <body class="page-header-fixed">
-	<header> {include file="../header_menu.tpl"} </header>
+	<header> {include file="header_menu.tpl"} </header>
 	<div class="container-fluid" style="padding: 60px 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span12">
 				<!-- Google Map -->
 				<div class="row-fluid">
-
-					<div id="map" class="gmaps margin-bottom-40" style="height: 400px;"></div>
+					<div id="map" class="gmaps margin-bottom-40" style="height: 700px;">
+					<img alt="" src="/bootstrap/bootstrap/image/location.png" style="height: 100%;width:100%;">
+					
+					</div>
 
 				</div>
 

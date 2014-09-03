@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-08-25 18:02:37
+<?php /* Smarty version Smarty-3.1.19, created on 2014-08-25 22:49:49
          compiled from "./templates/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:164421504653fbb27d49e778-31384972%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:207169641753fbf5cd3438a0-27515387%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '164421504653fbb27d49e778-31384972',
+  'nocache_hash' => '207169641753fbf5cd3438a0-27515387',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_53fbb27d7fc145_91173344',
+  'unifunc' => 'content_53fbf5cd37c597_83484679',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53fbb27d7fc145_91173344')) {function content_53fbb27d7fc145_91173344($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config("totem.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
+<?php if ($_valid && !is_callable('content_53fbf5cd37c597_83484679')) {function content_53fbf5cd37c597_83484679($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config("totem.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
 <!DOCTYPE html>
 <html>
 <head>
