@@ -9,9 +9,10 @@
             <a class="brand" href="#">Linux</a>
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="/index.php"><b class="icon-home"></b>首页</a></li>
-                <li><a href="#about"><b class="icon-comment"></b>课程简介</a></li>
-                <li><a href="#contact"><b class="icon-envelope"></b>项目信息</a></li>
+                <li><a href="/linux4pkuss/linux4pkuss/index.php"><b class="icon-home"></b>首页</a></li>
+                <li><a href="/linux4pkuss/linux4pkuss/controller/CourseShow.php"><b class="icon-comment"></b>课程信息</a></li>
+                <li><a href="/linux4pkuss/linux4pkuss/controller/TeacherShow.php"><b class="icon-comment"></b>教师信息</a></li>
+                <li><a href="/linux4pkuss/linux4pkuss/controller/ProjectShow.php"><b class="icon-envelope"></b>项目信息</a></li>
                 <li><a href="#contact"><b class="icon-bell"></b>课程通知</a></li>
                 <li><a href="#contact"><b class="icon-book"></b>相关文章</a></li>
                 <li><a href="#contact"><b class="icon-download"></b>资源下载</a></li>
