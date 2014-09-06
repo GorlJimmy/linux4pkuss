@@ -62,6 +62,10 @@
 	 //window.location.href="NotifyAdd.php?ID="+$("#notify").val()+ "&NAME="+$("#notify").find("option:selected").text();
  }
  
+ function EditOne(id){
+	 $.post("NotifyEdit.php", { ID: id, NAME: $("#notify").find("option:selected").text() }, function(data) { document.write(data); });
+ }
+ 
  function DeleteOne(id){
 	 if(confirm("确定要删除此数据吗?"))
 		{

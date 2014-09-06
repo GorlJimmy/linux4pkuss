@@ -11,9 +11,6 @@ $smarty->cache_lifetime = 120;
 $action=$_POST['NAME'];
 $id=$_POST['ID'];
 $notifyManage=new NotifyManageService();
-$smarty->assign('ThemeType',$action);
-$smarty->assign('NotifyID',$id);
-$smarty->display('../templates/SystemManage/NotifyAdd.tpl');
 if($id){
 	//≥ı º“≥√Ê
 }
@@ -23,4 +20,7 @@ else{
 	echo '<script language="JavaScript">window.location.href="NotifyManage.php";</script>';
 
 }
+$smarty->assign('ThemeType',$action);
+$smarty->assign('NotifyID',$id);
+$smarty->display('../templates/SystemManage/NotifyAdd.tpl');
 	

@@ -78,6 +78,27 @@ class NotifyManageService {
 		
 		return $result;
 	}
+
+	public function GetOneArticle($strWhere)
+	{
+		$param=$strWhere;
+		$sql = "select * from article_tb where id=$param ";
+		$db=new DBHelper();
+		$result=$db->exec_query($sql);
+		return $result;
+	}
+	
+	public function EditNotify($Object)
+	{
+		$title=$Object[0][title];
+		$content=$Object[0][content];
+		$id=$Object[0][id];
+		$sql = "update article_tb set title='$title',content='$content' where id='$id' ";
+		$db=new DBHelper();
+		$result=$db->exec_non_query($sql);
+	
+		return $result;
+	}
 	
 }
 

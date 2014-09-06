@@ -15,6 +15,7 @@
                 <li><a href="#contact"><b class="icon-bell"></b>课程通知</a></li>
                 <li><a href="#contact"><b class="icon-book"></b>相关文章</a></li>
                 <li><a href="#contact"><b class="icon-download"></b>资源下载</a></li>
+                <li><a href="/linux4pkuss/linux4pkuss/controller/ArticleCheck.php"><b class="icon-download"></b>网站管理</a></li>
                 </ul>
               <ul class="nav pull-right">
                 <li class="divider-vertical"></li>
