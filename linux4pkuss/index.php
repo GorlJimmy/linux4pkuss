@@ -12,6 +12,8 @@ $smarty->setCompileDir($ROOT.'/templates_c');
 $smarty->setCacheDir($ROOT.'/cache');
 
 session_start();
+$user=$_COOKIE['user'];
+echo $user;
 if ($_SESSION['user']){
 	$smarty->display('home.tpl');
 }else{

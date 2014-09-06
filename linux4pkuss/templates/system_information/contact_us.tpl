@@ -72,14 +72,7 @@
 	<div class="container-fluid" style="padding: 60px 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span12">
-				<!-- Google Map -->
-				<div class="row-fluid">
-					<div id="map" class="gmaps margin-bottom-40" style="height: 700px;">
-					<img alt="" src="/bootstrap/bootstrap/image/location.png" style="height: 100%;width:100%;">
-					
-					</div>
-
-				</div>
+				
 
 				<div class="row-fluid margin-bottom-20">
 
@@ -87,7 +80,7 @@
 
 						<div class="space20"></div>
 
-						<h3 class="form-section">Contacts</h3>
+						<h3 class="form-section">联系方式</h3>
 
 						<p>Lorem ipsum dolor sit amet, Ut wisi enim ad minim veniam,
 							quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
@@ -110,7 +103,7 @@
 							<ul class="social-icons margin-bottom-10">
 								<li><a href="#" data-original-title="facebook"
 									class="facebook"></a></li>
-								<li><a href="#" data-original-title="github" class="github"></a></li>
+								<li><a href="https://github.com/GorlJimmy" data-original-title="github" class="github"></a></li>
 								<li><a href="#" data-original-title="Goole Plus"
 									class="googleplus"></a></li>
 								<li><a href="#" data-original-title="linkedin"
@@ -137,11 +130,11 @@
 
 						<form action="#" class="horizontal-form">
 
-							<h3 class="form-section">Feedback Form</h3>
+							<h3 class="form-section">您的反馈</h3>
 
 							<div class="control-group">
 
-								<label class="control-label">Name</label>
+								<label class="control-label">姓名</label>
 
 								<div class="controls">
 
@@ -165,7 +158,7 @@
 
 							<div class="control-group">
 
-								<label class="control-label">Nessage</label>
+								<label class="control-label">留言</label>
 
 								<div class="controls">
 
@@ -185,6 +178,14 @@
 
 						<!-- END FORM-->
 
+					</div>
+
+				</div>
+				<!-- Google Map -->
+				<div class="row-fluid">
+					<div id="map" class="gmaps margin-bottom-40" style="height: 700px;">
+					<img alt="" src="/bootstrap/bootstrap/image/location.png" style="height: 100%;width:100%;">
+					
 					</div>
 
 				</div>

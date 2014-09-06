@@ -33,6 +33,12 @@ if ('regist' == $type) {
 } else if ('login' == $type) {
 	$userService = new UserService();
 	$user = $userService->login($_POST);
+	setcookie("user","Jimmy",time()+2*7*24*3600);
+	$remember=$_POST['remember'];
+	if('remember'==$remember){
+		setcookie("user","Jimmy",time()+2*7*24*3600);
+	}
+	
 	if ($user) {
 		if(!$user['imgurl']){
 			$user['imgurl']='default/default.jpg';

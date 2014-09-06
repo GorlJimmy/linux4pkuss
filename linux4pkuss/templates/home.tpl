@@ -73,10 +73,10 @@
 			<div class="span10">
 				<!--Body content-->
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="#tab1" data-toggle="tab">tab1</a>
-					<li><a href="#tab2" data-toggle="tab">tab2</a>
-					<li><a href="#tab3" data-toggle="tab">tab3</a>
-					<li><a href="#tab4" data-toggle="tab">tab4</a>
+					<li class="active"><a href="#tab1" data-toggle="tab">重要通知</a>
+					<li><a href="#tab2" data-toggle="tab">最新资源</a>
+					<li><a href="#tab3" data-toggle="tab">博文推荐</a>
+					<li><a href="#tab4" data-toggle="tab">项目简介</a>
 				</ul>
 				<div class="tab-content">
 					<div class="tab-pane active" id="tab1">tab1</div>

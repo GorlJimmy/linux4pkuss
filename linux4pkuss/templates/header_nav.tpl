@@ -28,7 +28,7 @@
                          <label>密码</label>
                         <input type="password" name="password">
                         <label class="checkbox">
-                        <input type="checkbox">记住我？
+                        <input type="checkbox" name="remember" value="remember">记住我？
                         </label>
                         <button type="submit" class="btn blue button-next" data-loading-text="Loading...">登录<i class="m-icon-swapright m-icon-white"></i></button>
                         <span class="help-block" style="float:right;padding-right:5%"><a href="/user/forget.html">忘记密码？</a></span>
