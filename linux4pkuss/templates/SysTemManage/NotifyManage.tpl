@@ -6,9 +6,6 @@
 {include file="../../templates/SysTemManage/ManageInclude.tpl" title=foo} 
 <script src="../libs/public.js" type="text/javascript"></script> 
 <script language='javascript'>
- function EditOne(id){
-	 alert(id);
- }
  
  function Show(){
 	 var leg = $("#sample_editable_1 tr").length - 1
@@ -58,12 +55,11 @@
 		 alert("通知类别为空");
 		 return;
 	 }
-	 $.post("NotifyAdd.php", { ID: $("#notify").val(), NAME: $("#notify").find("option:selected").text() }, function(data) { document.write(data); });
-	 //window.location.href="NotifyAdd.php?ID="+$("#notify").val()+ "&NAME="+$("#notify").find("option:selected").text();
+	 $.post("NotifyAdd.php", { ID: $("#notify").val(), NAME: $("#notify").find("option:selected").text() }, function(data) { document.write(data);document.close(); });
  }
  
  function EditOne(id){
-	 $.post("NotifyEdit.php", { ID: id, NAME: $("#notify").find("option:selected").text() }, function(data) { document.write(data); });
+	 $.post("NotifyEdit.php", { ID: id, NAME: $("#notify").find("option:selected").text() }, function(data) { document.write(data); document.close();});
  }
  
  function DeleteOne(id){

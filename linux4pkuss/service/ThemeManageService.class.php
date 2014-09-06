@@ -87,6 +87,38 @@ class ThemeManageService {
 		$result=$db->exec_query($sql);
 		return $result;
 	}
+
+
+	public function AddTheme($Object)
+	{
+		$sql = "insert into theme_tb  values(null,'','$Object[Title]',now(),'$Object[TextArea]','$Object[Path]',0,1,0,'$Object[NotifyID]') ";
+		$db=new DBHelper();
+		$result=$db->exec_non_query($sql);
+	
+		return $result;
+	}
+	
+	public function GetOneTheme($strWhere)
+	{
+		$param=$strWhere;
+		$sql = "select * from theme_tb where id=$param ";
+		$db=new DBHelper();
+		$result=$db->exec_query($sql);
+		return $result;
+	}
+	
+	public function EditTheme($Object)
+	{
+		$title=$Object[0][tname];
+		$path=$Object[0][path];
+		$content=$Object[0][description];
+		$id=$Object[0][id];
+		$sql = "update theme_tb set tname='$title',description='$content',path='$path' where id='$id' ";
+		$db=new DBHelper();
+		$result=$db->exec_non_query($sql);
+	
+		return $result;
+	}
 	
 }
 
