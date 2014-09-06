@@ -1,4 +1,25 @@
-	<script>
+<?php /* Smarty version Smarty-3.1.19, created on 2014-09-06 08:48:35
+         compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/footer.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:10268321953fa94e954fce9-68970591%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '8e05ed5a561428f52416a331cb513c743d042f2d' => 
+    array (
+      0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/footer.tpl',
+      1 => 1410007703,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '10268321953fa94e954fce9-68970591',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_53fa94e9550de0_82279347',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_53fa94e9550de0_82279347')) {function content_53fa94e9550de0_82279347($_smarty_tpl) {?>	<script>
 			window._bd_share_config = {
 				"common" : {
 					"bdSnsKey" : {},
@@ -40,4 +61,4 @@
 <div class="footer-tools">
 			<span class="go-top"> <i class="icon-angle-up"></i>
 			</span>
-</div>
+</div><?php }} ?>

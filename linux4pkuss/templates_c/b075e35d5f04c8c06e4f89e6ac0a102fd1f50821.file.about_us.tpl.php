@@ -1,4 +1,25 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.19, created on 2014-09-06 08:37:22
+         compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/about_us.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:151450753553fc1f88d8a0f9-86003099%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'b075e35d5f04c8c06e4f89e6ac0a102fd1f50821' => 
+    array (
+      0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/about_us.tpl',
+      1 => 1410006990,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '151450753553fc1f88d8a0f9-86003099',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_53fc1f88dc2d56_61529468',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_53fc1f88dc2d56_61529468')) {function content_53fc1f88dc2d56_61529468($_smarty_tpl) {?><!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
@@ -83,7 +104,8 @@
 <!-- BEGIN BODY -->
 
 <body class="page-header-fixed">
-	<header> {include file="../header_menu.tpl"} </header>
+	<header> <?php echo $_smarty_tpl->getSubTemplate ("../header_menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+ </header>
 	<div class="container-fluid" style="padding: 60px 8% 0 8%">
 		<!-- BEGIN PAGE CONTENT-->
 		<div class="row-fluid margin-bottom-30">
@@ -262,7 +284,8 @@
 	<!-- END CONTAINER -->
 	<!-- BEGIN FOOTER -->
 
-	<div class="footer">{include file="../footer.tpl"}</div>
+	<div class="footer"><?php echo $_smarty_tpl->getSubTemplate ("../footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+</div>
 
 	<!-- END FOOTER -->
 
@@ -322,4 +345,4 @@
 
 <!-- END BODY -->
 
-</html>
+</html><?php }} ?>

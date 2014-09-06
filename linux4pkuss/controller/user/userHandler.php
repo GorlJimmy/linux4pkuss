@@ -7,6 +7,7 @@ $smarty = new Smarty ();
 $smarty->setTemplateDir ( $ROOT . '/templates' );
 $smarty->setCompileDir ( $ROOT . '/templates_c' );
 $smarty->setCacheDir ( $ROOT . '/cache' );
+session_start ();
 $type = $_GET ['type'] . trim ();
 if ('regist' == $type) {
 	$smarty->display ( 'user/registPage.tpl' );
@@ -17,41 +18,37 @@ if ('regist' == $type) {
 	// $area_code=$_POST['area'];
 	// $phone=$_POST['phone'];
 	
-	$userService = new UserService();
+	$userService = new UserService ();
 	$user = $userService->createUser ( $_POST );
 	
 	if ($user) {
-		if(!$user['imgurl']){
-			$user['imgurl']='default/default.jpg';
+		if (! $user ['imgurl']) {
+			$user ['imgurl'] = 'default/default.jpg';
 		}
-		session_start ();
 		$_SESSION ['user'] = $user;
 		header ( "location:/index.php" );
 	} else {
 		header ( "location:/index.php" );
 	}
 } else if ('login' == $type) {
-	$userService = new UserService();
-	$user = $userService->login($_POST);
-	setcookie("user","Jimmy",time()+2*7*24*3600);
-	$remember=$_POST['remember'];
-	if('remember'==$remember){
-		setcookie("user","Jimmy",time()+2*7*24*3600);
-	}
-	
+	$userService = new UserService ();
+	$user = $userService->login ( $_POST );
 	if ($user) {
-		if(!$user['imgurl']){
-			$user['imgurl']='default/default.jpg';
+		if (isset($_POST ['remember'])) {
+			setcookie ( "username", $_POST['username'].trim(), time () + 2 * 7 * 24 * 3600 );
+			setcookie ( "password", $_POST['password'].trim(), time () + 2 * 7 * 24 * 3600 );
 		}
-		session_start ();
+		if (! $user ['imgurl']) {
+			$user ['imgurl'] = 'default/default.jpg';
+		}
 		$_SESSION ['user'] = $user;
-		header ( "location:/index.php" );
-	} else {
+		$smarty->display ( 'home.tpl' );
+		
+	}else{
 		header ( "location:/index.php" );
 	}
-	
 } else if ('logout' == $type) {
-	session_start ();
+	
 	session_destroy ();
 	// $smarty->display('index.tpl');
 	header ( "location:/index.php" );
@@ -59,10 +56,18 @@ if ('regist' == $type) {
 	header ( "Cache-control:no-cache,no-store,must-revalidate" );
 	header ( "Pragma:no-cache" );
 	header ( "Expires:-1" );
-	$smarty->display ( 'user/extra_lock.tpl' );
+	if (isset ( $_SESSION ['user'] )) {
+		$smarty->display ( 'user/extra_lock.tpl' );
+	} else {
+		
+		header ( "location:/index.php" );
+	}
 } else if ('profile' == $type) {
-	session_start ();
-	$smarty->display ( 'user/profile.tpl' );
+	if (isset ( $_SESSION ['user'] )) {
+		$smarty->display ( 'user/profile.tpl' );
+	} else {
+		header ( "location:/index.php" );
+	}
 }
 	
 
