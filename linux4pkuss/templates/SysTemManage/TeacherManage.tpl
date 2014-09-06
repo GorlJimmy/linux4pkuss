@@ -32,37 +32,11 @@
 			});
 			prettyPrint();
 		});
-		
-		$(document).ready(function(){
-			   $("#project").change(function(){
-			    var parm= 'Action=Get&ID='+$("#project").val();
-				  window.location.href='ProjectManage.php?'+parm;
-			  });
-			  var requestId=request("ID");
-			  $("#project  option[value='"+requestId+"'] ").attr("selected",true) 
-			});
-		 
-		 /*--获取网页传递的参数--*/
-		 function request(paras)
-		 { 
-		     var url = location.href; 
-		     var paraString = url.substring(url.indexOf("?")+1,url.length).split("&"); 
-		     var paraObj = {} 
-		     for (i=0; j=paraString[i]; i++){ 
-		     paraObj[j.substring(0,j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=")+1,j.length); 
-		     } 
-		     var returnValue = paraObj[paras.toLowerCase()]; 
-		     if(typeof(returnValue)=="undefined"){ 
-		     return ""; 
-		     }else{ 
-		     return returnValue; 
-		     } 
-		 }
 	</script>
 </head>
 <body>
 <header> {include file="../../templates/header_nav.tpl" title=foo} </header>
-<form action="ProjectManage.php" method="post" class="form-horizontal"> 
+<form action="TeacherManage.php" method="post" class="form-horizontal"> 
 <div class="container-fluid" style="padding: 60px 8% 0 8%">
 		<div class="row-fluid">
 		{include file="../../templates/SysTemManage/ManageLeft.tpl" title=foo}
@@ -76,7 +50,7 @@
 
 							<div class="portlet-title">
 
-								<div class="caption"><i class="icon-reorder"></i>修改项目信息</div>
+								<div class="caption"><i class="icon-reorder"></i>修改教师信息</div>
 
 								<div class="tools">
 
@@ -89,20 +63,10 @@
 									<a href="javascript:;" class="remove"></a>
 
 								</div>
+
 							</div>
 
 							<div class="portlet-body">
-								
-											<div class="control-group">	
-												<label class="control-label">项目类别</label>
-												<div class="controls">
-													<select id="project" name="project"> 
-														{foreach from=$select item=theme}
-															<option value="{$theme.id}">{$theme.title}</option>  
-														{/foreach}
-													</select>
-												</div>
-											</div>
 												<div class="control-group">
 
 													<label class="control-label">标题</label>

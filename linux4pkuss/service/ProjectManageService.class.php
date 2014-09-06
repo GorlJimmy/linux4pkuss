@@ -27,37 +27,38 @@ class ProjectManageService {
 	
 	public function GetList($strWhere)
 	{	
-		$param=self::check_input($strWhere);
+		$param=$strWhere;
 		$sql = "select * from article_tb where 1=$param ";
 		$db=new DBHelper();
 		$result=$db->exec_query($sql);
 		return $result;
 	}
-	
-	public function ChangeToSysManager($strWhere)
+
+	public function GetProjectList($strWhere)
 	{
-		$param=self::check_input($strWhere);
-		$sql = "update user_tb set role_id=0 where id=$param ";
+		$param=$strWhere;
+		$sql = "select * from article_tb where theme_id=$param ";
 		$db=new DBHelper();
 		$result=$db->exec_query($sql);
 		return $result;
 	}
 	
-	public function ChangeToNormalUser($strWhere)
+	public function GetArticleList($strWhere)
 	{
-		$param=self::check_input($strWhere);
-		$sql = "update user_tb set role_id=1 where id=$param ";
+		$param=$strWhere;
+		$sql = "select * from article_tb where id=$param ";
 		$db=new DBHelper();
 		$result=$db->exec_query($sql);
 		return $result;
 	}
-	
-	public function DeleteProInfo($strWhere)
+
+	public function UpdateProjectInfo($Object)
 	{
-		$param=self::check_input($strWhere);
-		$sql = "delete from article_tb where id=$param ";
+		$content=addslashes($Object[TextArea]);
+		$sql = "update article_tb set title='$Object[Title]',content='$content' where id='$Object[project]' ";
 		$db=new DBHelper();
-		$result=$db->exec_query($sql);
+		$result=$db->exec_non_query($sql);
+	
 		return $result;
 	}
 	
