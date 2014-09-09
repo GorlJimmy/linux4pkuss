@@ -23,7 +23,7 @@ class ArticleService{
 	}
 	//通过id定位到某一文章，用于显示文章内容
 	public function article_queryById($id){
-		$sql="select * from article_tb where isshare=1 and id=".$id;
+		$sql="select * from article_tb where isshare=1 and id=$id";
 		$db=new DBHelper();
 		$result=$db->exec_query($sql);
 		return $result;
@@ -64,7 +64,6 @@ class ArticleService{
 		$db=new DBHelper();
 		$result=$db->exec_other($sql);
 		
-		echo $sql.'<br>';
 		return $result;
 	}
 	public function GetList($strWhere)

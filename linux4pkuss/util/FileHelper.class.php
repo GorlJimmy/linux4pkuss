@@ -8,12 +8,12 @@ class FileHelper{
 		$this->PATH=$_SERVER['DOCUMENT_ROOT'];
 	}
 	#文件上传:返回值：0表示文件上传成功，1表示文件太大，2表示文件类型不支持，3表示文件上传失败，
-	public function upLoad($FILE){
+	public function upLoad($FILE,$ROOT){
 		#获取文件的大小
-		$fileSize=$FILE['size'];
-		if($fileSize > 1024*1024*2){
-			return 1;
-		}
+// 		$fileSize=$FILE['size'];
+// 		if($fileSize > 1024*1024*2){
+// 			return 1;
+// 		}
 		#获取文件的类型
 // 		$fileType=$FILE['type'];
 // 		if($fileType!='image/jpg'){
@@ -21,7 +21,6 @@ class FileHelper{
 // 		}
 		#判断文件是否上传到服务器临时目录
 		if(is_uploaded_file($FILE['tmp_name'])){
-			
 			#文件上传时的真实名称
 			$realName=$FILE['name'];
 			#如果文件中文
@@ -33,11 +32,16 @@ class FileHelper{
 			#保存的文件名称
 			$fileName=time().rand(1,10000).$extName;
 			#保存文件到服务器指定的目录
-			if(move_uploaded_file($FILE['tmp_name'], $this->PATH.'/upload/'.$fileName)){
-				return 0;
+			$today = date ( 'Y-m-d', time () );
+			$url=$this->PATH.'/upload/'.$ROOT.'/'.$today.'/';
+			if(!is_dir($url)){
+				mkdir($url);
+			}
+			if(move_uploaded_file($FILE['tmp_name'], $url.$fileName)){
+				return $ROOT.'/'.$today.'/'.$fileName;
 			}
 		}else{
-			return 3;
+			return "failure";
 
 		}
 	}
@@ -46,7 +50,6 @@ class FileHelper{
 		$fileName=iconv("utf-8", "gb2312", $fileName);
 		#判断文件是否存在
 		if(!file_exists($this->PATH.'/'.$fileName)){
-			echo "file not exisit";
 			return;
 		}
 		#打开文件
