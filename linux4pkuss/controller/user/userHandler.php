@@ -3,6 +3,7 @@ $ROOT = $_SERVER ['DOCUMENT_ROOT'];
 require_once $ROOT . '/libs/Smarty.class.php';
 require_once $ROOT . '/service/UserService.class.php';
 $smarty = new Smarty ();
+session_start ();
 
 $smarty->setTemplateDir ( $ROOT . '/templates' );
 $smarty->setCompileDir ( $ROOT . '/templates_c' );
@@ -33,21 +34,25 @@ if ('regist' == $type) {
 } else if ('login' == $type) {
 	$userService = new UserService();
 	$user = $userService->login($_POST);
-	setcookie("user","Jimmy",time()+2*7*24*3600);
-	$remember=$_POST['remember'];
-	if('remember'==$remember){
-		setcookie("user","Jimmy",time()+2*7*24*3600);
-	}
 	
 	if ($user) {
-		if(!$user['imgurl']){
-			$user['imgurl']='default/default.jpg';
+		if($user['status']!=1){
+			header ( "location:/index.php?msg=status_error" );
+		}else{
+			$remember=$_POST['remember'];
+			if(is($remember)){
+				setcookie("user",$user,time()+2*7*24*3600);
+			}
+			
+			if(!$user['imgurl']){
+				$user['imgurl']='default/default.jpg';
+			}
+			$_SESSION ['user'] = $user;
+			header ( "location:/index.php?msg=success" );
 		}
-		session_start ();
-		$_SESSION ['user'] = $user;
-		header ( "location:/index.php" );
+		
 	} else {
-		header ( "location:/index.php" );
+		header ( "location:/index.php?msg=auth_error" );
 	}
 	
 } else if ('logout' == $type) {
