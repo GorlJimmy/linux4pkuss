@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>欢迎你Jimmy</title>
+<title>欢迎你{$smarty.session.user['username']}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset=utf-8>
 
@@ -55,7 +55,7 @@
 </script>
 </head>
 <body>
-	<header> {include file="header_menu.tpl"} </header>
+	<header> {include file="header_nav.tpl"} </header>
 	<div class="container-fluid" style="margin: 60px 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span2">
