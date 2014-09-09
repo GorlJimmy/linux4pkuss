@@ -82,7 +82,7 @@ class UserService {
 
 		$db = new DBHelper ();
 		$sql = "update user_tb set status=0 where id=$param[id]";
-		$affectRows = $db->exec_others ( $sql );
+		$affectRows = $db->exec_other( $sql );
 		if(0<$affectRows){
 			return true;
 		}else{
@@ -107,12 +107,13 @@ class UserService {
 			$user['role_id']=$pramas['role_id']?$pramas['role_id']:$user['role_id'];
 			$user['status_id']=$pramas['status_id']?$pramas['status_id']:$user['status_id'];
 			$user['introdution']=$pramas['introdution']?$pramas['introdution']:$user['introdution'];
+			
 			$sql = "update user_tb set username='$user[username]' password=$user[password] birthday=  gender=$user[birthday]\
 			 identificationr=$user[identificationr] email=$user[email] imgurl=$user[imgurl] \
 			 registerTime=$user[registerTime]  role_id=$user[role_id] status_id=$user[status_id] introdution=$user[introdution]\
 			 where id=$param[id]";
 				
-			$affectRows = $db->exec_others ( $sql );
+			$affectRows = $db->exec_other ( $sql );
 			if(0<$affectRows){
 				return true;
 			}else{
