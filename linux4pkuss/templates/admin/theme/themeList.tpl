@@ -59,9 +59,11 @@
 <script src="/bootstrap/bootstrap/js/jquery.nestable.js"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script src="/bootstrap/bootstrap/js/ui-nestable.js"></script>
+<script src="/bootstrap/bootstrap/js/table-managed.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		App.init();
+		TableManaged.init();
 		UINestable.init();
 	});
 </script>
@@ -107,21 +109,39 @@
 
 					<div class="span12">
 
-						<div class="portlet box blue">
+						<div class="portlet box light-grey">
 
 							<div class="portlet-title">
 
 								<div class="caption">
-									<i class="icon-comments"></i>Nestable List 1
+									<i class="icon-user"></i>Table
 								</div>
 
-								<div class="tools">
+								<div class="actions">
 
-									<a href="javascript:;" class="collapse"></a> <a
-										href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="#" class="btn blue"><i class="icon-pencil"></i>
+										Add</a>
 
-									<a href="javascript:;" class="reload"></a> <a
-										href="javascript:;" class="remove"></a>
+									<div class="btn-group">
+
+										<a class="btn green" href="#" data-toggle="dropdown"> <i
+											class="icon-cogs"></i> Tools <i class="icon-angle-down"></i>
+
+										</a>
+
+										<ul class="dropdown-menu pull-right">
+
+
+											<li><a href="#"><i class="icon-print"></i> 打印</a></li>
+
+											<li><a href="#"><i class="icon-pencil"></i> 编辑</a></li>
+
+											<li><a href="#"><i class="icon-ban-circle"></i>
+													导出EXCEL</a></li>
+
+										</ul>
+
+									</div>
 
 								</div>
 
@@ -130,6 +150,24 @@
 							<div class="portlet-body ">
 
 								<div class="dd" id="nestable_list_1">
+									<ol>
+										<li>
+											<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+
+											<form class="sidebar-search">
+
+												<div class="input-box">
+
+													<a href="javascript:;" class="remove"></a> <input
+														type="text" placeholder="Search..." /> <input
+														type="button" class="submit" value=" " />
+
+												</div>
+
+											</form> <!-- END RESPONSIVE QUICK SEARCH FORM -->
+
+										</li>
+									</ol>
 
 									<ol class="dd-list">
 
@@ -238,7 +276,7 @@
 	</div>
 
 	<!-- END CONTAINER -->
-	
+
 	<!-- BEGIN FOOTER -->
 	<div class="footer">{include file="../../footer.tpl"}</div>
 	<!-- END FOOTER -->
