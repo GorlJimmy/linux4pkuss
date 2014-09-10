@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>主题管理</title>
 <link href="/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="/bootstrap/bootstrap/css/bootstrap-responsive.css"
 	rel="stylesheet">
@@ -163,6 +163,7 @@
 											<th class="hidden-480">主题编号</th>
 											<th class="hidden-480">创建时间</th>
 											<th class="hidden-480">创建人</th>
+											<th class="hidden-480">子主题个数</th>
 											<th class="hidden-480">操作</th>
 
 										</tr>
