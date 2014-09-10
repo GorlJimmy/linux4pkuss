@@ -19,7 +19,6 @@ if('list'==$type){
 	$themeService=new ThemeService();
 	$topThemes=$themeService->themeList(0);
 	$smarty->assign('topThemes',$topThemes);
-
 	$smarty->display('admin/theme/themeList.tpl');
 }
 else if('add'==$type){
