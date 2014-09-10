@@ -109,7 +109,7 @@
 			</div>
 			<div class="span6">
 				<iframe src="/bootstrap/bootstrap/video/video4pku.mp4"
-					style="width: 100%; height: 327px; border: 0" ></iframe>
+					style="width: 100%; height: 327px; border: 0" autoscreen></iframe>
 
 			</div>
 
