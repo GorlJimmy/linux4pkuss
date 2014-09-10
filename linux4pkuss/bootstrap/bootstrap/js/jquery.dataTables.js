@@ -9326,7 +9326,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfoFiltered": "(从  _MAX_ t记录数据中过滤)",
+			"sInfoFiltered": "(从  _MAX_条记录数据中过滤)",
 		
 		
 			/**
