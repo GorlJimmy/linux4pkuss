@@ -106,7 +106,7 @@ class ThemeService {
 		$sql = "insert into theme_tb (num,name,createdate,description,path,user_id) values('$num','$theme[name]','$now','$theme[description]','$theme[path]',$user_id,0";
 		$result=$db->exec_other($sql);
 
-		return $result>0?true:false;
+		return $result;
 	}
 
 	public function GetOneTheme($strWhere)
