@@ -121,7 +121,7 @@
 
 		<div class="headline">
 
-			<h3>Meet Our Team</h3>
+			<h3>我们的团队</h3>
 
 		</div>
 
@@ -132,7 +132,7 @@
 				<div class="meet-our-team">
 
 					<h3>
-						LIQING<small>CEO</small>
+						李晴<small>CEO</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
@@ -162,7 +162,7 @@
 				<div class="meet-our-team">
 
 					<h3>
-						Marta Doe <small>Project Manager</small>
+						路婧威 <small>Project Manager</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/team_info/ljw.jpg" alt=""
@@ -191,7 +191,7 @@
 				<div class="meet-our-team">
 
 					<h3>
-						Bob Nilson <small> CEO</small>
+						许松 <small> CEO</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/image/2.jpg" alt=""
@@ -221,7 +221,7 @@
 				<div class="meet-our-team">
 
 					<h3>
-						Marta Doe <small>Project Manager</small>
+						肖勍星 <small>Project Manager</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/image/3.jpg" alt=""
@@ -254,7 +254,7 @@
 				<div class="meet-our-team">
 
 					<h3>
-						LIQING<small> CEO</small>
+						高晓宁<small> CEO</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
@@ -283,7 +283,7 @@
 				<div class="meet-our-team">
 
 					<h3>
-						LIQING<small> CEO</small>
+						田晓宇<small> CEO</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
