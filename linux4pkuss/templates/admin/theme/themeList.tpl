@@ -161,7 +161,7 @@
 
 													<div class="controls">
 
-														<textarea class="medium m-wrap" rows="8" name="TextArea"></textarea>
+														<textarea class="span12 m-wrap" name="TextArea"></textarea>
 
 													</div>
 
