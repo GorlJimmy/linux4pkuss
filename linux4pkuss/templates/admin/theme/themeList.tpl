@@ -20,6 +20,7 @@
 	rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="/bootstrap/bootstrap/css/DT_bootstrap.css" />
 <link rel="stylesheet" href="/bootstrap/bootstrap/css/select2.css" />
+<link href="/bootstrap/bootstrap/css/bootstrap-modal.css" rel="stylesheet" type="text/css"/>
 <link rel="shortcut icon" href="/bootstrap/bootstrap/image/favicon.ico" />
 <script src="/bootstrap/bootstrap/js/jquery-1.10.1.min.js"
 	type="text/javascript"></script>
@@ -61,10 +62,13 @@
 <script src="/bootstrap/bootstrap/js/select2.min.js"></script>
 
 <script src="/bootstrap/bootstrap/js/jquery.dataTables.js"></script>
+<script src="/bootstrap/bootstrap/js/form-components.js"></script>     
+
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		App.init();
 		TableManaged.init();
+		 FormComponents.init();
 	});
 </script>
 
@@ -123,44 +127,47 @@
 									<div id="myModal" class="modal hide fade" tabindex="-1"
 										role="dialog" aria-labelledby="myModalLabel"
 										aria-hidden="true">
-										<form action="">
-											<div class="control-group">
+										<div class="portlet-body form">
+											<form action="">
+												<div class="control-group">
 
-												<label class="control-label">标题名称</label>
+													<label class="control-label">标题名称</label>
 
-												<div class="controls">
+													<div class="controls">
 
-													<input type="text" placeholder="请输入标题" class="m-wrap large"
-														name="Title" /> <span class="help-inline"></span>
+														<input type="text" placeholder="请输入标题"
+															class="m-wrap large" name="Title" /> <span
+															class="help-inline"></span>
 
-												</div>
-
-											</div>
-											<div class="control-group">
-
-												<label class="control-label">页面路径</label>
-
-												<div class="controls">
-
-													<input type="text" placeholder="请输入页面路径"
-														class="m-wrap large" name="Path" /> <span
-														class="help-inline"></span>
+													</div>
 
 												</div>
+												<div class="control-group">
 
-											</div>
-											<div class="control-group">
+													<label class="control-label">页面路径</label>
 
-												<label class="control-label">描述</label>
+													<div class="controls">
 
-												<div class="controls">
+														<input type="text" placeholder="请输入页面路径"
+															class="m-wrap large" name="Path" /> <span
+															class="help-inline"></span>
 
-													<textarea class="medium m-wrap" rows="3" name="TextArea"></textarea>
+													</div>
 
 												</div>
+												<div class="control-group">
 
-											</div>
-										</form>
+													<label class="control-label">描述</label>
+
+													<div class="controls">
+
+														<textarea class="medium m-wrap" rows="3" name="TextArea"></textarea>
+
+													</div>
+
+												</div>
+											</form>
+										</div>
 										<div class="modal-footer">
 											<button class="btn red" data-dismiss="modal"
 												aria-hidden="true">取消</button>
