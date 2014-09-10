@@ -121,8 +121,7 @@
 									<i class="icon-user"></i>项目主题信息
 								</div>
 
-								<div class="actions">
-
+								<div class="actions" style="font-color:black">
 									<a href="#addTheme" role="button" class="btn blue"
 										data-toggle="modal"><i class="icon-pencil"></i> 添加</a>
 									<div id="addTheme" class="modal hide fade" tabindex="-1"
