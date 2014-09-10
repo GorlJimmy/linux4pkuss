@@ -237,7 +237,10 @@
 											<td class="hidden-480">{$theme.num}</td>
 											<td class="hidden-480">{$theme.createdate}</td>
 											<td class="hidden-480">{$theme.user_id}</td>
-											<td><span class="label label-success">详细信息</span></td>
+											<td><a href="#"><i class="icon-pencil"></i> 编辑</a>
+											<a href="#"><i class="icon-pencil"></i> 编辑</a>
+											<a href="#"><i class="icon-pencil"></i> 编辑</a>
+											</td>
 											
 										</tr>
 										{/foreach}
