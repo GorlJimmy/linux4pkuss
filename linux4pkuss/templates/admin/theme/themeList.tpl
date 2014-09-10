@@ -238,8 +238,7 @@
 											<td class="hidden-480">{$theme.createdate}</td>
 											<td class="hidden-480">{$theme.user_id}</td>
 											<td><span class="label label-success">详细信息</span></td>
-											<td><span class="label label-success">修改</span></td>
-											<td><span class="label label-success">删除</span></td>
+											
 										</tr>
 										{/foreach}
 										
