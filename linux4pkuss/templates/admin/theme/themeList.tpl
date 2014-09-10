@@ -157,12 +157,13 @@
 										</div>
 
 									</div>
-								</form>
-							</div>
-							<div class="modal-footer">
+									<div class="modal-footer">
 								<button class="btn red" data-dismiss="modal" aria-hidden="true">取消</button>
 								<button class="btn green" type="submit">提交</button>
 							</div>
+								</form>
+							</div>
+							
 						</div>
 
 						<div class="portlet box light-grey">
