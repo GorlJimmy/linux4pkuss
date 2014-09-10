@@ -221,14 +221,10 @@
 											<th class="hidden-480">主题编号</th>
 											<th class="hidden-480">创建时间</th>
 											<th class="hidden-480">创建人</th>
-											<th class="center" colspan="3">操作</th>
-
+											<th colspan="3"><span class="label label-success">主题操作</span></th>
 										</tr>
-
 									</thead>
-
 									<tbody>
-
 										{foreach from=$topThemes item=theme}
 										<tr class="odd gradeX">
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
@@ -241,13 +237,11 @@
 												title="详情"><i class="icon-envelope-alt"></i></a> &nbsp;<a
 												href="/controllor/theme/themeHandler.php?type=edit&num={$theme.num}"
 												title="编辑"><i class=icon-edit></i></a> &nbsp;<a
-												href="/controllor/theme/themeHandler.php?type=delete&num={$theme.num}" title="删除"><i
-													class="icon-trash"></i></a></td>
+												href="/controllor/theme/themeHandler.php?type=delete&num={$theme.num}"
+												title="删除"><i class="icon-trash"></i></a></td>
 
 										</tr>
 										{/foreach}
-
-
 									</tbody>
 
 								</table>
