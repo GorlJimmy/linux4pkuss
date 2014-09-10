@@ -19,7 +19,6 @@
 <link href="/bootstrap/bootstrap/css/jquery.gritter.css"
 	rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="/bootstrap/bootstrap/css/DT_bootstrap.css" />
-<link rel="stylesheet" href="/bootstrap/bootstrap/css/select2.css" />
 <link href="/bootstrap/bootstrap/css/bootstrap-modal.css"
 	rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="/bootstrap/bootstrap/image/favicon.ico" />
@@ -60,7 +59,6 @@
 <script src="/bootstrap/bootstrap/js/app.js"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script src="/bootstrap/bootstrap/js/table-managed.js"></script>
-<script src="/bootstrap/bootstrap/js/select2.min.js"></script>
 
 <script src="/bootstrap/bootstrap/js/jquery.dataTables.js"></script>
 <script src="/bootstrap/bootstrap/js/form-components.js"></script>

@@ -102,7 +102,8 @@ class ThemeService {
 		$db = new DBHelper ();
 		$num = time () . rand ( 1, 10000 );
 		$now = date ( 'Y-m-d h:m:s', time () );
-		$sql = "insert into theme_tb (num,name,createdate,description,path,user_id) values('$num','$theme[name]','$now','$theme[description]','$theme[path]',$user[id],0";
+		$user_id=intval($user['id']);
+		$sql = "insert into theme_tb (num,name,createdate,description,path,user_id) values('$num','$theme[name]','$now','$theme[description]','$theme[path]',$user_id,0";
 		$result=$db->exec_other($sql);
 
 		return $result>0?true:false;
