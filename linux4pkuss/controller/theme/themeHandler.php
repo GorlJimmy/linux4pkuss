@@ -39,4 +39,8 @@ else if('add'==$type){
 	}else{
 		header("location:themeHandler.php?type=list&msg=failure");
 	}
+}else if('query'==$type){
+	header("location:themeHandler.php?type=list&msg=success");
+}else if('edit'==$type){
+	header("location:themeHandler.php?type=list&msg=success");
 }
