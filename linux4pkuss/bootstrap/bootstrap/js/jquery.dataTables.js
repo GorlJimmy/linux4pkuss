@@ -9287,7 +9287,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfo": "显示  _TOTAL_ 的 _START_ 到 _END_  条记录",
+			"sInfo": "总共  _TOTAL_ 记录/当前第 _START_ 到 _END_  条记录",
 		
 		
 			/**
