@@ -129,7 +129,7 @@
 										role="dialog" aria-labelledby="myModalLabel"
 										aria-hidden="true">
 										<div class="portlet-body form">
-											<form action="">
+											<form action="" class="form-horizontal">
 												<div class="control-group">
 
 													<label class="control-label">标题名称</label>
@@ -137,7 +137,7 @@
 													<div class="controls">
 
 														<input type="text" placeholder="请输入标题"
-															class="m-wrap large" name="Title" /> <span
+															class="m-wrap span6" name="Title" /> <span
 															class="help-inline"></span>
 
 													</div>
@@ -150,7 +150,7 @@
 													<div class="controls">
 
 														<input type="text" placeholder="请输入页面路径"
-															class="m-wrap large" name="Path" /> <span
+															class="m-wrap span6" name="Path" /> <span
 															class="help-inline"></span>
 
 													</div>
@@ -162,7 +162,7 @@
 
 													<div class="controls">
 
-														<textarea class="medium m-wrap" rows="3" name="TextArea"></textarea>
+														<textarea class="medium m-wrap" rows="8" name="TextArea"></textarea>
 
 													</div>
 
