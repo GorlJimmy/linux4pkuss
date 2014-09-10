@@ -117,10 +117,11 @@
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal"
 									aria-hidden="true">&times;</button>
-								<h3>新增该主题下的子标题</h3>
+								<h3>新增子主题</h3>
 							</div>
 							<div class="portlet-body form">
-								<form action="/controller/theme/themeHandler.php?type=add"
+								<form
+									action="/controller/theme/themeHandler.php?type=add&parent_id={theme.parent_id}"
 									class="form-horizontal" method="post">
 									<div class="control-group">
 
@@ -204,12 +205,7 @@
 
 							</div>
 
-							<div class="portlet-body ">
-
-
-
-
-							</div>
+							<div class="portlet-body "></div>
 
 						</div>
 
