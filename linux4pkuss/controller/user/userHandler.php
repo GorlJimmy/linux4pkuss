@@ -57,10 +57,12 @@ if ('regist' == $type) {
 	// $smarty->display('index.tpl');
 	header ( "location:/index.php" );
 } else if ('lock' == $type) {
-	header ( "Cache-control:no-cache,no-store,must-revalidate" );
-	header ( "Pragma:no-cache" );
-	header ( "Expires:-1" );
+	
 	if (isset ( $_SESSION ['user'] )) {
+		$smarty->assign('username',$_SESSION['user']['username']);
+		$smarty->assign('email',$_SESSION['user']['email']);
+		$smarty->assign('imgurl',$_SESSION['user']['imgurl']);
+		session_destroy ();
 		$smarty->display ( 'user/extra_lock.tpl' );
 	} else {
 		
