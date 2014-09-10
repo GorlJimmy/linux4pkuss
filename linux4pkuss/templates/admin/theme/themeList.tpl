@@ -151,9 +151,9 @@
 								<form class="sidebar-search">
 
 									<div class="input-box">
-										<label>主题名称查找</label> <a href="javascript:;" class="remove"></a>
-										<input type="text" placeholder="Search..." /> <input
-											type="button" class="submit" value=" Search..." />
+										<label>主题名称查找</label> <input type="text"
+											placeholder="Search..." /> <input type="button"
+											class="submit" value=" Search..." />
 
 									</div>
 
