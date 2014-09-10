@@ -147,14 +147,13 @@
 							</div>
 
 							<div class="portlet-body ">
-									<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+								<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
 								<form class="sidebar-search">
 
 									<div class="input-box">
-
-										<a href="javascript:;" class="remove"></a> <input type="text"
-											placeholder="Search..." /> <input type="button"
-											class="submit" value=" " />
+										<label>主题名称查找</label> <a href="javascript:;" class="remove"></a>
+										<input type="text" placeholder="Search..." /> <input
+											type="button" class="submit" value=" Search..." />
 
 									</div>
 
