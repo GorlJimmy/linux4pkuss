@@ -32,7 +32,7 @@ else if('add'==$type){
 }else if('delete'==$type){
 	$num=$_GET['num'];
 	$themeService=new ThemeService();
-	$isSuccess=$themeService->createTheme($num);
+	$isSuccess=$themeService->deleteTheme($num);
 	if($isSuccess){
 		header("location:themeHandler.php?type=list&msg=success");
 	}else{
