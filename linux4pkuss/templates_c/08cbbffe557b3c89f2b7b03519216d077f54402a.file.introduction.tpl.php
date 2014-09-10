@@ -1,4 +1,25 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.19, created on 2014-09-09 21:57:03
+         compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/introduction.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:938286690540b2b442db492-24012232%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '08cbbffe557b3c89f2b7b03519216d077f54402a' => 
+    array (
+      0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/introduction.tpl',
+      1 => 1410314218,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '938286690540b2b442db492-24012232',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_540b2b44345d92_81276170',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_540b2b44345d92_81276170')) {function content_540b2b44345d92_81276170($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
 <title>课程简介</title>
@@ -55,7 +76,8 @@
 </script>
 </head>
 <body>
-	<header> {include file="header_nav.tpl"} </header>
+	<header> <?php echo $_smarty_tpl->getSubTemplate ("header_nav.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+ </header>
 	<div class="container-fluid" style="padding: 60px 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
@@ -497,6 +519,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer">{include file="../footer.tpl"}</div>
+	<div class="footer"><?php echo $_smarty_tpl->getSubTemplate ("../footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+</div>
 </body>
 </html>
+<?php }} ?>

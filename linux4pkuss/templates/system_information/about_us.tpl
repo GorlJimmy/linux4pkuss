@@ -48,34 +48,31 @@
 
 <link rel="shortcut icon" href="/bootstrap/bootstrap/image/favicon.ico" />
 <script>
-								window._bd_share_config = {
-									"common" : {
-										"bdSnsKey" : {},
-										"bdText" : "",
-										"bdMini" : "2",
-										"bdPic" : "",
-										"bdStyle" : "0",
-										"bdSize" : "16"
-									},
-									"share" : {},
-									"image" : {
-										"viewList" : [ "qzone", "tsina", "tqq",
-												"renren", "weixin" ],
-										"viewText" : "分享到：",
-										"viewSize" : "16"
-									},
-									"selectShare" : {
-										"bdContainerClass" : null,
-										"bdSelectMiniList" : [ "qzone",
-												"tsina", "tqq", "renren",
-												"weixin" ]
-									}
-								};
-								with (document)
-									0[(getElementsByTagName('head')[0] || body)
-											.appendChild(createElement('script')).src = '/bootstrap/bootstrap/javascript/share.js?cdnversion='
-											+ ~(-new Date() / 36e5)];
-							</script>
+	window._bd_share_config = {
+		"common" : {
+			"bdSnsKey" : {},
+			"bdText" : "",
+			"bdMini" : "2",
+			"bdPic" : "",
+			"bdStyle" : "0",
+			"bdSize" : "16"
+		},
+		"share" : {},
+		"image" : {
+			"viewList" : [ "qzone", "tsina", "tqq", "renren", "weixin" ],
+			"viewText" : "分享到：",
+			"viewSize" : "16"
+		},
+		"selectShare" : {
+			"bdContainerClass" : null,
+			"bdSelectMiniList" : [ "qzone", "tsina", "tqq", "renren", "weixin" ]
+		}
+	};
+	with (document)
+		0[(getElementsByTagName('head')[0] || body)
+				.appendChild(createElement('script')).src = '/bootstrap/bootstrap/javascript/share.js?cdnversion='
+				+ ~(-new Date() / 36e5)];
+</script>
 </head>
 
 <!-- END HEAD -->
@@ -83,7 +80,7 @@
 <!-- BEGIN BODY -->
 
 <body class="page-header-fixed">
-	<header> {include file="../header_menu.tpl"} </header>
+	<header> {include file="../header_nav.tpl"} </header>
 	<div class="container-fluid" style="padding: 60px 8% 0 8%">
 		<!-- BEGIN PAGE CONTENT-->
 		<div class="row-fluid margin-bottom-30">
@@ -112,7 +109,7 @@
 			</div>
 			<div class="span6">
 				<iframe src="/bootstrap/bootstrap/video/video4pku.mp4"
-					style="width: 100%; height: 327px; border: 0" allowfullscreen></iframe>
+					style="width: 100%; height: 327px; border: 0" ></iframe>
 
 			</div>
 
@@ -130,15 +127,16 @@
 
 		<ul class="thumbnails">
 
-			<li class="span3">
+			<li class="span2">
 
 				<div class="meet-our-team">
 
 					<h3>
-						Bob Nilson <small>Chief Executive Officer / CEO</small>
+						LIQING<small>CEO</small>
 					</h3>
 
-					<img src="/bootstrap/bootstrap/image/2.jpg" alt="" />
+					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
+						style="width: 180px; height: 230px;" />
 
 					<div class="team-info">
 
@@ -146,20 +144,20 @@
 							dapibus, justo sit amet risus etiam porta sem...</p>
 
 						<div class="bdsharebuttonbox">
-								<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
-									class="bds_qzone" data-cmd="qzone"></a><a href="#"
-									class="bds_tsina" data-cmd="tsina"></a><a href="#"
-									class="bds_tqq" data-cmd="tqq"></a><a href="#"
-									class="bds_renren" data-cmd="renren"></a><a href="#"
-									class="bds_weixin" data-cmd="weixin"></a>
-							</div>
+							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+								class="bds_qzone" data-cmd="qzone"></a><a href="#"
+								class="bds_tsina" data-cmd="tsina"></a><a href="#"
+								class="bds_tqq" data-cmd="tqq"></a><a href="#"
+								class="bds_renren" data-cmd="renren"></a><a href="#"
+								class="bds_weixin" data-cmd="weixin"></a>
+						</div>
 					</div>
 
 				</div>
 
 			</li>
 
-			<li class="span3">
+			<li class="span2">
 
 				<div class="meet-our-team">
 
@@ -167,48 +165,50 @@
 						Marta Doe <small>Project Manager</small>
 					</h3>
 
-					<img src="/bootstrap/bootstrap/image/3.jpg" alt="" />
+					<img src="/bootstrap/bootstrap/team_info/ljw.jpg" alt=""
+						style="width: 180px; height: 230px;" />
 
 					<div class="team-info">
 
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce
 							dapibus, justo sit amet risus etiam porta sem...</p>
-<div class="bdsharebuttonbox">
-								<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
-									class="bds_qzone" data-cmd="qzone"></a><a href="#"
-									class="bds_tsina" data-cmd="tsina"></a><a href="#"
-									class="bds_tqq" data-cmd="tqq"></a><a href="#"
-									class="bds_renren" data-cmd="renren"></a><a href="#"
-									class="bds_weixin" data-cmd="weixin"></a>
-							</div>
+						<div class="bdsharebuttonbox">
+							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+								class="bds_qzone" data-cmd="qzone"></a><a href="#"
+								class="bds_tsina" data-cmd="tsina"></a><a href="#"
+								class="bds_tqq" data-cmd="tqq"></a><a href="#"
+								class="bds_renren" data-cmd="renren"></a><a href="#"
+								class="bds_weixin" data-cmd="weixin"></a>
+						</div>
 					</div>
 
 				</div>
 
 			</li>
 
-			<li class="span3">
+			<li class="span2">
 
 				<div class="meet-our-team">
 
 					<h3>
-						Bob Nilson <small>Chief Executive Officer / CEO</small>
+						Bob Nilson <small> CEO</small>
 					</h3>
 
-					<img src="/bootstrap/bootstrap/image/2.jpg" alt="" />
+					<img src="/bootstrap/bootstrap/image/2.jpg" alt=""
+						style="width: 180px; height: 230px;" />
 
 					<div class="team-info">
 
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce
 							dapibus, justo sit amet risus etiam porta sem...</p>
-<div class="bdsharebuttonbox">
-								<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
-									class="bds_qzone" data-cmd="qzone"></a><a href="#"
-									class="bds_tsina" data-cmd="tsina"></a><a href="#"
-									class="bds_tqq" data-cmd="tqq"></a><a href="#"
-									class="bds_renren" data-cmd="renren"></a><a href="#"
-									class="bds_weixin" data-cmd="weixin"></a>
-							</div>
+						<div class="bdsharebuttonbox">
+							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+								class="bds_qzone" data-cmd="qzone"></a><a href="#"
+								class="bds_tsina" data-cmd="tsina"></a><a href="#"
+								class="bds_tqq" data-cmd="tqq"></a><a href="#"
+								class="bds_renren" data-cmd="renren"></a><a href="#"
+								class="bds_weixin" data-cmd="weixin"></a>
+						</div>
 
 					</div>
 
@@ -216,7 +216,7 @@
 
 			</li>
 
-			<li class="span3">
+			<li class="span2">
 
 				<div class="meet-our-team">
 
@@ -224,7 +224,8 @@
 						Marta Doe <small>Project Manager</small>
 					</h3>
 
-					<img src="/bootstrap/bootstrap/image/3.jpg" alt="" />
+					<img src="/bootstrap/bootstrap/image/3.jpg" alt=""
+						style="width: 180px; height: 230px;" />
 
 					<div class="team-info">
 
@@ -232,16 +233,75 @@
 							dapibus, justo sit amet risus etiam porta sem...</p>
 
 
-							<div class="bdsharebuttonbox">
-								<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
-									class="bds_qzone" data-cmd="qzone"></a><a href="#"
-									class="bds_tsina" data-cmd="tsina"></a><a href="#"
-									class="bds_tqq" data-cmd="tqq"></a><a href="#"
-									class="bds_renren" data-cmd="renren"></a><a href="#"
-									class="bds_weixin" data-cmd="weixin"></a>
-							</div>
-							
+						<div class="bdsharebuttonbox">
+							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+								class="bds_qzone" data-cmd="qzone"></a><a href="#"
+								class="bds_tsina" data-cmd="tsina"></a><a href="#"
+								class="bds_tqq" data-cmd="tqq"></a><a href="#"
+								class="bds_renren" data-cmd="renren"></a><a href="#"
+								class="bds_weixin" data-cmd="weixin"></a>
+						</div>
 
+
+					</div>
+
+				</div>
+
+			</li>
+			
+			<li class="span2">
+
+				<div class="meet-our-team">
+
+					<h3>
+						LIQING<small> CEO</small>
+					</h3>
+
+					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
+						style="width: 180px; height: 230px;" />
+
+					<div class="team-info">
+
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce
+							dapibus, justo sit amet risus etiam porta sem...</p>
+
+						<div class="bdsharebuttonbox">
+							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+								class="bds_qzone" data-cmd="qzone"></a><a href="#"
+								class="bds_tsina" data-cmd="tsina"></a><a href="#"
+								class="bds_tqq" data-cmd="tqq"></a><a href="#"
+								class="bds_renren" data-cmd="renren"></a><a href="#"
+								class="bds_weixin" data-cmd="weixin"></a>
+						</div>
+					</div>
+
+				</div>
+
+			</li>
+			<li class="span2">
+
+				<div class="meet-our-team">
+
+					<h3>
+						LIQING<small> CEO</small>
+					</h3>
+
+					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
+						style="width: 180px; height: 230px;" />
+
+					<div class="team-info">
+
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce
+							dapibus, justo sit amet risus etiam porta sem...</p>
+
+						<div class="bdsharebuttonbox">
+							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+								class="bds_qzone" data-cmd="qzone"></a><a href="#"
+								class="bds_tsina" data-cmd="tsina"></a><a href="#"
+								class="bds_tqq" data-cmd="tqq"></a><a href="#"
+								class="bds_renren" data-cmd="renren"></a><a href="#"
+								class="bds_weixin" data-cmd="weixin"></a>
+						</div>
 					</div>
 
 				</div>

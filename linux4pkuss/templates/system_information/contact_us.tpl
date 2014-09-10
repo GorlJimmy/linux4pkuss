@@ -68,7 +68,7 @@
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
 <body class="page-header-fixed">
-	<header> {include file="header_menu.tpl"} </header>
+	<header> {include file="../header_nav.tpl"} </header>
 	<div class="container-fluid" style="padding: 60px 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span12">

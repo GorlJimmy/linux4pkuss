@@ -1,4 +1,25 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.19, created on 2014-09-09 22:34:14
+         compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/project.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:58237193540b1e2f215e14-03428149%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '5968fbc3a06bc1d4562f707cf2481fa983edab23' => 
+    array (
+      0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/project.tpl',
+      1 => 1410316449,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '58237193540b1e2f215e14-03428149',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_540b1e2f263875_89135304',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_540b1e2f263875_89135304')) {function content_540b1e2f263875_89135304($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
 <title>项目信息</title>
@@ -56,7 +77,8 @@
 </script>
 </head>
 <body>
-	<header> {include file="header_nav.tpl"} </header>
+	<header> <?php echo $_smarty_tpl->getSubTemplate ("header_nav.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+ </header>
 	<div class="container-fluid" style="padding: 60px 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
@@ -844,6 +866,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer">{include file="../footer.tpl"}</div>
+	<div class="footer"><?php echo $_smarty_tpl->getSubTemplate ("../footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+</div>
 </body>
 </html>
+<?php }} ?>

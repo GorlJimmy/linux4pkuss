@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-09-03 01:44:32
+<?php /* Smarty version Smarty-3.1.19, created on 2014-09-09 20:58:05
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:188816133453fa94e9504045-90777898%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '42f4e36bfd041d02d487a3da2144abc7dd3ed50e' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/home.tpl',
-      1 => 1409722140,
+      1 => 1410309168,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_53fa94e9541448_71941889')) {function content_53fa94e9541448_71941889($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
-<title>欢迎你Jimmy</title>
+<title>欢迎你<?php echo $_SESSION['user']['username'];?>
+</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset=utf-8>
 
@@ -76,7 +77,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </script>
 </head>
 <body>
-	<header> <?php echo $_smarty_tpl->getSubTemplate ("header_menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+	<header> <?php echo $_smarty_tpl->getSubTemplate ("header_nav.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
  </header>
 	<div class="container-fluid" style="margin: 60px 8% 0 8%">
 		<div class="row-fluid">

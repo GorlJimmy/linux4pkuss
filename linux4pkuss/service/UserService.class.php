@@ -37,17 +37,17 @@ class UserService {
 		$db = new DBHelper ();
 		$user [username] = $user [username] . trim ();
 		$user [password] = md5 ( $user [password] . trim () );
-		$sql = "select * from user_tb where username='$user[username]' , password='$user[password]' and status<>0 limit 1";
+		$sql = "select * from user_tb where username='$user[username]' and password='$user[password]' and status_id<>0 limit 1";
 		$result = $db->exec_query ( $sql );
 		if (0 < count ( $result )) {
 			return $result [0];
 		} else {
-			$sql = "select * from user_tb where realname='$user[username]' , password='$user[password]' and status<>0";
+			$sql = "select * from user_tb where realname='$user[username]' and password='$user[password]' and status_id<>0";
 			$result = $db->exec_query ( $sql );
 			if (0 < count ( $result )) {
 				return $result [0];
 			} else {
-				$sql = "select * from user_tb where email='$user[username]' , password='$user[password]' and status<>0";
+				$sql = "select * from user_tb where email='$user[username]' and password='$user[password]' and status_id<>0";
 				$result = $db->exec_query ( $sql );
 				if (0 < count ( $result )) {
 					return $result [0];

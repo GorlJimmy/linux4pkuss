@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-09-06 08:37:22
+<?php /* Smarty version Smarty-3.1.19, created on 2014-09-09 22:56:28
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/about_us.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:151450753553fc1f88d8a0f9-86003099%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b075e35d5f04c8c06e4f89e6ac0a102fd1f50821' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/about_us.tpl',
-      1 => 1410006990,
+      1 => 1410317782,
       2 => 'file',
     ),
   ),
@@ -69,34 +69,31 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <link rel="shortcut icon" href="/bootstrap/bootstrap/image/favicon.ico" />
 <script>
-								window._bd_share_config = {
-									"common" : {
-										"bdSnsKey" : {},
-										"bdText" : "",
-										"bdMini" : "2",
-										"bdPic" : "",
-										"bdStyle" : "0",
-										"bdSize" : "16"
-									},
-									"share" : {},
-									"image" : {
-										"viewList" : [ "qzone", "tsina", "tqq",
-												"renren", "weixin" ],
-										"viewText" : "分享到：",
-										"viewSize" : "16"
-									},
-									"selectShare" : {
-										"bdContainerClass" : null,
-										"bdSelectMiniList" : [ "qzone",
-												"tsina", "tqq", "renren",
-												"weixin" ]
-									}
-								};
-								with (document)
-									0[(getElementsByTagName('head')[0] || body)
-											.appendChild(createElement('script')).src = '/bootstrap/bootstrap/javascript/share.js?cdnversion='
-											+ ~(-new Date() / 36e5)];
-							</script>
+	window._bd_share_config = {
+		"common" : {
+			"bdSnsKey" : {},
+			"bdText" : "",
+			"bdMini" : "2",
+			"bdPic" : "",
+			"bdStyle" : "0",
+			"bdSize" : "16"
+		},
+		"share" : {},
+		"image" : {
+			"viewList" : [ "qzone", "tsina", "tqq", "renren", "weixin" ],
+			"viewText" : "分享到：",
+			"viewSize" : "16"
+		},
+		"selectShare" : {
+			"bdContainerClass" : null,
+			"bdSelectMiniList" : [ "qzone", "tsina", "tqq", "renren", "weixin" ]
+		}
+	};
+	with (document)
+		0[(getElementsByTagName('head')[0] || body)
+				.appendChild(createElement('script')).src = '/bootstrap/bootstrap/javascript/share.js?cdnversion='
+				+ ~(-new Date() / 36e5)];
+</script>
 </head>
 
 <!-- END HEAD -->
@@ -104,7 +101,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <!-- BEGIN BODY -->
 
 <body class="page-header-fixed">
-	<header> <?php echo $_smarty_tpl->getSubTemplate ("../header_menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+	<header> <?php echo $_smarty_tpl->getSubTemplate ("../header_nav.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
  </header>
 	<div class="container-fluid" style="padding: 60px 8% 0 8%">
 		<!-- BEGIN PAGE CONTENT-->
@@ -134,7 +131,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div>
 			<div class="span6">
 				<iframe src="/bootstrap/bootstrap/video/video4pku.mp4"
-					style="width: 100%; height: 327px; border: 0" allowfullscreen></iframe>
+					style="width: 100%; height: 327px; border: 0" ></iframe>
 
 			</div>
 
@@ -152,15 +149,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 		<ul class="thumbnails">
 
-			<li class="span3">
+			<li class="span2">
 
 				<div class="meet-our-team">
 
 					<h3>
-						Bob Nilson <small>Chief Executive Officer / CEO</small>
+						LIQING<small>CEO</small>
 					</h3>
 
-					<img src="/bootstrap/bootstrap/image/2.jpg" alt="" />
+					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
+						style="width: 180px; height: 230px;" />
 
 					<div class="team-info">
 
@@ -168,20 +166,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 							dapibus, justo sit amet risus etiam porta sem...</p>
 
 						<div class="bdsharebuttonbox">
-								<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
-									class="bds_qzone" data-cmd="qzone"></a><a href="#"
-									class="bds_tsina" data-cmd="tsina"></a><a href="#"
-									class="bds_tqq" data-cmd="tqq"></a><a href="#"
-									class="bds_renren" data-cmd="renren"></a><a href="#"
-									class="bds_weixin" data-cmd="weixin"></a>
-							</div>
+							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+								class="bds_qzone" data-cmd="qzone"></a><a href="#"
+								class="bds_tsina" data-cmd="tsina"></a><a href="#"
+								class="bds_tqq" data-cmd="tqq"></a><a href="#"
+								class="bds_renren" data-cmd="renren"></a><a href="#"
+								class="bds_weixin" data-cmd="weixin"></a>
+						</div>
 					</div>
 
 				</div>
 
 			</li>
 
-			<li class="span3">
+			<li class="span2">
 
 				<div class="meet-our-team">
 
@@ -189,48 +187,50 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						Marta Doe <small>Project Manager</small>
 					</h3>
 
-					<img src="/bootstrap/bootstrap/image/3.jpg" alt="" />
+					<img src="/bootstrap/bootstrap/team_info/ljw.jpg" alt=""
+						style="width: 180px; height: 230px;" />
 
 					<div class="team-info">
 
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce
 							dapibus, justo sit amet risus etiam porta sem...</p>
-<div class="bdsharebuttonbox">
-								<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
-									class="bds_qzone" data-cmd="qzone"></a><a href="#"
-									class="bds_tsina" data-cmd="tsina"></a><a href="#"
-									class="bds_tqq" data-cmd="tqq"></a><a href="#"
-									class="bds_renren" data-cmd="renren"></a><a href="#"
-									class="bds_weixin" data-cmd="weixin"></a>
-							</div>
+						<div class="bdsharebuttonbox">
+							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+								class="bds_qzone" data-cmd="qzone"></a><a href="#"
+								class="bds_tsina" data-cmd="tsina"></a><a href="#"
+								class="bds_tqq" data-cmd="tqq"></a><a href="#"
+								class="bds_renren" data-cmd="renren"></a><a href="#"
+								class="bds_weixin" data-cmd="weixin"></a>
+						</div>
 					</div>
 
 				</div>
 
 			</li>
 
-			<li class="span3">
+			<li class="span2">
 
 				<div class="meet-our-team">
 
 					<h3>
-						Bob Nilson <small>Chief Executive Officer / CEO</small>
+						Bob Nilson <small> CEO</small>
 					</h3>
 
-					<img src="/bootstrap/bootstrap/image/2.jpg" alt="" />
+					<img src="/bootstrap/bootstrap/image/2.jpg" alt=""
+						style="width: 180px; height: 230px;" />
 
 					<div class="team-info">
 
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce
 							dapibus, justo sit amet risus etiam porta sem...</p>
-<div class="bdsharebuttonbox">
-								<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
-									class="bds_qzone" data-cmd="qzone"></a><a href="#"
-									class="bds_tsina" data-cmd="tsina"></a><a href="#"
-									class="bds_tqq" data-cmd="tqq"></a><a href="#"
-									class="bds_renren" data-cmd="renren"></a><a href="#"
-									class="bds_weixin" data-cmd="weixin"></a>
-							</div>
+						<div class="bdsharebuttonbox">
+							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+								class="bds_qzone" data-cmd="qzone"></a><a href="#"
+								class="bds_tsina" data-cmd="tsina"></a><a href="#"
+								class="bds_tqq" data-cmd="tqq"></a><a href="#"
+								class="bds_renren" data-cmd="renren"></a><a href="#"
+								class="bds_weixin" data-cmd="weixin"></a>
+						</div>
 
 					</div>
 
@@ -238,7 +238,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 			</li>
 
-			<li class="span3">
+			<li class="span2">
 
 				<div class="meet-our-team">
 
@@ -246,7 +246,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						Marta Doe <small>Project Manager</small>
 					</h3>
 
-					<img src="/bootstrap/bootstrap/image/3.jpg" alt="" />
+					<img src="/bootstrap/bootstrap/image/3.jpg" alt=""
+						style="width: 180px; height: 230px;" />
 
 					<div class="team-info">
 
@@ -254,16 +255,75 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 							dapibus, justo sit amet risus etiam porta sem...</p>
 
 
-							<div class="bdsharebuttonbox">
-								<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
-									class="bds_qzone" data-cmd="qzone"></a><a href="#"
-									class="bds_tsina" data-cmd="tsina"></a><a href="#"
-									class="bds_tqq" data-cmd="tqq"></a><a href="#"
-									class="bds_renren" data-cmd="renren"></a><a href="#"
-									class="bds_weixin" data-cmd="weixin"></a>
-							</div>
-							
+						<div class="bdsharebuttonbox">
+							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+								class="bds_qzone" data-cmd="qzone"></a><a href="#"
+								class="bds_tsina" data-cmd="tsina"></a><a href="#"
+								class="bds_tqq" data-cmd="tqq"></a><a href="#"
+								class="bds_renren" data-cmd="renren"></a><a href="#"
+								class="bds_weixin" data-cmd="weixin"></a>
+						</div>
 
+
+					</div>
+
+				</div>
+
+			</li>
+			
+			<li class="span2">
+
+				<div class="meet-our-team">
+
+					<h3>
+						LIQING<small> CEO</small>
+					</h3>
+
+					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
+						style="width: 180px; height: 230px;" />
+
+					<div class="team-info">
+
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce
+							dapibus, justo sit amet risus etiam porta sem...</p>
+
+						<div class="bdsharebuttonbox">
+							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+								class="bds_qzone" data-cmd="qzone"></a><a href="#"
+								class="bds_tsina" data-cmd="tsina"></a><a href="#"
+								class="bds_tqq" data-cmd="tqq"></a><a href="#"
+								class="bds_renren" data-cmd="renren"></a><a href="#"
+								class="bds_weixin" data-cmd="weixin"></a>
+						</div>
+					</div>
+
+				</div>
+
+			</li>
+			<li class="span2">
+
+				<div class="meet-our-team">
+
+					<h3>
+						LIQING<small> CEO</small>
+					</h3>
+
+					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
+						style="width: 180px; height: 230px;" />
+
+					<div class="team-info">
+
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce
+							dapibus, justo sit amet risus etiam porta sem...</p>
+
+						<div class="bdsharebuttonbox">
+							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+								class="bds_qzone" data-cmd="qzone"></a><a href="#"
+								class="bds_tsina" data-cmd="tsina"></a><a href="#"
+								class="bds_tqq" data-cmd="tqq"></a><a href="#"
+								class="bds_renren" data-cmd="renren"></a><a href="#"
+								class="bds_weixin" data-cmd="weixin"></a>
+						</div>
 					</div>
 
 				</div>

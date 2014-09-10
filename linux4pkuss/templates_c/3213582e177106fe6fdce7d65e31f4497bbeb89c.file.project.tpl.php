@@ -1,7 +1,31 @@
+<?php /* Smarty version Smarty-3.1.19, created on 2014-09-06 10:27:38
+         compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/project.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:636582295540b19da408414-65289374%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '3213582e177106fe6fdce7d65e31f4497bbeb89c' => 
+    array (
+      0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/project.tpl',
+      1 => 1409508884,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '636582295540b19da408414-65289374',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_540b19da4671d7_93800009',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_540b19da4671d7_93800009')) {function content_540b19da4671d7_93800009($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config("totem.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
 <!DOCTYPE html>
 <html>
 <head>
-<title>课程简介</title>
+<title><?php echo $_smarty_tpl->getConfigVariable('title');?>
+--<?php echo $_smarty_tpl->getConfigVariable('teacher');?>
+</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset=utf-8>
 <!-- Bootstrap -->
@@ -55,7 +79,8 @@
 </script>
 </head>
 <body>
-	<header> {include file="header_nav.tpl"} </header>
+	<header> <?php echo $_smarty_tpl->getSubTemplate ("header_nav.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+ </header>
 	<div class="container-fluid" style="padding: 60px 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
@@ -93,7 +118,7 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-
+						
 					</div>
 				</div>
 				<div class="portlet box purple">
@@ -112,190 +137,12 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-
+						
 					</div>
 				</div>
 
 			</div>
 			<div class="span6">
-				<div class="portlet box grey">
-
-					<div class="portlet-title">
-
-						<div class="caption">
-							<i class="icon-coffee"></i>课程简介
-						</div>
-
-						<div class="tools">
-
-							<a href="javascript:;" class="collapse"></a> <a
-								href="#portlet-config" data-toggle="modal" class="config"></a> <a
-								href="javascript:;" class="reload"></a> <a href="javascript:;"
-								class="remove"></a>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="pulsate-regular">Linux 内核分析与驱动编程</div>
-						<div class="row-fluid">
-							<div class="span12">
-								<!--Body content-->
-								<ul class="nav nav-tabs">
-									<li class="active"><a href="#tab6" data-toggle="tab">基本信息</a>
-									<li><a href="#tab7" data-toggle="tab">成绩分布</a>
-									<li><a href="#tab8" data-toggle="tab">课程内容</a>
-									<li><a href="#tab9" data-toggle="tab">参考教材</a>
-									<li><a href="#tab10" data-toggle="tab">课程信息</a>
-								</ul>
-								<div class="tab-content">
-									<div class="tab-pane active" id="tab6">
-										<p>课程名称： Linux 内核分析与驱动编程(Linux Kernel Analysis and Driver
-											Development)</p>
-										<p>课程号 ： 01711620</p>
-										<p>所属学科： 计算机科学与技术</p>
-										<p>领域方向： 软件工程</p>
-										<p>学时和学分： 48学时； 3学分</p>
-										<p>主讲： 荆琦</p>
-										<p>上课信息： 周三 （0:00- 0:00） （教室号）
-										<p>
-									</div>
-									<div class="tab-pane" id="tab7">
-										<p>1、 内核体系架构及模块间关系分析报告</p>
-										<p>– 平时成绩（70%）：按时提交，内容完整丰满，格式正确</p>
-										<p>– 课程报告（30%）：</p>
-										<p>• 文档提交（10%）：及时提交，有自己的见解</p>
-										<p>• 课堂报告（20%）：思路清晰，课堂表达清楚</p>
-										<p>2、 课后作业及内存分析报告</p>
-										<p>– 课后作业（40%）：提交及时，程序结果正确，编写规范</p>
-										<p>– 课程报告（60%）：</p>
-										<p>• 文档提交（30%）：及时提交，内容相对完整，独立完成，有自己的见解</p>
-										<p>• 课堂报告（30%）：思路清晰，课堂表达清楚；</p>
-
-
-									</div>
-									<div class="tab-pane" id="tab8">
-									<table class="table table-bordered table-hover">
-										<thead>
-									<tr>
-									<th></th>
-									<th>知识模块</th>
-									<th>知识点</th>
-									</tr>
-									</thead>
-									<tr>
-									<td>1</td>
-									<td>课程介绍和相关基础知识概述</td>
-									<td>Linux内核基本结构、Linux的历史、开放社区的文化、驱动程序介绍、内核编程基础</td>
-									</tr>
-									<tr>
-									<td>2</td>
-									<td>进程管理</td>
-									<td>Linux进程基本概念、进程的生命周期、进程上下文切换等</td>
-									</tr>
-									<tr>
-									<td>3</td>
-									<td>进程调度</td>
-									<td>Linux 进程调度策略、调度算法、进程切换、调度相关的调用</td>
-									</tr>
-									<tr>
-									<td>4</td>
-									<td>系统调用、中断处理</td>
-									<td>系统调用内核支持机制、系统调用处理函数、系统调用实现、系统调用上下文、Linux中断处理</td>
-									</tr>
-									<tr>
-									<td>5</td>
-									<td>内核同步</td>
-									<td>原子操作、自旋锁、RCU、内存屏障等linux内核同步机制</td>
-									</tr>
-									<tr>
-									<td>6</td>
-									<td>内存管理（1）</td>
-									<td>内存寻址、Linux页式管理、物理页分配</td>
-									</tr>
-									<tr>
-									<td>7</td>
-									<td>内存管理（2）</td>
-									<td>内存初始化、伙伴系统建立、Slab管理、进程地址空间</td>
-									</tr>
-									<tr>
-									<td>8</td>
-									<td>文件系统</td>
-									<td>Linux虚拟文件系统、Ext3/Ext2文件系统结构</td>
-									</tr>
-									<tr>
-									<td>9</td>
-									<td>Linux设备驱动基础、字符设备驱动程序设计</td>
-									<td>Linux设备驱动基础、字符设备创建和加载、字符设备的操作、对字符设备进行poll 和select的实现、字符设备访问控制、IOCTL、阻塞IO、异步事件等</td>
-									</tr>
-									<tr>
-									<td>10</td>
-									<td>块设备驱动程序设计</td>
-									<td>块设备内核相关数据结构和组织、块设备操作、内核磁盘调度算法、请求处理。</td>
-									</tr>
-									<tr>
-									<td>11</td>
-									<td>网络设备驱动程序设计、USB设备驱动程序设计、PCI设备驱动程序设计</td>
-									<td>网络设备驱动程序的编写方法、高速网络设备驱动程序结构实现方法、使用DMA等；USB设备模型、USB驱动程序设计方法等；PCI驱动程序设计方法</td>
-									</tr>
-									<tr>
-									<td>12</td>
-									<td>课程报告</td>
-									<td>课堂报告</td>
-									</tr>
-									</table>
-									</div>
-									<div class="tab-pane" id="tab9">
-										<p>1、 《Understanding the Linux Kernel, 3rd Edition 》
-											作者：Daniel P. Bovet, Marco Cesati 出版社：O'Reilly 出版日期：2005年12月</p>
-										<p>2、 《Professional Linux Kernel Architecture》 作者：Wolfgang
-											Mauerer 出版社：Wiley 出版日期：2008年10月</p>
-										<p>3、 《Linux 驱动程序设计》，作者：Jonathan Corbet,Alessandro
-											Rubini,Greg Kroah-Hartman，魏永明,耿岳,钟书毅 译 语种：汉语 出版社：中国电力出版社
-											出版日期：2005年12月</p>
-										<p>4、 《Essential Linux Device Drivers》 作者：Sreekrishnan
-											Venkateswaran 出版社：Pearson Education Asia 出版日期：2008年5月</p>
-										<hr>
-										<h4>参考书：</h4>
-
-
-										<p>1、 《Linux Kernel Development, 3rd edition》 作者：（美）Robert
-											Love 语种：英语 出版社: Addison-Wesley，出版日期：2010年6月</p>
-
-										<p>2、 《Linux内核情景分析》 作者：毛德操、胡希明 出版社：浙江大学出版社 出版日期：2005年1月</p>
-										<p>3、 《操作系统教程》 作者：陈向群、杨芙清 出版社：北京大学出版社 出版日期：2004年7月</p>
-										<p>4、 《The Linux Kernel Primer : A Top-Down Approach for
-											x86 and PowerPC Architectures》 作者：（美）Claudia Salzberg
-											Rodriguez,Gordon Fischer,Steven Smolski 出版社：机械工业出版社
-											出版日期：2006年7月</p>
-									</div>
-
-									<div class="tab-pane" id="tab10">
-										<h4>课程基础知识要求：</h4>
-
-										<p>数据结构</p>
-
-										<p>–操作系统</p>
-
-										<p>–计算机体系结构</p>
-
-										<p>–C 语言</p>
-
-										<p>–汇编语言</p>
-
-
-										<h4>课程主要目标：</h4>
-										<p>以Linux为实例，掌握操作系统的设计原理；掌握Linux操作系统的体系结构、设计原理</p>
-
-										<p>能在Linux上开发相关驱动程序</p>
-
-										<p>为今后进行相关实习与工作打下基础</p>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
 				<div class="portlet box green">
 
 					<div class="portlet-title">
@@ -313,7 +160,8 @@
 						</div>
 					</div>
 					<div class="portlet-body">
-						<div id="pulsate-regular">荆琦（女） 副教授，博士 Email:
+						<div id="pulsate-regular"><?php echo $_smarty_tpl->getConfigVariable('teacher');?>
+（女） 副教授，博士 Email:
 							jingqi@pku.edu.cn</div>
 						<div class="row-fluid">
 							<div class="span3">
@@ -449,7 +297,128 @@
 
 				</div>
 
+				<div class="portlet box grey">
 
+					<div class="portlet-title">
+
+						<div class="caption">
+							<i class="icon-cogs"></i>课程简介
+						</div>
+
+						<div class="tools">
+
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload"></a> <a href="javascript:;"
+								class="remove"></a>
+						</div>
+					</div>
+					<div class="portlet-body">
+						<div id="pulsate-regular">Linux 内核分析与驱动编程</div>
+						<div class="row-fluid">
+							<div class="span12">
+								<!--Body content-->
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#tab6" data-toggle="tab">基本信息</a>
+									<li><a href="#tab7" data-toggle="tab">成绩分布</a>
+									<li><a href="#tab8" data-toggle="tab">课程内容</a>
+									<li><a href="#tab9" data-toggle="tab">参考教材</a>
+									<li><a href="#tab10" data-toggle="tab">课程信息</a>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="tab6">
+										<p>课程名称： Linux 内核分析与驱动编程(Linux Kernel Analysis and Driver
+											Development)</p>
+										<p>课程号 ： 01711620</p>
+										<p>所属学科： 计算机科学与技术</p>
+										<p>领域方向： 软件工程</p>
+										<p>学时和学分： 48学时； 3学分</p>
+										<p>主讲： 荆琦</p>
+										<p>上课信息： 周三 （0:00- 0:00） （教室号）
+										<p>
+									</div>
+									<div class="tab-pane" id="tab7">
+										<p>1、 内核体系架构及模块间关系分析报告</p>
+										<p>– 平时成绩（70%）：按时提交，内容完整丰满，格式正确</p>
+										<p>– 课程报告（30%）：</p>
+										<p>• 文档提交（10%）：及时提交，有自己的见解</p>
+										<p>• 课堂报告（20%）：思路清晰，课堂表达清楚</p>
+										<p>2、 课后作业及内存分析报告</p>
+										<p>– 课后作业（40%）：提交及时，程序结果正确，编写规范</p>
+										<p>– 课程报告（60%）：</p>
+										<p>• 文档提交（30%）：及时提交，内容相对完整，独立完成，有自己的见解</p>
+										<p>• 课堂报告（30%）：思路清晰，课堂表达清楚；</p>
+
+
+									</div>
+									<div class="tab-pane" id="tab8">
+										<p>1. 核高基重大专项《开源操作系统内核分析和安全性评估》 2012.9-2013.12</p>
+										<p>2. 总装十二五《基于XX感知的XXXX服务技术研究》2011.7-2015.12</p>
+										<p>3. 横向《****风险评估方法和工具研究》2011.7-2012.12</p>
+										<p>4. 十一五项目《XXXX授权管理与访问控制系统》2006.1—2010.12</p>
+										<p>5. IBM合作项目《Linux on POWER》 2005.4—2009.1</p>
+										<p>6. 国家自然科学基金《无线传感器网络的安全体系结构研究》2007.1—2007.12</p>
+										<p>7. 科技部政府间合作项目《普适计算中对等网络技术研究》2005.1—2007.12</p>
+										<p>8. 国家科技攻关项目《国产基础软件技术培训系统研制与课程开发》2005.8—2007.6</p>
+										<p>9. 国家863项目《XXXX网络信息安全技术》2006.11—2007.6</p>
+										<p>10. IBM合作项目《Document Format Converter》 2005.11—2006.11
+										</p>
+										<p>11. 微软亚洲研究院资助项目《基于策略的移动设备安全应用框架》 2003.6—2004.6</p>
+										<p>12. 国家863项目《动态联盟协同项目管理系统》2001.7—2003.7</p>
+									</div>
+									<div class="tab-pane" id="tab9">
+										<p>1、 《Understanding the Linux Kernel, 3rd Edition 》
+											作者：Daniel P. Bovet, Marco Cesati 出版社：O'Reilly 出版日期：2005年12月</p>
+										<p>2、 《Professional Linux Kernel Architecture》 作者：Wolfgang
+											Mauerer 出版社：Wiley 出版日期：2008年10月</p>
+										<p>3、 《Linux 驱动程序设计》，作者：Jonathan Corbet,Alessandro
+											Rubini,Greg Kroah-Hartman，魏永明,耿岳,钟书毅 译 语种：汉语 出版社：中国电力出版社
+											出版日期：2005年12月</p>
+										<p>4、 《Essential Linux Device Drivers》 作者：Sreekrishnan
+											Venkateswaran 出版社：Pearson Education Asia 出版日期：2008年5月</p>
+										<hr>
+										<h4>参考书：</h4>
+
+
+										<p>1、 《Linux Kernel Development, 3rd edition》 作者：（美）Robert
+											Love 语种：英语 出版社: Addison-Wesley，出版日期：2010年6月</p>
+
+										<p>2、 《Linux内核情景分析》 作者：毛德操、胡希明 出版社：浙江大学出版社 出版日期：2005年1月</p>
+										<p>3、 《操作系统教程》 作者：陈向群、杨芙清 出版社：北京大学出版社 出版日期：2004年7月</p>
+										<p>4、 《The Linux Kernel Primer : A Top-Down Approach for
+											x86 and PowerPC Architectures》 作者：（美）Claudia Salzberg
+											Rodriguez,Gordon Fischer,Steven Smolski 出版社：机械工业出版社
+											出版日期：2006年7月</p>
+									</div>
+
+									<div class="tab-pane" id="tab10">
+										<h4>课程基础知识要求：</h4>
+
+										<p>数据结构</p>
+
+										<p>–操作系统</p>
+
+										<p>–计算机体系结构</p>
+
+										<p>–C 语言</p>
+
+										<p>–汇编语言</p>
+
+
+										<h4>课程主要目标：</h4>
+										<p>以Linux为实例，掌握操作系统的设计原理；掌握Linux操作系统的体系结构、设计原理</p>
+
+										<p>能在Linux上开发相关驱动程序</p>
+
+										<p>为今后进行相关实习与工作打下基础</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
 
 
 			</div>
@@ -472,7 +441,7 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-
+						
 					</div>
 				</div>
 				<div class="portlet box yellow">
@@ -491,12 +460,14 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="footer">{include file="../footer.tpl"}</div>
+	<div class="footer"><?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+</div>
 </body>
 </html>
+<?php }} ?>
