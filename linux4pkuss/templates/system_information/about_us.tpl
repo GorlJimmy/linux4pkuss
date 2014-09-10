@@ -132,7 +132,7 @@
 				<div class="meet-our-team">
 
 					<h3>
-						李晴<small>CEO</small>
+						李晴<small>QQ:1037962767</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
@@ -140,8 +140,7 @@
 
 					<div class="team-info">
 
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce
-							dapibus, justo sit amet risus etiam porta sem...</p>
+						<p>北京大学，软件开发方向</p>
 
 						<div class="bdsharebuttonbox">
 							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
