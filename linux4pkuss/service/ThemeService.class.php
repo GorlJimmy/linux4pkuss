@@ -81,15 +81,15 @@ class ThemeService {
 		return $result;
 	}
 
-	public function DeleteTheme($strWhere)
+	public function deleteTheme($num)
 	{
 		require_once $this->PATH . '/util/DBHelper.class.php';
 
 		$db = new DBHelper ();
-		$param=self::check_input($strWhere);
-		$sql = "delete from theme_tb where id=$param ";
-		$result=$db->exec_query($sql);
-		return $result;
+		$param=self::check_input($num);
+		$sql = "delete from theme_tb where num=$param ";
+		$result=$db->exec_other($sql);
+		return $result>0?true:false;
 	}
 
 
