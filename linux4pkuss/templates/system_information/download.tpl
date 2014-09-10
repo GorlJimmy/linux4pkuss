@@ -123,7 +123,7 @@
 					<div class="portlet-title">
 
 						<div class="caption">
-							<i class="icon-cogs"></i>教师简介
+							<i class="icon-download"></i>资源下载
 						</div>
 
 						<div class="tools">
