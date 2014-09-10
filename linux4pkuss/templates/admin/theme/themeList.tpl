@@ -238,7 +238,7 @@
 											<td class="hidden-480">{$theme.num}</td>
 											<td class="hidden-480">{$theme.createdate}</td>
 											<td class="hidden-480">{$theme.user_id}</td>
-											<td class="hidden-480">{$theme.user_id}</td>
+											<td class="hidden-480">fdf</td>
 											<td><span class="label label-success">Approved</span></td>
 										</tr>
 										{/foreach}
