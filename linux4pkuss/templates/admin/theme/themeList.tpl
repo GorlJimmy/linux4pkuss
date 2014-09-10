@@ -159,15 +159,11 @@
 											<th style="width: 8px;"><input type="checkbox"
 												class="group-checkable" data-set="#sample_1 .checkboxes" /></th>
 
-											<th>Username</th>
-
-											<th class="hidden-480">Email</th>
-
-											<th class="hidden-480">Points</th>
-
-											<th class="hidden-480">Joined</th>
-
-											<th></th>
+											<th>主题名称</th>
+											<th class="hidden-480">主题编号</th>
+											<th class="hidden-480">创建时间</th>
+											<th class="hidden-480">创建人</th>
+											<th class="hidden-480">操作</th>
 
 										</tr>
 
