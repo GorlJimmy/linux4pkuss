@@ -57,11 +57,11 @@ class UserService {
 			}
 		}
 	}
-	function findUserById($id){
+	function findUserById($num){
 		require_once $this->PATH . '/util/DBHelper.class.php';
 
 		$db = new DBHelper ();
-		$sql = "select * from user_tb where id=$id limit 1";
+		$sql = "select * from user_tb where num=$num limit 1";
 		$result = $db->exec_query ( $sql );
 		if (0 < count ( $result )) {
 			return $result [0];

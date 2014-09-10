@@ -38,13 +38,14 @@ if ('regist' == $type) {
 			setcookie ( "username", $_POST ['username'] . trim (), time () + 2 * 7 * 24 * 3600 );
 			setcookie ( "password", $_POST ['password'] . trim (), time () + 2 * 7 * 24 * 3600 );
 		}
-		if ($user ['status_id'] != 1) {
+		if (1 != $user ['status_id']) {
 			header ( "location:/index.php?msg=status_error" );
 		} else {
 			if (! $user ['imgurl']) {
 				$user ['imgurl'] = 'default/default.jpg';
 			}
 			$_SESSION ['user'] = $user;
+			
 			header ( "location:/index.php?msg=success" );
 		}
 	} else {
@@ -71,6 +72,13 @@ if ('regist' == $type) {
 	} else {
 		header ( "location:/index.php" );
 	}
+} else if ('admin' == $type) {
+	$userService = new UserService ();
+	$user = $userService->findUserById ( $_GET ['num'] );
+	if (1 == $user ['role_id']) {
+		$smarty->display ( 'admin/profile.tpl' );
+	} else {
+		$smarty->display ( 'user/profile.tpl' );
+	}
 }
-	
 
