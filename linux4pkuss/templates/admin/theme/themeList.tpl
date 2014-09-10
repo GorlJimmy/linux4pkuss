@@ -122,9 +122,9 @@
 
 								<div class="actions">
 
-									<a href="#myModal" role="button" class="btn blue"
+									<a href="#addTheme" role="button" class="btn blue"
 										data-toggle="modal"><i class="icon-pencil"></i> 添加</a>
-									<div id="myModal" class="modal hide fade" tabindex="-1"
+									<div id="addTheme" class="modal hide fade" tabindex="-1"
 										role="dialog" aria-labelledby="myModalLabel"
 										aria-hidden="true">
 										<div class="portlet-body form">
@@ -136,7 +136,7 @@
 													<div class="controls">
 
 														<input type="text" placeholder="请输入标题"
-															class="m-wrap span6" name="Title" /> <span
+															class="m-wrap span12" name="Title" /> <span
 															class="help-inline"></span>
 
 													</div>
@@ -149,7 +149,7 @@
 													<div class="controls">
 
 														<input type="text" placeholder="请输入页面路径"
-															class="m-wrap span6" name="Path" /> <span
+															class="m-wrap span12" name="Path" /> <span
 															class="help-inline"></span>
 
 													</div>
