@@ -86,8 +86,8 @@ class ThemeService {
 		require_once $this->PATH . '/util/DBHelper.class.php';
 
 		$db = new DBHelper ();
-		$param=self::check_input($num);
-		$sql = "delete from theme_tb where num=$param ";
+		//$param=self::check_input($num);
+		$sql = "delete from theme_tb where num='$num'";
 		$result=$db->exec_other($sql);
 		return $result>0?true:false;
 	}
