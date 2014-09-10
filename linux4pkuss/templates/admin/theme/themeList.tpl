@@ -237,8 +237,8 @@
 											<td class="hidden-480">{$theme.createdate}</td>
 											<td class="hidden-480">{$theme.user_id}</td>
 											<td><a href="#" title="详情"><i
-													class="icon-envelope-alt"></i></a> &npsb;<a href="#" title="编辑"><i
-													class=icon-edit></i></a> &npsb;<a href="#" title="删除"><i
+													class="icon-envelope-alt"></i></a> &nbsp;<a href="#" title="编辑"><i
+													class=icon-edit></i></a> &nbsp;<a href="#" title="删除"><i
 													class="icon-trash"></i></a></td>
 
 										</tr>
