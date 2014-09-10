@@ -9,40 +9,17 @@
 
 				<li class=""><a href="javascript:;"> <i class="icon-cogs"></i>
 
-						<span class="title">项目信息管理</span> <span class="arrow "></span>
+						<span class="title">项目信息</span> <span class="arrow "></span>
 
 				</a>
 
 					<ul class="sub-menu">
 
-						<li><a href="layout_horizontal_sidebar_menu.html">
+						<li><a href="/controller/theme/themeHandler.php?type=list">主题管理</a></li>
 
-								Horzontal & Sidebar Menu</a></li>
+						<li><a href="/controller/theme/themeHandler.php?type=list">项目管理</a></li>
 
-						<li><a href="layout_horizontal_menu1.html"> Horzontal
-								Menu 1</a></li>
-
-						<li><a href="layout_horizontal_menu2.html"> Horzontal
-								Menu 2</a></li>
-
-						<li><a href="layout_promo.html"> Promo Page</a></li>
-
-						<li><a href="layout_email.html"> Email Templates</a></li>
-
-						<li><a href="layout_ajax.html"> Content Loading via Ajax</a>
-
-						</li>
-
-						<li><a href="layout_sidebar_closed.html"> Sidebar Closed
-								Page</a></li>
-
-						<li><a href="layout_blank_page.html"> Blank Page</a></li>
-
-						<li><a href="layout_boxed_page.html"> Boxed Page</a></li>
-
-						<li><a href="layout_boxed_not_responsive.html">
-
-								Non-Responsive Boxed Layout</a></li>
+						
 
 					</ul></li>
 
