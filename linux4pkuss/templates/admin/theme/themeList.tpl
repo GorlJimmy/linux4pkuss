@@ -123,16 +123,47 @@
 									<div id="myModal" class="modal hide fade" tabindex="-1"
 										role="dialog" aria-labelledby="myModalLabel"
 										aria-hidden="true">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"
-												aria-hidden="true">X</button>
-											<h3>添加主题</h3>
-										</div>
-										<div class="modal-body">
-											<p>One fine body…</p>
-										</div>
+										<form action="">
+											<div class="control-group">
+
+												<label class="control-label">标题名称</label>
+
+												<div class="controls">
+
+													<input type="text" placeholder="请输入标题" class="m-wrap large"
+														name="Title" /> <span class="help-inline"></span>
+
+												</div>
+
+											</div>
+											<div class="control-group">
+
+												<label class="control-label">页面路径</label>
+
+												<div class="controls">
+
+													<input type="text" placeholder="请输入页面路径"
+														class="m-wrap large" name="Path" /> <span
+														class="help-inline"></span>
+
+												</div>
+
+											</div>
+											<div class="control-group">
+
+												<label class="control-label">描述</label>
+
+												<div class="controls">
+
+													<textarea class="medium m-wrap" rows="3" name="TextArea"></textarea>
+
+												</div>
+
+											</div>
+										</form>
 										<div class="modal-footer">
-											<button class="btn red" data-dismiss="modal" aria-hidden="true">取消</button>
+											<button class="btn red" data-dismiss="modal"
+												aria-hidden="true">取消</button>
 											<button class="btn green">提交</button>
 										</div>
 									</div>
