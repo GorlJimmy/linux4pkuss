@@ -11,16 +11,16 @@ $smarty->cache_lifetime = 120;
 $action=$_POST['NAME'];
 $id=$_POST['ID'];
 $notifyManage=new NotifyManageService();
-$smarty->assign('ThemeType',$action);
-$smarty->assign('NotifyID',$id);
-$smarty->display('../templates/SystemManage/NotifyAdd.tpl');
 if($id){
-	//³õÊ¼Ò³Ãæ
+	//ï¿½ï¿½Ê¼Ò³ï¿½ï¿½
 }
 else{
-	//Ìá½»Ò³Ãæ
+	//ï¿½á½»Ò³ï¿½ï¿½
 	$result=$notifyManage->AddNotify($_POST);
 	echo '<script language="JavaScript">window.location.href="NotifyManage.php";</script>';
 
 }
+$smarty->assign('ThemeType',$action);
+$smarty->assign('NotifyID',$id);
+$smarty->display('../templates/SystemManage/NotifyAdd.tpl');
 	

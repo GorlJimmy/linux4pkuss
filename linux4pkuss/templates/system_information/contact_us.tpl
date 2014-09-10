@@ -184,7 +184,7 @@
 				<!-- Google Map -->
 				<div class="row-fluid">
 					<div id="map" class="gmaps margin-bottom-40" style="height: 700px;">
-					<img alt="" src="/bootstrap/bootstrap/image/location.png" style="height: 100%;width:100%;">
+					<img alt="" src="/bootstrap/bootstrap/image/location.jpg" style="height: 100%;width:100%;">
 					
 					</div>
 

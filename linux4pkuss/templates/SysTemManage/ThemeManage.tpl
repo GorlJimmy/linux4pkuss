@@ -6,9 +6,6 @@
 {include file="../../templates/SysTemManage/ManageInclude.tpl" title=foo} 
 <script src="../libs/public.js" type="text/javascript"></script> 
 <script language='javascript'>
- function EditOne(id){
-	 alert(id);
- }
  
  function Show(value){
 	 var leg = $("#sample_editable_1 tr").length - 1
@@ -61,6 +58,18 @@
 		 });
 		location.reload();
 		}
+ }
+ 
+ function AddNew(){
+	 if($("#notify").val()==""||$("#notify").val()==null){
+		 alert("一级标题为空");
+		 return;
+	 }
+	 $.post("ThemeAdd.php", { ID: $("#notify").val(), NAME: $("#notify").find("option:selected").text() }, function(data) { document.write(data); });
+ }
+ 
+ function EditOne(id){
+	 $.post("ThemeEdit.php", { ID: id, NAME: $("#notify").find("option:selected").text() }, function(data) { document.write(data); });
  }
  
  $(document).ready(function(){
@@ -126,12 +135,12 @@
 
 									<div class="btn-group">
 
-										<button id="sample_editable_1_new" class="btn green" onclick="AddNew();">
+										<button id="btnAdd" class="btn green" onclick="AddNew();">
 
 										新增
 
 										</button>
-										<button id="sample_editable_1_new" class="btn red"  onclick="Delete();">
+										<button id="btnDelete" class="btn red"  onclick="Delete();">
 
 										删除
 
@@ -146,22 +155,22 @@
 									</select> 
 								</div>
 								
-										<button id="sample_editable_1_new" class="btn blue" onclick="Show('ShowHome');">
+										<button id="btnHome" class="btn blue" onclick="Show('ShowHome');">
 
 										显示
 
 										</button>
-										<button id="sample_editable_1_new" class="btn blue" onclick="UnShow('UnShowHome');">
+										<button id="btnUnHome" class="btn blue" onclick="UnShow('UnShowHome');">
 
 										不显示
 
 										</button>
-										<button id="sample_editable_1_new"  class="btn yellow"  onclick="Show('Show');">
+										<button id="btnShow"  class="btn yellow"  onclick="Show('Show');">
 
 										可见
 
 										</button>
-										<button id="sample_editable_1_new" class="btn yellow"  onclick="UnShow('UnShow');">
+										<button id="btnUnShow" class="btn yellow"  onclick="UnShow('UnShow');">
 
 										不可见
 

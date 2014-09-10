@@ -20,10 +20,10 @@
 							<a href="/linux4pkuss/linux4pkuss/controller/AttachmentCheck.php">上传资料审核</a>
 						</p>
 						<p>
-							<a href="#">课程信息维护</a>
+							<a href="/linux4pkuss/linux4pkuss/controller/CourseManage.php">课程信息维护</a>
 						</p>
 						<p>
-							<a href="#">教师简介维护</a>
+							<a href="/linux4pkuss/linux4pkuss/controller/TeacherManage.php">教师简介维护</a>
 						</p>
 						<p>
 							<a href="/linux4pkuss/linux4pkuss/controller/ProjectManage.php">项目信息维护</a>

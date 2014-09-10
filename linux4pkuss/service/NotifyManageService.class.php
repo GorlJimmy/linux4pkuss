@@ -12,12 +12,12 @@ class NotifyManageService {
 	// TODO - Insert your code here
 	function check_input($value)
 	{
-		// È¥³ýÐ±¸Ü
+		// È¥ï¿½ï¿½Ð±ï¿½ï¿½
 		if (get_magic_quotes_gpc())
 		{
 			$value = stripslashes($value);
 		}
-		// Èç¹û²»ÊÇÊý×ÖÔò¼ÓÒýºÅ
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		if (!is_numeric($value))
 		{
 			$value = "'" . mysql_real_escape_string($value) . "'";
@@ -76,6 +76,27 @@ class NotifyManageService {
 		$db=new DBHelper();
 		$result=$db->exec_non_query($sql);
 		
+		return $result;
+	}
+
+	public function GetOneArticle($strWhere)
+	{
+		$param=$strWhere;
+		$sql = "select * from article_tb where id=$param ";
+		$db=new DBHelper();
+		$result=$db->exec_query($sql);
+		return $result;
+	}
+	
+	public function EditNotify($Object)
+	{
+		$title=$Object[0][title];
+		$content=$Object[0][content];
+		$id=$Object[0][id];
+		$sql = "update article_tb set title='$title',content='$content' where id='$id' ";
+		$db=new DBHelper();
+		$result=$db->exec_non_query($sql);
+	
 		return $result;
 	}
 	

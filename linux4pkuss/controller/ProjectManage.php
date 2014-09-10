@@ -5,14 +5,30 @@ require_once '../service/ProjectManageService.class.php';
 
 $smarty = new Smarty;
 $smarty->force_compile = true;
-//$smarty->debugging = true;
 $smarty->caching = true;
 $smarty->cache_lifetime = 120;
-//$smarty->left_delimiter = '<{'; 
-//$smarty->right_delimiter = '}>';
+$action=$_GET['Action'];
+$id=(int)$_GET['ID'];
+$projectQuery=new ProjectManageService();
+//��ȡ��Ŀ����б���Ҫȷ����Ŀ��Ϣһ�������id��
+$select=$projectQuery->GetProjectList(3);
+if(!isset($_POST['btnSave'])){
+	if($action=="Get"){
+		$result=$projectQuery->GetArticleList($id);
+	}
+	else
+	{
+		$result=$projectQuery->GetArticleList($select[0]["id"]);
+	}
+	if($result!=null){
+		$smarty->assign('Title',$result[0]['title']);
+		$smarty->assign('Content',$result[0]['content']);
+	}
+}
+else if(isset($_POST['btnSave'])){
+		$result=$projectQuery->UpdateProjectInfo($_POST);
+		echo '<script language="JavaScript">window.location.href="ProjectManage.php?Action=Get&ID='.$_POST['project'].'";</script>';
+}
 
-$articleQuery=new ProjectManageService();
-$result=$articleQuery->GetList(1);
-$smarty->assign('result',$result);
-//echo print_r($result);
+$smarty->assign('select',$select);
 $smarty->display('../templates/SystemManage/ProjectManage.tpl');

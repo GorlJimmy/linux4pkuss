@@ -1,4 +1,8 @@
 <?php
+/**
+ * @author Jimmy 2014
+ * @version v1.0
+ */
 $ROOT=$_SERVER['DOCUMENT_ROOT'];
 
 require_once $ROOT.'/service/ProvinceService.class.php';
