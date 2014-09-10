@@ -10,6 +10,11 @@ $smarty->setCacheDir ( $ROOT . '/cache' );
 session_start ();
 $type = $_GET ['type'] . trim ();
 
+$user=$_SESSION['user'];
+if(1!=$user['role_id']){
+	header ( "location:/index.php?msg=auth_failure" );
+	return;
+}
 if('list'==$type){
 	$themeService=new ThemeService();
 	$topThemes=$themeService->themeList(0);

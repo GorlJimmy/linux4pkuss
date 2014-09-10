@@ -238,19 +238,8 @@
 	</div>
 
 	<!-- END CONTAINER -->
-	<script src="/bootstrap/bootstrap/js/table-editable.js"></script>
-	<script>
-		jQuery(document).ready(function() {
-
-			App.init();
-
-			TableEditable.init();
-
-			$("#s2id_autogen1").remove();
-
-		});
-	</script>
+	
 	<!-- BEGIN FOOTER -->
-	<div class="footer">{include file="../footer.tpl"}</div>
+	<div class="footer">{include file="../../footer.tpl"}</div>
 	<!-- END FOOTER -->
 </html>
