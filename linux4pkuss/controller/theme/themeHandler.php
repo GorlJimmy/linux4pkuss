@@ -10,12 +10,11 @@ $smarty->setCacheDir ( $ROOT . '/cache' );
 session_start ();
 $type = $_GET ['type'] . trim ();
 
-$themeService=new ThemeService();
 if('list'==$type){
+	$themeService=new ThemeService();
 	$topThemes=$themeService->themeList(0);
 	$smarty->assign('topThemes',$topThemes);
-	//$smarty->assign('select',$select);
-	//echo print_r($result);
+	
 	$smarty->display('admin/theme/themeList.tpl');
 }
 else
