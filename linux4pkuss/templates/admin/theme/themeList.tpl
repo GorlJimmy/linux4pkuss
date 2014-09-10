@@ -56,7 +56,6 @@
 <script type="text/javascript"
 	src="/bootstrap/bootstrap/js/DT_bootstrap.js"></script>
 <script src="/bootstrap/bootstrap/js/app.js"></script>
-<script src="/bootstrap/bootstrap/js/jquery.nestable.js"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script src="/bootstrap/bootstrap/js/table-managed.js"></script>
 <script src="/bootstrap/bootstrap/js/select2.min.js"></script>
