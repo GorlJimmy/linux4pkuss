@@ -27,6 +27,6 @@ else if('add'==$type){
 	if($isSuccess){
 		header("location:themeHandler.php?type=list&msg=success");
 	}else{
-		header("location:themeHandler.php?type=list&msg=$isSuccess");
+		header("location:themeHandler.php?type=list&msg=$_POST[name]");
 	}
 }
