@@ -127,7 +127,7 @@
 
 										<div class="controls">
 
-											<input type="text" placeholder="请输入标题" class="m-wrap span12"
+											<input type="text" placeholder="请输入标题" class="m-wrap span8"
 												name="Title" /> <span class="help-inline"></span>
 
 										</div>
@@ -140,7 +140,7 @@
 										<div class="controls">
 
 											<input type="text" placeholder="请输入页面路径"
-												class="m-wrap span12" name="Path" /> <span
+												class="m-wrap span8" name="Path" /> <span
 												class="help-inline"></span>
 
 										</div>
@@ -152,7 +152,7 @@
 
 										<div class="controls">
 
-											<textarea class="span12 m-wrap" name="TextArea"></textarea>
+											<textarea class="span18 m-wrap" name="TextArea"></textarea>
 
 										</div>
 
