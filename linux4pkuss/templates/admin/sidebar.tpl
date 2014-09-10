@@ -24,7 +24,7 @@
 					</ul></li>
 
 				<li class=""><a href="javascript:;"> <i
-						class="icon-bookmark-empty"></i> <span class="title">课程通知管理</span> <span
+						class="icon-bookmark-empty"></i> <span class="title">课程通知</span> <span
 						class="arrow "></span>
 
 				</a>
@@ -57,7 +57,7 @@
 
 				<li class=""><a href="javascript:;"> <i class="icon-table"></i>
 
-						<span class="title">资源管理</span> <span class="arrow "></span>
+						<span class="title">资源信息</span> <span class="arrow "></span>
 
 				</a>
 
@@ -82,7 +82,7 @@
 					</ul></li>
 
 				<li class=""><a href="javascript:;"> <i
-						class="icon-briefcase"></i> <span class="title">文章管理</span> <span
+						class="icon-briefcase"></i> <span class="title">文章信息</span> <span
 						class="arrow "></span>
 
 				</a>
@@ -134,7 +134,7 @@
 					</ul></li>
 
 				<li class=""><a href="javascript:;"> <i
-						class="icon-gift"></i> <span class="title">用户管理</span><span class="arrow"></span>
+						class="icon-gift"></i> <span class="title">用户信息</span><span class="arrow"></span>
 
 				</a>
 
@@ -170,7 +170,7 @@
 					</ul></li>
 
 				<li><a class="active" href="javascript:;"> <i
-						class="icon-sitemap"></i> <span class="title">角色管理</span> <span
+						class="icon-sitemap"></i> <span class="title">角色信息</span> <span
 						class="arrow "></span>
 
 				</a>
@@ -211,7 +211,7 @@
 
 				<li><a href="javascript:;"> <i class="icon-folder-open"></i>
 
-						<span class="title">權限管理</span> <span class="arrow "></span>
+						<span class="title">權限信息</span> <span class="arrow "></span>
 
 				</a>
 

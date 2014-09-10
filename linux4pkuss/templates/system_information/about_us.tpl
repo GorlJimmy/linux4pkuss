@@ -108,8 +108,8 @@
 				</blockquote>
 			</div>
 			<div class="span6">
-				<video src="/bootstrap/bootstrap/video/video4pku.mp4"
-					style="width: 100%; height: 327px; border: 0" autoscreen></video>
+				<iframe src="/bootstrap/bootstrap/video/video4pku.mp4"
+					style="width: 100%; height: 327px; border: 0" autoscreen></iframe>
 
 			</div>
 
