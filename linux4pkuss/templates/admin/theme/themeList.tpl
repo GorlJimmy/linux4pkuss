@@ -230,6 +230,18 @@
 
 									<tbody>
 
+										{foreach from=$topThemes item=theme}
+										<tr class="odd gradeX">
+											<td><input type="checkbox" class="checkboxes"
+												value="1" /></td>
+											<td>{$theme.name}</td>
+											<td class="center hidden-480">{$theme.num}</td>
+											<td class="hidden-480">{$theme.createdate}</td>
+											<td class="hidden-480">{$theme.user_id}</td>
+											<td class="hidden-480">{$theme.user_id}</td>
+											<td><span class="label label-success">Approved</span></td>
+										</tr>
+										{/foreach}
 										<tr class="odd gradeX">
 
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
