@@ -221,7 +221,7 @@
 											<th class="hidden-480">主题编号</th>
 											<th class="hidden-480">创建时间</th>
 											<th class="hidden-480">创建人</th>
-											<th class="hidden-480">操作</th>
+											<th colspan="3">操作</th>
 
 										</tr>
 
@@ -237,7 +237,9 @@
 											<td class="hidden-480">{$theme.num}</td>
 											<td class="hidden-480">{$theme.createdate}</td>
 											<td class="hidden-480">{$theme.user_id}</td>
-											<td><span class="label label-success">Approved</span></td>
+											<td><span class="label label-success">详细信息</span></td>
+											<td><span class="label label-success">修改</span></td>
+											<td><span class="label label-success">删除</span></td>
 										</tr>
 										{/foreach}
 										
