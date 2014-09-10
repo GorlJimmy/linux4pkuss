@@ -63,7 +63,7 @@
 				<div class="portlet box blue">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-cogs"></i>快速注册
+							<i class=" icon-picture"></i>图解软件信息
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -74,7 +74,16 @@
 					</div>
 					<div class="portlet-body">
 						<p>
-							<a href="/controller/user/userHandler.php?type=regist">Linux内存管理心得</a>
+							<a href="http://59.56.74.25:2233/linuxProject" target="_blank">Linux内核图解软件链接</a>
+						</p>
+						<p>
+							<a href="http://59.56.74.25:2233/linuxProject" target="_blank">Linux内核图解软件用户手册</a>
+						</p>
+						<p>
+							<a href="http://59.56.74.25:2233/linuxProject" target="_blank">Linux内核图解软件的设计</a>
+						</p>
+						<p>
+							<a href="http://59.56.74.25:2233/linuxProject" target="_blank">Linux内核图解软件简介</a>
 						</p>
 					</div>
 				</div>
