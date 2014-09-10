@@ -141,7 +141,7 @@
 					<div class="team-info">
 
 						<p>北京大学，软件开发方向</p>
-
+						<p>北京大学，软件开发方向</p>
 						<div class="bdsharebuttonbox">
 							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
 								class="bds_qzone" data-cmd="qzone"></a><a href="#"
@@ -161,7 +161,7 @@
 				<div class="meet-our-team">
 
 					<h3>
-						路婧威 <small>Project Manager</small>
+						路婧威 <small>QQ:1156407389</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/team_info/ljw.jpg" alt=""
@@ -190,7 +190,7 @@
 				<div class="meet-our-team">
 
 					<h3>
-						许松 <small> CEO</small>
+						许松 <small>QQ:464446732</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/image/2.jpg" alt=""
@@ -220,7 +220,7 @@
 				<div class="meet-our-team">
 
 					<h3>
-						肖勍星 <small>Project Manager</small>
+						肖勍星 <small>QQ:277597940</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/image/3.jpg" alt=""
@@ -253,7 +253,7 @@
 				<div class="meet-our-team">
 
 					<h3>
-						高晓宁<small> CEO</small>
+						高晓宁<small>QQ:24778204</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
@@ -282,7 +282,7 @@
 				<div class="meet-our-team">
 
 					<h3>
-						田晓宇<small> CEO</small>
+						田晓宇<small>QQ:542056066</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
