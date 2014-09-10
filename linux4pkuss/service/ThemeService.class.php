@@ -6,12 +6,10 @@ class ThemeService {
 	}
 	function check_input($value)
 	{
-		// ȥ��б��
 		if (get_magic_quotes_gpc())
 		{
 			$value = stripslashes($value);
 		}
-		// ������������������
 		if (!is_numeric($value))
 		{
 			$value = "'" . mysql_real_escape_string($value) . "'";
@@ -34,7 +32,7 @@ class ThemeService {
 	{
 		require_once $this->PATH . '/util/DBHelper.class.php';
 		$db = new DBHelper ();
-		$sql = "select * from theme_tb where parent_id=$level ";
+		$sql = "select * from theme_tb where parent_id=$level order by id desc";
 		$result=$db->exec_query($sql);
 		return $result;
 	}
