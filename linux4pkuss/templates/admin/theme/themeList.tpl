@@ -221,7 +221,6 @@
 											<th class="hidden-480">主题编号</th>
 											<th class="hidden-480">创建时间</th>
 											<th class="hidden-480">创建人</th>
-											<th class="hidden-480">子主题个数</th>
 											<th class="hidden-480">操作</th>
 
 										</tr>
@@ -238,7 +237,6 @@
 											<td class="hidden-480">{$theme.num}</td>
 											<td class="hidden-480">{$theme.createdate}</td>
 											<td class="hidden-480">{$theme.user_id}</td>
-											<td class="hidden-480">fdf</td>
 											<td><span class="label label-success">Approved</span></td>
 										</tr>
 										{/foreach}
