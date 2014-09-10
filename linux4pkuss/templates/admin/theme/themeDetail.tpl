@@ -117,7 +117,7 @@
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal"
 									aria-hidden="true">&times;</button>
-								<h3>添加主题</h3>
+								<h3>新增该主题下的子标题</h3>
 							</div>
 							<div class="portlet-body form">
 								<form action="/controller/theme/themeHandler.php?type=add"
@@ -207,44 +207,6 @@
 							<div class="portlet-body ">
 
 
-								<table class="table table-striped table-bordered table-hover"
-									id="sample_1">
-
-									<thead>
-
-										<tr>
-
-											<th style="width: 8px;"><input type="checkbox"
-												class="group-checkable" data-set="#sample_1 .checkboxes" /></th>
-
-											<th>主题名称</th>
-											<th class="hidden-480">主题编号</th>
-											<th class="hidden-480">创建时间</th>
-											<th class="hidden-480">创建人</th>
-											<th colspan="3"><span class="label label-success">主题操作</span></th>
-										</tr>
-									</thead>
-									<tbody>
-										{foreach from=$topThemes item=theme}
-										<tr class="odd gradeX">
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-											<td>{$theme.name}</td>
-											<td class="hidden-480">{$theme.num}</td>
-											<td class="hidden-480">{$theme.createdate}</td>
-											<td class="hidden-480">{$theme.user_id}</td>
-											<td><a
-												href="/controller/theme/themeHandler.php?type=query&num={$theme.num}"
-												title="详情"><i class="icon-envelope-alt"></i></a> &nbsp;<a
-												href="/controller/theme/themeHandler.php?type=edit&num={$theme.num}"
-												title="编辑"><i class=icon-edit></i></a> &nbsp;<a
-												href="/controller/theme/themeHandler.php?type=delete&num={$theme.num}"
-												title="删除"><i class="icon-trash"></i></a></td>
-
-										</tr>
-										{/foreach}
-									</tbody>
-
-								</table>
 
 
 							</div>

@@ -40,7 +40,10 @@ else if('add'==$type){
 		header("location:themeHandler.php?type=list&msg=failure");
 	}
 }else if('query'==$type){
-	header("location:themeHandler.php?type=list&msg=success");
+	$themeService=new ThemeService();
+	$theme=$themeService->findTheme($num);
+	$smarty->assign('theme',$theme);
+	$smarty->display('admin/theme/themeDetail.tpl');
 }else if('edit'==$type){
 	header("location:themeHandler.php?type=list&msg=success");
 }

@@ -86,8 +86,8 @@ class ThemeService {
 		require_once $this->PATH . '/util/DBHelper.class.php';
 
 		$db = new DBHelper ();
-		//$param=self::check_input($num);
-		$sql = "delete from theme_tb where num='$num'";
+		$param=self::check_input($num);
+		$sql = "delete from theme_tb where num='$param'";
 		$result=$db->exec_other($sql);
 		return $result>0?true:false;
 	}
@@ -107,15 +107,15 @@ class ThemeService {
 		return $result>0?true:false;
 	}
 
-	public function GetOneTheme($strWhere)
+	public function findTheme($num)
 	{
 		require_once $this->PATH . '/util/DBHelper.class.php';
 
 		$db = new DBHelper ();
-		$param=$strWhere;
-		$sql = "select * from theme_tb where id=$param ";
+		$param=$num;
+		$sql = "select * from theme_tb where num=$param limit 1 ";
 		$result=$db->exec_query($sql);
-		return $result;
+		return count($result)>0?$result[0]:null;
 	}
 
 	public function EditTheme($Object)
