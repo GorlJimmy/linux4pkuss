@@ -120,15 +120,15 @@
 								<h3>添加主题</h3>
 							</div>
 							<div class="portlet-body form">
-								<form action="" class="form-horizontal">
+								<form action="/controller/theme/themeHandler.php?type=add" class="form-horizontal">
 									<div class="control-group">
 
-										<label class="control-label">标题名称</label>
+										<label class="control-label">主题名称</label>
 
 										<div class="controls">
 
 											<input type="text" placeholder="请输入标题" class="m-wrap span8"
-												name="Title" /> <span class="help-inline"></span>
+												name="name" /> <span class="help-inline"></span>
 
 										</div>
 
@@ -140,7 +140,7 @@
 										<div class="controls">
 
 											<input type="text" placeholder="请输入页面路径"
-												class="m-wrap span8" name="Path" /> <span
+												class="m-wrap span8" name="path" /> <span
 												class="help-inline"></span>
 
 										</div>
@@ -148,11 +148,11 @@
 									</div>
 									<div class="control-group">
 
-										<label class="control-label">描述</label>
+										<label class="control-label">主题说明</label>
 
 										<div class="controls">
 
-											<textarea class="span18 m-wrap" name="TextArea"></textarea>
+											<textarea class="span8 m-wrap" name="description"></textarea>
 
 										</div>
 
@@ -161,7 +161,7 @@
 							</div>
 							<div class="modal-footer">
 								<button class="btn red" data-dismiss="modal" aria-hidden="true">取消</button>
-								<button class="btn green">提交</button>
+								<button class="btn green" type="submit">提交</button>
 							</div>
 						</div>
 
