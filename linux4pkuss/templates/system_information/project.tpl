@@ -74,16 +74,16 @@
 					</div>
 					<div class="portlet-body">
 						<p>
-							<a href="http://59.56.74.25:2233/linuxProject" target="_blank">Linux内核图解软件链接</a>
+							<a href="http://www.linux4pku.org.cn:2233/linuxProject" target="_blank">Linux内核图解软件链接</a>
 						</p>
 						<p>
-							<a href="http://59.56.74.25:2233/linuxProject" target="_blank">Linux内核图解软件用户手册</a>
+							<a href="http://www.linux4pku.org.cn:2233/linuxProject" target="_blank">Linux内核图解软件用户手册</a>
 						</p>
 						<p>
-							<a href="http://59.56.74.25:2233/linuxProject" target="_blank">Linux内核图解软件的设计</a>
+							<a href="http://www.linux4pku.org.cn:2233/linuxProject" target="_blank">Linux内核图解软件的设计</a>
 						</p>
 						<p>
-							<a href="http://59.56.74.25:2233/linuxProject" target="_blank">Linux内核图解软件简介</a>
+							<a href="http:/www.linux4pku.org.cn:2233/linuxProject" target="_blank">Linux内核图解软件简介</a>
 						</p>
 					</div>
 				</div>
