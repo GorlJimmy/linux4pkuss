@@ -121,7 +121,7 @@
 							</div>
 							<div class="portlet-body form">
 								<form action="/controller/theme/themeHandler.php?type=add"
-									class="form-horizontal">
+									class="form-horizontal" method="post">
 									<div class="control-group">
 
 										<label class="control-label">主题名称</label>
