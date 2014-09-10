@@ -63,13 +63,12 @@
 
 <script src="/bootstrap/bootstrap/js/jquery.dataTables.js"></script>
 <script src="/bootstrap/bootstrap/js/form-components.js"></script>
-<script src="/bootstrap/bootstrap/js/ckeditor.js"></script>      
 
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		App.init();
 		TableManaged.init();
-		FormComponents.init();
+		//FormComponents.init();
 	});
 </script>
 
