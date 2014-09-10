@@ -18,8 +18,8 @@
 	rel="stylesheet" type="text/css" />
 <link href="/bootstrap/bootstrap/css/jquery.gritter.css"
 	rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css"
-	href="/bootstrap/bootstrap/css/jquery.nestable.css" />
+<link rel="stylesheet" href="/bootstrap/bootstrap/css/DT_bootstrap.css" />
+<link rel="stylesheet" href="/bootstrap/bootstrap/css/select2.css" />
 <link rel="shortcut icon" href="/bootstrap/bootstrap/image/favicon.ico" />
 <script src="/bootstrap/bootstrap/js/jquery-1.10.1.min.js"
 	type="text/javascript"></script>
@@ -58,13 +58,14 @@
 <script src="/bootstrap/bootstrap/js/app.js"></script>
 <script src="/bootstrap/bootstrap/js/jquery.nestable.js"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
-<script src="/bootstrap/bootstrap/js/ui-nestable.js"></script>
 <script src="/bootstrap/bootstrap/js/table-managed.js"></script>
+<script src="/bootstrap/bootstrap/js/select2.min.js"></script>
+
+<script src="/bootstrap/bootstrap/js/jquery.dataTables.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		App.init();
 		TableManaged.init();
-		UINestable.init();
 	});
 </script>
 
@@ -113,18 +114,17 @@
 							<div class="portlet-title">
 
 								<div class="caption">
-									<i class="icon-user"></i>Table
+									<i class="icon-user"></i>项目主题信息
 								</div>
 
 								<div class="actions">
 
-									<a href="#" class="btn blue"><i class="icon-pencil"></i>
-										Add</a>
+									<a href="#" class="btn blue"><i class="icon-pencil"></i> 添加</a>
 
 									<div class="btn-group">
 
 										<a class="btn green" href="#" data-toggle="dropdown"> <i
-											class="icon-cogs"></i> Tools <i class="icon-angle-down"></i>
+											class="icon-cogs"></i> 工具 <i class="icon-angle-down"></i>
 
 										</a>
 
@@ -147,107 +147,462 @@
 							</div>
 
 							<div class="portlet-body ">
-								<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
-								<form class="sidebar-search">
-
-									<div class="input-box">
-										<label>主题名称查找</label> <input type="text"
-											placeholder="Search..." /> <input type="button"
-											class="submit" value=" Search..." />
-
-									</div>
-
-								</form>
-								<!-- END RESPONSIVE QUICK SEARCH FORM -->
-
-								<div class="dd" id="nestable_list_1">
 
 
-									<ol class="dd-list">
+								<table class="table table-striped table-bordered table-hover"
+									id="sample_1">
 
-										<li class="dd-item" data-id="1">
+									<thead>
 
-											<div class="dd-handle">Item 1</div>
+										<tr>
 
-										</li>
+											<th style="width: 8px;"><input type="checkbox"
+												class="group-checkable" data-set="#sample_1 .checkboxes" /></th>
 
-										<li class="dd-item" data-id="2">
+											<th>Username</th>
 
-											<div class="dd-handle">Item 2</div>
+											<th class="hidden-480">Email</th>
 
-											<ol class="dd-list">
+											<th class="hidden-480">Points</th>
 
-												<li class="dd-item" data-id="3">
+											<th class="hidden-480">Joined</th>
 
-													<div class="dd-handle">Item 3</div>
+											<th></th>
 
-												</li>
+										</tr>
 
-												<li class="dd-item" data-id="4">
+									</thead>
 
-													<div class="dd-handle">Item 4</div>
+									<tbody>
 
-												</li>
+										<tr class="odd gradeX">
 
-												<li class="dd-item" data-id="5">
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 
-													<div class="dd-handle">Item 5</div>
+											<td>shuxer</td>
 
-													<ol class="dd-list">
+											<td class="hidden-480"><a href="mailto:shuxer@gmail.com">shuxer@gmail.com</a></td>
 
-														<li class="dd-item" data-id="6">
+											<td class="hidden-480">120</td>
 
-															<div class="dd-handle">Item 6</div>
+											<td class="center hidden-480">12 Jan 2012</td>
 
-														</li>
+											<td><span class="label label-success">Approved</span></td>
 
-														<li class="dd-item" data-id="7">
+										</tr>
 
-															<div class="dd-handle">Item 7</div>
+										<tr class="odd gradeX">
 
-														</li>
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 
-														<li class="dd-item" data-id="8">
+											<td>looper</td>
 
-															<div class="dd-handle">Item 8</div>
+											<td class="hidden-480"><a
+												href="mailto:looper90@gmail.com">looper90@gmail.com</a></td>
 
-														</li>
+											<td class="hidden-480">120</td>
 
-													</ol>
+											<td class="center hidden-480">12.12.2011</td>
 
-												</li>
+											<td><span class="label label-warning">Suspended</span></td>
 
-												<li class="dd-item" data-id="9">
+										</tr>
 
-													<div class="dd-handle">Item 9</div>
+										<tr class="odd gradeX">
 
-												</li>
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 
-												<li class="dd-item" data-id="10">
+											<td>userwow</td>
 
-													<div class="dd-handle">Item 10</div>
+											<td class="hidden-480"><a
+												href="mailto:userwow@yahoo.com">userwow@yahoo.com</a></td>
 
-												</li>
+											<td class="hidden-480">20</td>
 
-											</ol>
+											<td class="center hidden-480">12.12.2012</td>
 
-										</li>
+											<td><span class="label label-success">Approved</span></td>
 
-										<li class="dd-item" data-id="11">
+										</tr>
 
-											<div class="dd-handle">Item 11</div>
+										<tr class="odd gradeX">
 
-										</li>
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 
-										<li class="dd-item" data-id="12">
+											<td>user1wow</td>
 
-											<div class="dd-handle">Item 12</div>
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">userwow@gmail.com</a></td>
 
-										</li>
+											<td class="hidden-480">20</td>
 
-									</ol>
+											<td class="center hidden-480">12.12.2012</td>
 
-								</div>
+											<td><span class="label label-inverse">Blocked</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>restest</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">test@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">12.12.2012</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>foopl</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">19.11.2010</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>weep</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">19.11.2010</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>coop</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">19.11.2010</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>pppol</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">19.11.2010</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>test</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">19.11.2010</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>userwow</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">userwow@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">12.12.2012</td>
+
+											<td><span class="label label-inverse">Blocked</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>test</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">test@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">12.12.2012</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>goop</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">12.11.2010</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>weep</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">15.11.2011</td>
+
+											<td><span class="label label-inverse">Blocked</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>toopl</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">16.11.2010</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>userwow</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">userwow@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">9.12.2012</td>
+
+											<td><span class="label label-inverse">Blocked</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>tes21t</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">test@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">14.12.2012</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>fop</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">13.11.2010</td>
+
+											<td><span class="label label-warning">Suspended</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>kop</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">17.11.2010</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>vopl</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">19.11.2010</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>userwow</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">userwow@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">12.12.2012</td>
+
+											<td><span class="label label-inverse">Blocked</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>wap</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">test@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">12.12.2012</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>test</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">19.12.2010</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>toop</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">17.12.2010</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>weep</td>
+
+											<td class="hidden-480"><a
+												href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+
+											<td class="hidden-480">20</td>
+
+											<td class="center hidden-480">15.11.2011</td>
+
+											<td><span class="label label-success">Approved</span></td>
+
+										</tr>
+
+									</tbody>
+
+								</table>
+
 
 							</div>
 
