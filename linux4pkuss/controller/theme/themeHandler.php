@@ -9,8 +9,9 @@ $smarty->setCompileDir ( $ROOT . '/templates_c' );
 $smarty->setCacheDir ( $ROOT . '/cache' );
 session_start ();
 $type = $_GET ['type'] . trim ();
-
+$num=$_GET['num'].trim();
 $user=$_SESSION['user'];
+
 if(1!=$user['role_id']){
 	header ( "location:/index.php?msg=auth_failure" );
 	return;
@@ -30,7 +31,7 @@ else if('add'==$type){
 		header("location:themeHandler.php?type=list&msg=failure");
 	}
 }else if('delete'==$type){
-	$num=$_GET['num'];
+
 	$themeService=new ThemeService();
 	$isSuccess=$themeService->deleteTheme($num);
 	if($isSuccess){
