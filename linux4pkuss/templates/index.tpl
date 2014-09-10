@@ -63,7 +63,7 @@
 				<div class="portlet box blue">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-cogs"></i>快速注册
+							<i class="icon-user"></i>快速注册
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -73,15 +73,23 @@
 						</div>
 					</div>
 					<div class="portlet-body">
-						<p>
-							<a href="/controller/user/userHandler.php?type=regist">Linux内存管理心得</a>
+						<ol>
+							<li>请填写真实邮箱，用于激活您的帐号；</li>
+							<li>包括 Gmail 在内很多邮件服务商会把<span class="label label-success">本站</span>发送的邮件识别为垃圾邮件；</li>
+							<li>如果您使用<span class="label label-info">163邮箱</span>，那么邮件可能在您的订阅邮件列表中</li>
+							<li>如果您没有收到<span class="label label-success">本站</span>发送的邮件，请注意查看您邮箱中的垃圾邮件；</li>
+							<li>请将来自<span class="label label-success">本站</span>的邮件设置成不是垃圾邮件，以便接受本站邮件；</li>
+							<li>如果您<span class="label label-important">忘记登录密码</span>，也可以通过此邮箱进行密码重置；</li>
+						</ol>
+						<p style="text-align: right">
+							<a href="/controller/user/userHandler.php?type=regist">进入注册</a>
 						</p>
 					</div>
 				</div>
 				<div class="portlet box green">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-cogs"></i>最新文章
+							<i class="icon-book"></i>最新文章
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -94,13 +102,13 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-						
+
 					</div>
 				</div>
 				<div class="portlet box purple">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-cogs"></i>最新资源
+							<i class="icon-download"></i>最新资源
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -113,7 +121,7 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-						
+
 					</div>
 				</div>
 
@@ -124,15 +132,14 @@
 					<div class="portlet-title">
 
 						<div class="caption">
-							<i class="icon-cogs"></i>教师简介
+							<i class="icon-thumbs-up"></i>教师简介
 						</div>
 
 						<div class="tools">
 
 							<a href="javascript:;" class="collapse"></a> <a
 								href="#portlet-config" data-toggle="modal" class="config"></a> <a
-								href="javascript:;" class="reload"></a> <a href="javascript:;"
-								class="remove"></a>
+								href="javascript:;" class="reload"></a>
 						</div>
 					</div>
 					<div class="portlet-body">
@@ -327,19 +334,76 @@
 
 									</div>
 									<div class="tab-pane" id="tab8">
-										<p>1. 核高基重大专项《开源操作系统内核分析和安全性评估》 2012.9-2013.12</p>
-										<p>2. 总装十二五《基于XX感知的XXXX服务技术研究》2011.7-2015.12</p>
-										<p>3. 横向《****风险评估方法和工具研究》2011.7-2012.12</p>
-										<p>4. 十一五项目《XXXX授权管理与访问控制系统》2006.1—2010.12</p>
-										<p>5. IBM合作项目《Linux on POWER》 2005.4—2009.1</p>
-										<p>6. 国家自然科学基金《无线传感器网络的安全体系结构研究》2007.1—2007.12</p>
-										<p>7. 科技部政府间合作项目《普适计算中对等网络技术研究》2005.1—2007.12</p>
-										<p>8. 国家科技攻关项目《国产基础软件技术培训系统研制与课程开发》2005.8—2007.6</p>
-										<p>9. 国家863项目《XXXX网络信息安全技术》2006.11—2007.6</p>
-										<p>10. IBM合作项目《Document Format Converter》 2005.11—2006.11
-										</p>
-										<p>11. 微软亚洲研究院资助项目《基于策略的移动设备安全应用框架》 2003.6—2004.6</p>
-										<p>12. 国家863项目《动态联盟协同项目管理系统》2001.7—2003.7</p>
+										<table class="table table-bordered table-hover">
+											<thead>
+												<tr>
+													<th></th>
+													<th>知识模块</th>
+													<th>知识点</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td>课程介绍和相关基础知识概述</td>
+												<td>Linux内核基本结构、Linux的历史、开放社区的文化、驱动程序介绍、内核编程基础</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>进程管理</td>
+												<td>Linux进程基本概念、进程的生命周期、进程上下文切换等</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>进程调度</td>
+												<td>Linux 进程调度策略、调度算法、进程切换、调度相关的调用</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>系统调用、中断处理</td>
+												<td>系统调用内核支持机制、系统调用处理函数、系统调用实现、系统调用上下文、Linux中断处理</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>内核同步</td>
+												<td>原子操作、自旋锁、RCU、内存屏障等linux内核同步机制</td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>内存管理（1）</td>
+												<td>内存寻址、Linux页式管理、物理页分配</td>
+											</tr>
+											<tr>
+												<td>7</td>
+												<td>内存管理（2）</td>
+												<td>内存初始化、伙伴系统建立、Slab管理、进程地址空间</td>
+											</tr>
+											<tr>
+												<td>8</td>
+												<td>文件系统</td>
+												<td>Linux虚拟文件系统、Ext3/Ext2文件系统结构</td>
+											</tr>
+											<tr>
+												<td>9</td>
+												<td>Linux设备驱动基础、字符设备驱动程序设计</td>
+												<td>Linux设备驱动基础、字符设备创建和加载、字符设备的操作、对字符设备进行poll
+													和select的实现、字符设备访问控制、IOCTL、阻塞IO、异步事件等</td>
+											</tr>
+											<tr>
+												<td>10</td>
+												<td>块设备驱动程序设计</td>
+												<td>块设备内核相关数据结构和组织、块设备操作、内核磁盘调度算法、请求处理。</td>
+											</tr>
+											<tr>
+												<td>11</td>
+												<td>网络设备驱动程序设计、USB设备驱动程序设计、PCI设备驱动程序设计</td>
+												<td>网络设备驱动程序的编写方法、高速网络设备驱动程序结构实现方法、使用DMA等；USB设备模型、USB驱动程序设计方法等；PCI驱动程序设计方法</td>
+											</tr>
+											<tr>
+												<td>12</td>
+												<td>课程报告</td>
+												<td>课堂报告</td>
+											</tr>
+										</table>
 									</div>
 									<div class="tab-pane" id="tab9">
 										<p>1、 《Understanding the Linux Kernel, 3rd Edition 》
@@ -403,7 +467,7 @@
 				<div class="portlet box red">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-cogs"></i>课程通知
+							<i class="icon-comments-alt"></i>课程通知
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -416,13 +480,13 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-						
+
 					</div>
 				</div>
 				<div class="portlet box yellow">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-cogs"></i>热门下载
+							<i class="icon-download-alt"></i>热门下载
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -435,7 +499,7 @@
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-						
+
 					</div>
 				</div>
 			</div>

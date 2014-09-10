@@ -5,11 +5,11 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li><a href="/index.php"><b class="icon-home"></b>首页</a></li>
-                <li><a href="#about"><b class="icon-comment"></b>课程简介</a></li>
-                <li><a href="#contact"><b class="icon-envelope"></b>项目信息</a></li>
-                <li><a href="#contact"><b class="icon-bell"></b>课程通知</a></li>
-                <li><a href="#contact"><b class="icon-book"></b>相关文章</a></li>
-                <li><a href="#contact"><b class="icon-download"></b>资源下载</a></li>
+     <li><a href="/controller/system_information/handler.php?type=introduction"><b class="icon-comment"></b>课程简介</a></li>
+                <li><a href="/controller/system_information/handler.php?type=project"><b class="icon-envelope"></b>项目信息</a></li>
+                <li><a href="/controller/system_information/handler.php?type=notice"><b class="icon-bell"></b>课程通知</a></li>
+                <li><a href="/controller/system_information/handler.php?type=article"><b class="icon-book"></b>相关文章</a></li>
+                <li><a href="/controller/system_information/handler.php?type=download"><b class="icon-download"></b>资源下载</a></li>
                 {if isset($smarty.session.user)}
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th-large"></i>个人中心<b class="caret"></b></a>
@@ -49,11 +49,11 @@
                     <li>
                         <form action="/controller/user/userHandler.php?type=login" method="post" style="width:300px;padding:3% 5% 0 5%">
                         <label>用户名</label>
-                        <input type="text" name="username" placeholder="Email/UserName/RealName">
+                        <input type="text" name="username" placeholder="Email/UserName/RealName" value="{$smarty.cookies.username}">
                          <label>密码</label>
-                        <input type="password" name="password">
+                        <input type="password" name="password" value="{$smarty.cookies.password}">
                         <label class="checkbox">
-                        <input type="checkbox" name="remember" value="remember">记住我？
+                        <input type="checkbox" name="remember" value="remember" checked>记住我？
                         </label>
                         <button type="submit" class="btn blue button-next" data-loading-text="Loading...">登录<i class="m-icon-swapright m-icon-white"></i></button>
                         <span class="help-block" style="float:right;padding-right:5%"><a href="/user/forget.html">忘记密码？</a></span>

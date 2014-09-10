@@ -12,12 +12,12 @@ class ThemeManageService {
 	// TODO - Insert your code here
 	function check_input($value)
 	{
-		// È¥³ýÐ±¸Ü
+		// È¥ï¿½ï¿½Ð±ï¿½ï¿½
 		if (get_magic_quotes_gpc())
 		{
 			$value = stripslashes($value);
 		}
-		// Èç¹û²»ÊÇÊý×ÖÔò¼ÓÒýºÅ
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		if (!is_numeric($value))
 		{
 			$value = "'" . mysql_real_escape_string($value) . "'";
