@@ -19,6 +19,7 @@
 <link href="/bootstrap/bootstrap/css/jquery.gritter.css"
 	rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="/bootstrap/bootstrap/css/DT_bootstrap.css" />
+<link rel="stylesheet" href="/bootstrap/bootstrap/css/select2.css" />
 <link href="/bootstrap/bootstrap/css/bootstrap-modal.css"
 	rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="/bootstrap/bootstrap/image/favicon.ico" />
@@ -59,6 +60,7 @@
 <script src="/bootstrap/bootstrap/js/app.js"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script src="/bootstrap/bootstrap/js/table-managed.js"></script>
+<script src="/bootstrap/bootstrap/js/select2.min.js"></script>
 
 <script src="/bootstrap/bootstrap/js/jquery.dataTables.js"></script>
 <script src="/bootstrap/bootstrap/js/form-components.js"></script>
@@ -227,18 +229,23 @@
 									</thead>
 
 									<tbody>
-										{foreach from=$topThemes item=theme}
+
 										<tr class="odd gradeX">
-											<td><input type="checkbox" class="checkboxes"
-												value="1" /></td>
-											<td>{$theme.name}</td>
-											<td class="center hidden-480">{$theme.num}</td>
-											<td class="hidden-480">{$theme.createdate}</td>
-											<td class="hidden-480">{$theme.user_id}</td>
-											<td class="hidden-480">{$theme.user_id}</td>
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>shuxer</td>
+
+											<td class="hidden-480"><a href="mailto:shuxer@gmail.com">shuxer@gmail.com</a></td>
+
+											<td class="hidden-480">120</td>
+
+											<td class="center hidden-480">12 Jan 2012</td>
+
 											<td><span class="label label-success">Approved</span></td>
+
 										</tr>
-										{/foreach}
+
 										<tr class="odd gradeX">
 
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
