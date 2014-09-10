@@ -221,7 +221,7 @@
 											<th class="hidden-480">主题编号</th>
 											<th class="hidden-480">创建时间</th>
 											<th class="hidden-480">创建人</th>
-											<th colspan="3">操作</th>
+											<th class="center" colspan="3">操作</th>
 
 										</tr>
 
@@ -231,20 +231,19 @@
 
 										{foreach from=$topThemes item=theme}
 										<tr class="odd gradeX">
-											<td><input type="checkbox" class="checkboxes"
-												value="1" /></td>
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 											<td>{$theme.name}</td>
 											<td class="hidden-480">{$theme.num}</td>
 											<td class="hidden-480">{$theme.createdate}</td>
 											<td class="hidden-480">{$theme.user_id}</td>
-											<td><a href="#"><i class="icon-pencil"></i> 编辑</a>
-											<a href="#"><i class="icon-pencil"></i> 编辑</a>
-											<a href="#"><i class="icon-pencil"></i> 编辑</a>
-											</td>
-											
+											<td><a href="#" title="详情"><i
+													class="icon-envelope-alt"></i></a> &npsb;<a href="#" title="编辑"><i
+													class=icon-edit></i></a> &npsb;<a href="#" title="删除"><i
+													class="icon-trash"></i></a></td>
+
 										</tr>
 										{/foreach}
-										
+
 
 									</tbody>
 
