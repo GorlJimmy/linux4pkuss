@@ -95,15 +95,17 @@ class ThemeService {
 	}
 
 
-	public function AddTheme($Object)
+	public function createTheme($theme,$user)
 	{
 		require_once $this->PATH . '/util/DBHelper.class.php';
 
 		$db = new DBHelper ();
-		$sql = "insert into theme_tb  values(null,'','$Object[Title]',now(),'$Object[TextArea]','$Object[Path]',0,1,0,'$Object[NotifyID]') ";
-		$result=$db->exec_non_query($sql);
+		$num = time () . rand ( 1, 10000 );
+		$now = date ( 'Y-m-d h:m:s', time () );
+		$sql = "insert into theme_tb  values(null,'$num','$theme[name]',$now,'$theme[description]','$theme[path]',0,1,$user[id],0";
+		$result=$db->exec_other($sql);
 
-		return $result;
+		return $result>0?true:false;
 	}
 
 	public function GetOneTheme($strWhere)

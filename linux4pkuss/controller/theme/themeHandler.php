@@ -16,13 +16,18 @@ if(1!=$user['role_id']){
 	return;
 }
 if('list'==$type){
-// 	$themeService=new ThemeService();
-// 	$topThemes=$themeService->themeList(0);
-// 	$smarty->assign('topThemes',$topThemes);
-	
+	$themeService=new ThemeService();
+	$topThemes=$themeService->themeList(0);
+	$smarty->assign('topThemes',$topThemes);
+
 	$smarty->display('admin/theme/themeList.tpl');
 }
-else
-{
-	//$result=$themeService->GetList($select[0]["id"]);
+else if('add'==$type){
+	$themeService=new ThemeService();
+	$isSuccess=$themeService->createTheme($_POST,$user);
+	if($isSuccess){
+		header("location:themeHandler.php?type=list&msg=success");
+	}else{
+		header("location:themeHandler.php?type=list&msg=failure");
+	}
 }
