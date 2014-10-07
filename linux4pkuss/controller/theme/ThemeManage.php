@@ -5,13 +5,12 @@ require_once '../service/ThemeManageService.class.php';
 
 $smarty = new Smarty;
 $smarty->force_compile = true;
-//$smarty->debugging = true;
 $smarty->caching = true;
 $smarty->cache_lifetime = 120;
 $action=$_GET['Action'];
 $id=(int)$_GET['ID'];
 $themeQuery=new ThemeManageService();
-//¶ÁÈ¡Ò»¼¶±êÌâÁĞ±í
+//ï¿½ï¿½È¡Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½
 $select=$themeQuery->GetNotifyThemeList(0);
 if($action=="Get"){
 	$result=$themeQuery->GetList($id);

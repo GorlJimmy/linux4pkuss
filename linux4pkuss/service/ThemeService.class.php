@@ -112,7 +112,7 @@ class ThemeService {
 		require_once $this->PATH . '/util/DBHelper.class.php';
 
 		$db = new DBHelper ();
-		$param=$num;
+		$param=self::check_input($num);
 		$sql = "select * from theme_tb where num=$param limit 1 ";
 		$result=$db->exec_query($sql);
 		return count($result)>0?$result[0]:null;
@@ -135,4 +135,3 @@ class ThemeService {
 
 }
 
-?>

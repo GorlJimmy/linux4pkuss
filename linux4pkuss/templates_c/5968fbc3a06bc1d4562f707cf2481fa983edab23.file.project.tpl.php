@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-09-10 00:32:45
+<?php /* Smarty version Smarty-3.1.19, created on 2014-09-11 00:40:52
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/project.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:58237193540b1e2f215e14-03428149%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5968fbc3a06bc1d4562f707cf2481fa983edab23' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/project.tpl',
-      1 => 1410323560,
+      1 => 1410396822,
       2 => 'file',
     ),
   ),
@@ -96,16 +96,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					</div>
 					<div class="portlet-body">
 						<p>
-							<a href="http://59.56.74.25:2233/linuxProject" target="_blank">Linux内核图解软件链接</a>
+							<a href="http://www.linux4pku.org.cn:2233/linuxProject" target="_blank">Linux内核图解软件链接</a>
 						</p>
 						<p>
-							<a href="http://59.56.74.25:2233/linuxProject" target="_blank">Linux内核图解软件用户手册</a>
+							<a href="http://www.linux4pku.org.cn:2233/linuxProject" target="_blank">Linux内核图解软件用户手册</a>
 						</p>
 						<p>
-							<a href="http://59.56.74.25:2233/linuxProject" target="_blank">Linux内核图解软件的设计</a>
+							<a href="http://www.linux4pku.org.cn:2233/linuxProject" target="_blank">Linux内核图解软件的设计</a>
 						</p>
 						<p>
-							<a href="http://59.56.74.25:2233/linuxProject" target="_blank">Linux内核图解软件简介</a>
+							<a href="http:/www.linux4pku.org.cn:2233/linuxProject" target="_blank">Linux内核图解软件简介</a>
 						</p>
 					</div>
 				</div>

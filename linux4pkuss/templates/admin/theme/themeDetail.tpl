@@ -116,12 +116,11 @@
 							role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal"
-									aria-hidden="true">&times;</button>
-								<h3>新增子主题</h3>
+									aria-hidden="true"></button>
+								<h4>添加<span class="label label-success">{$theme.name}</span>的子主题</h4>
 							</div>
 							<div class="portlet-body form">
-								<form
-									action="/controller/theme/themeHandler.php?type=add&parent_id={theme.parent_id}"
+								<form action="/controller/theme/themeHandler.php?type=add&parent_id={$theme.id}"
 									class="form-horizontal" method="post">
 									<div class="control-group">
 
@@ -205,7 +204,11 @@
 
 							</div>
 
-							<div class="portlet-body "></div>
+							<div class="portlet-body ">
+
+
+								
+							</div>
 
 						</div>
 
@@ -230,4 +233,3 @@
 	<!-- BEGIN FOOTER -->
 	<div class="footer">{include file="../../footer.tpl"}</div>
 	<!-- END FOOTER -->
-</html>
