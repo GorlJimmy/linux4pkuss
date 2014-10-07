@@ -22,7 +22,6 @@ foreach($provinces as $key=>$value ){
 	$province_code=$provinces[$key]['province_code'];
 	//echo $sql2."'$province_code'";
 	$areas=$db->exec_query($sql2."'$province_code'");
-
 	foreach ($areas as $key=>$value){
 		$new_city_code=$areas[$key]['province_code'].$areas[$key]['city_code'];
 		$new_area_code=$areas[$key]['province_code'].$areas[$key]['city_code'].$areas[$key]['area_code'];
