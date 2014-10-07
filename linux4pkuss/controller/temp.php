@@ -18,6 +18,7 @@ $provinces=$db->exec_query($sql1);
 //  		echo $sql3."<br>";
 //  	}
 // }
+
 foreach($provinces as $key=>$value ){
 	$province_code=$provinces[$key]['province_code'];
 	//echo $sql2."'$province_code'";
