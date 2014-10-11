@@ -100,7 +100,7 @@
 					</div>
 					<div class="portlet-body">
 						<p>
-							<a href="#">Linux内存管理心得</a>
+							<a href="/controller/article/articleHandler.php?type=challenge"">2014红帽挑战比赛</a>
 						</p>
 
 					</div>

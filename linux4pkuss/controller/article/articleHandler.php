@@ -24,6 +24,9 @@ if("add"==$type){
 	$rst=$articleadd->article_add($num,$title,$createdate,$content,$isshare,$theme_id);
 	header('location:articleHandler.php?type=query');
 
+}else if("challenge"==$type){
+	$smarty->display('article/redhat_challenge.tpl');
+
 }else if("delete"==$type){
 	//去掉字符串的最后一个逗号，可以删除多篇文章
 	$id=rtrim($_GET['id'],',');
