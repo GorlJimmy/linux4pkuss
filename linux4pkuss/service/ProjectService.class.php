@@ -1,5 +1,5 @@
 <?php
-class ThemeService {
+class ProjectService {
 	private $PATH;
 	function __construct() {
 		$this->PATH = $_SERVER ['DOCUMENT_ROOT'];
@@ -17,13 +17,13 @@ class ThemeService {
 		return $value;
 	}
 
+	
 
-
-	public function themeList($level)
+	public function projectList($level)
 	{
 		require_once $this->PATH . '/util/DBHelper.class.php';
 		$db = new DBHelper ();
-		$sql = "select * from theme_tb where parent_id=$level order by id desc";
+		$sql = "select * from project_tb where parent_id=$level order by id desc";
 		$result=$db->exec_query($sql);
 		return $result;
 	}
@@ -34,7 +34,7 @@ class ThemeService {
 
 		$db = new DBHelper ();
 		$param=self::check_input($strWhere);
-		$sql = "update theme_tb set isshown=1 where id=$param ";
+		$sql = "update project_tb set isshown=1 where id=$param ";
 		$result=$db->exec_query($sql);
 		return $result;
 	}
@@ -45,7 +45,7 @@ class ThemeService {
 
 		$db = new DBHelper ();
 		$param=self::check_input($strWhere);
-		$sql = "update theme_tb set isshown=0 where id=$param ";
+		$sql = "update project_tb set isshown=0 where id=$param ";
 		$result=$db->exec_query($sql);
 		return $result;
 	}
@@ -56,7 +56,7 @@ class ThemeService {
 
 		$db = new DBHelper ();
 		$param=self::check_input($strWhere);
-		$sql = "update theme_tb set ishomepage=1 where id=$param ";
+		$sql = "update project_tb set ishomepage=1 where id=$param ";
 		$result=$db->exec_query($sql);
 		return $result;
 	}
@@ -67,24 +67,24 @@ class ThemeService {
 
 		$db = new DBHelper ();
 		$param=self::check_input($strWhere);
-		$sql = "update theme_tb set ishomepage=0 where id=$param ";
+		$sql = "update project_tb set ishomepage=0 where id=$param ";
 		$result=$db->exec_query($sql);
 		return $result;
 	}
 
-	public function deleteTheme($num)
+	public function deleteProject($num)
 	{
 		require_once $this->PATH . '/util/DBHelper.class.php';
 
 		$db = new DBHelper ();
 		$param=self::check_input($num);
-		$sql = "delete from theme_tb where num='$param'";
+		$sql = "delete from project_tb where num='$param'";
 		$result=$db->exec_other($sql);
 		return $result>0?true:false;
 	}
 
 
-	public function createTheme($theme,$user)
+	public function createProject($project,$user)
 	{
 		require_once $this->PATH . '/util/DBHelper.class.php';
 
@@ -92,7 +92,7 @@ class ThemeService {
 		$num = time () . rand ( 1, 10000 );
 		$now = date ( 'Y-m-d h:m:s', time () );
 		$user_id=intval($user['id']);
-		$sql = "insert into theme_tb (num,name,createdate,description,path,user_id,parent_id) values('$num','$theme[name]','$now','$theme[description]','$theme[path]',$user_id,0)";
+		$sql = "insert into project_tb (num,name,createdate,description,path,user_id,parent_id) values('$num','$project[name]','$now','$project[description]','$project[path]',$user_id,0)";
 		$result=$db->exec_other($sql);
 
 		return $result>0?true:false;
@@ -104,7 +104,7 @@ class ThemeService {
 
 		$db = new DBHelper ();
 		$param=self::check_input($num);
-		$sql = "select * from theme_tb where num=$param limit 1 ";
+		$sql = "select * from project_tb where num=$param limit 1 ";
 		$result=$db->exec_query($sql);
 		return count($result)>0?$result[0]:null;
 	}
@@ -118,7 +118,7 @@ class ThemeService {
 		$path=$Object[0][path];
 		$content=$Object[0][description];
 		$id=$Object[0][id];
-		$sql = "update theme_tb set tname='$title',description='$content',path='$path' where id='$id' ";
+		$sql = "update project_tb set name='$title',description='$content',path='$path' where id='$id' ";
 		$result=$db->exec_non_query($sql);
 
 		return $result;

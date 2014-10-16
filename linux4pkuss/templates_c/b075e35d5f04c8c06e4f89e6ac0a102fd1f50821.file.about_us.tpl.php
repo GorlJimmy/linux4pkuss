@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-09-09 22:56:28
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-16 13:14:34
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/about_us.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:151450753553fc1f88d8a0f9-86003099%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b075e35d5f04c8c06e4f89e6ac0a102fd1f50821' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/about_us.tpl',
-      1 => 1410317782,
+      1 => 1410396822,
       2 => 'file',
     ),
   ),
@@ -131,7 +131,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div>
 			<div class="span6">
 				<iframe src="/bootstrap/bootstrap/video/video4pku.mp4"
-					style="width: 100%; height: 327px; border: 0" ></iframe>
+					style="width: 100%; height: 327px; border: 0" autoscreen></iframe>
 
 			</div>
 
@@ -143,7 +143,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 		<div class="headline">
 
-			<h3>Meet Our Team</h3>
+			<h3>我们的团队</h3>
 
 		</div>
 
@@ -154,7 +154,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<div class="meet-our-team">
 
 					<h3>
-						LIQING<small>CEO</small>
+						李晴<small>QQ:1037962767</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
@@ -162,9 +162,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 					<div class="team-info">
 
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce
-							dapibus, justo sit amet risus etiam porta sem...</p>
-
+						<p>北京大学，软件开发方向</p>
+						<p>北京大学，软件开发方向</p>
 						<div class="bdsharebuttonbox">
 							<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
 								class="bds_qzone" data-cmd="qzone"></a><a href="#"
@@ -184,7 +183,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<div class="meet-our-team">
 
 					<h3>
-						Marta Doe <small>Project Manager</small>
+						路婧威 <small>QQ:1156407389</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/team_info/ljw.jpg" alt=""
@@ -213,7 +212,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<div class="meet-our-team">
 
 					<h3>
-						Bob Nilson <small> CEO</small>
+						许松 <small>QQ:464446732</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/image/2.jpg" alt=""
@@ -243,7 +242,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<div class="meet-our-team">
 
 					<h3>
-						Marta Doe <small>Project Manager</small>
+						肖勍星 <small>QQ:277597940</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/image/3.jpg" alt=""
@@ -276,7 +275,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<div class="meet-our-team">
 
 					<h3>
-						LIQING<small> CEO</small>
+						高晓宁<small>QQ:24778204</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
@@ -305,7 +304,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<div class="meet-our-team">
 
 					<h3>
-						LIQING<small> CEO</small>
+						田晓宇<small>QQ:542056066</small>
 					</h3>
 
 					<img src="/bootstrap/bootstrap/team_info/lq.jpg" alt=""
