@@ -12,10 +12,10 @@ $type = $_GET ['type'] . trim ();
 $num = $_GET ['num'] . trim ();
 $user = $_SESSION ['user'];
 
-if (1 != $user ['role_id']) {
-	header ( "location:/index.php?msg=auth_failure" );
-	return;
-}
+// if (1 != $user ['role_id']) {
+// 	header ( "location:/index.php?msg=auth_failure" );
+// 	return;
+// }
 if ('list' == $type) {
 	$articleService = new ArticleService ();
 	$articles = $articleService->articleList ();
@@ -46,12 +46,12 @@ if ('list' == $type) {
 	}
 } else if ("query" == $type) {
 	
-	$all_article = new ArticleService ();
-	$rst = $all_article->article_queryAll ();
+	$articleService = new ArticleService ();
+	$article = $articleService->queryArticle ($num);
 	
-	$smarty->assign ( 'resultset', $rst );
+	$smarty->assign ( 'article', $article );
 	
-	$smarty->display ( 'article/article_query.tpl' );
+	$smarty->display ( 'article/articleDetail.tpl' );
 } else if ("edit" == $type) {
 	
 	$id = $_POST ['id'];
@@ -112,5 +112,9 @@ if ('list' == $type) {
 	$smarty->assign ( 'rst_next', $result_next );
 	
 	$smarty->display ( 'article/article_show.tpl' );
+}else if('newArticle'==$type){
+	$articleService = new ArticleService ();
+	$articles = $articleService->articleList ();
+	echo json_encode($articles);
 }
 

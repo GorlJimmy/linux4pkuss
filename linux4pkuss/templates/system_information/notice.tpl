@@ -47,6 +47,7 @@
 	src="/bootstrap/bootstrap/js/jquery.bootpag.min.js"></script>
 <script src="/bootstrap/bootstrap/js/app.js"></script>
 <script src="/bootstrap/bootstrap/js/ui-general.js"></script>
+<script src="/bootstrap/bootstrap/javascript/index.js"></script>
 <script>
 	jQuery(document).ready(function() {
 		App.init();
@@ -56,13 +57,13 @@
 </head>
 <body>
 	<header> {include file="header_nav.tpl"} </header>
-	<div class="container-fluid" style="padding: 60px 8% 0 8%">
+	<div class="container-fluid" style="padding: 4% 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
 				<div class="portlet box blue">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-cogs"></i>快速注册
+							<i class="icon-cogs"></i>课程通知
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -71,9 +72,9 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newCourse">
 						<p>
-							<a href="/controller/user/userHandler.php?type=regist">Linux内存管理心得</a>
+							<a href="#">Linux内存管理心得</a>
 						</p>
 					</div>
 				</div>
@@ -89,7 +90,7 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newArticle">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
@@ -108,7 +109,7 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newReourse">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
@@ -280,7 +281,7 @@
 				<div class="portlet box red">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-comments"></i>课程通知
+							<i class="icon-comments"></i>友情链接
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -289,7 +290,7 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newLink">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
@@ -308,7 +309,7 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newDown">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>

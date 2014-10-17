@@ -48,6 +48,7 @@
 	src="/bootstrap/bootstrap/js/jquery.bootpag.min.js"></script>
 <script src="/bootstrap/bootstrap/js/app.js"></script>
 <script src="/bootstrap/bootstrap/js/ui-general.js"></script>
+<script src="/bootstrap/bootstrap/javascript/index.js"></script>
 <script>
 	jQuery(document).ready(function() {
 		App.init();
@@ -57,7 +58,7 @@
 </head>
 <body>
 	<header> {include file="header_nav.tpl"} </header>
-	<div class="container-fluid" style="padding: 60px 8% 0 8%">
+	<div class="container-fluid" style="padding: 4% 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
 				<div class="portlet box blue">
@@ -98,11 +99,7 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
-						<p>
-							<a href="/controller/article/articleHandler.php?type=challenge"">2014红帽挑战比赛</a>
-						</p>
-
+					<div class="portlet-body" id="newArticle">
 					</div>
 				</div>
 				<div class="portlet box purple">
@@ -117,10 +114,7 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
+					<div class="portlet-body" id="newResource">
 
 					</div>
 				</div>
@@ -458,11 +452,7 @@
 					</div>
 
 				</div>
-
-
 			</div>
-
-
 			<div class="span3">
 				<div class="portlet box red">
 					<div class="portlet-title">
@@ -476,11 +466,7 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-
+					<div class="portlet-body" id="newCourse">
 					</div>
 				</div>
 				<div class="portlet box yellow">
@@ -495,11 +481,22 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-
+					<div class="portlet-body" id="newDown">
+					</div>
+				</div>
+				<div class="portlet box green">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-download-alt"></i>友情链接
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newLink">
 					</div>
 				</div>
 			</div>

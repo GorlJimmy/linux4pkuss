@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-09-10 00:20:16
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-17 11:16:47
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/notice.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:402628917540b1c32d98a70-53871739%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a62da00f5761863d820cb200b69d60513a8f17c5' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/system_information/notice.tpl',
-      1 => 1410322810,
+      1 => 1413558946,
       2 => 'file',
     ),
   ),
@@ -68,6 +68,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	src="/bootstrap/bootstrap/js/jquery.bootpag.min.js"></script>
 <script src="/bootstrap/bootstrap/js/app.js"></script>
 <script src="/bootstrap/bootstrap/js/ui-general.js"></script>
+<script src="/bootstrap/bootstrap/javascript/index.js"></script>
 <script>
 	jQuery(document).ready(function() {
 		App.init();
@@ -78,13 +79,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <body>
 	<header> <?php echo $_smarty_tpl->getSubTemplate ("header_nav.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
  </header>
-	<div class="container-fluid" style="padding: 60px 8% 0 8%">
+	<div class="container-fluid" style="padding: 4% 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
 				<div class="portlet box blue">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-cogs"></i>快速注册
+							<i class="icon-cogs"></i>课程通知
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -93,9 +94,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newCourse">
 						<p>
-							<a href="/controller/user/userHandler.php?type=regist">Linux内存管理心得</a>
+							<a href="#">Linux内存管理心得</a>
 						</p>
 					</div>
 				</div>
@@ -111,7 +112,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newArticle">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
@@ -130,7 +131,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newReourse">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
@@ -303,7 +304,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<div class="portlet box red">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-comments"></i>课程通知
+							<i class="icon-comments"></i>友情链接
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -312,7 +313,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newLink">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
@@ -331,7 +332,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newDown">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>

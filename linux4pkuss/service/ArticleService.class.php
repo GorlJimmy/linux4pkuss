@@ -26,6 +26,13 @@ class ArticleService {
 		$result = $db->exec_other ( $sql );
 		return $result > 0 ? true : false;
 	}
+	public function queryArticle($num){
+		require_once $this->PATH . '/util/DBHelper.class.php';
+		$sql = "select * from article_tb where num=$num order by id asc";
+		$db = new DBHelper ();
+		$result = $db->exec_query ( $sql );
+		return $result[0];
+	}
 	// 文章列表中显示经过审核的文章
 	public function article_queryAll() {
 		require_once $this->PATH . '/util/DBHelper.class.php';

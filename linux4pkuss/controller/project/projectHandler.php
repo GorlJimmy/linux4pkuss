@@ -46,4 +46,8 @@ if ('list' == $type) {
 	$smarty->display ( 'admin/theme/themeDetail.tpl' );
 } else if ('edit' == $type) {
 	header ( "location:themeHandler.php?type=list&msg=success" );
+} else if ('project_list' == $type) {
+	$projectService = new ProjectService ();
+	$allProjects = $projectService->getAllProject ();
+	echo json_encode($allProjects);
 }

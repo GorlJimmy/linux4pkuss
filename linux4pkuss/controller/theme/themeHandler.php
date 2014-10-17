@@ -45,4 +45,8 @@ if ('list' == $type) {
 	$smarty->display ( 'admin/theme/themeDetail.tpl' );
 } else if ('edit' == $type) {
 	header ( "location:themeHandler.php?type=list&msg=success" );
+} else if ('theme_list' == $type) {
+	$themeService = new ThemeService ();
+	$allThemes = $themeService->getAllTheme ();
+	echo json_encode ( $allThemes );
 }
