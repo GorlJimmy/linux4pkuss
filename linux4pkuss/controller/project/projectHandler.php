@@ -16,6 +16,7 @@ if (1 != $user ['role_id']) {
 	header ( "location:/index.php?msg=auth_failure" );
 	return;
 }
+
 if ('list' == $type) {
 	$projectService = new ProjectService ();
 	$topProjects = $projectService->projectList ( 0 );
