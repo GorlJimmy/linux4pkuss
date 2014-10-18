@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-09-09 20:58:05
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-17 13:28:58
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:188816133453fa94e9504045-90777898%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '42f4e36bfd041d02d487a3da2144abc7dd3ed50e' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/home.tpl',
-      1 => 1410309168,
+      1 => 1413566916,
       2 => 'file',
     ),
   ),
@@ -79,7 +79,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <body>
 	<header> <?php echo $_smarty_tpl->getSubTemplate ("header_nav.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
  </header>
-	<div class="container-fluid" style="margin: 60px 8% 0 8%">
+	<div class="container-fluid" style="padding: 4% 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span2">
 				<!--Sidebar content-->

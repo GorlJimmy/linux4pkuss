@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-09-10 01:42:12
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-17 13:26:37
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/admin/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1558520360540fe4913fa685-48590477%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6a653fb27b73eb912290fde99e1a2bb70ee5048b' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/admin/header.tpl',
-      1 => 1410327716,
+      1 => 1413566792,
       2 => 'file',
     ),
   ),
@@ -19,27 +19,38 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_540fe491409c94_68213506',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_540fe491409c94_68213506')) {function content_540fe491409c94_68213506($_smarty_tpl) {?>	<div class="header navbar navbar-fixed-top">
+<?php if ($_valid && !is_callable('content_540fe491409c94_68213506')) {function content_540fe491409c94_68213506($_smarty_tpl) {?>
+<div class="header navbar navbar-fixed-top">
 
-		<!-- BEGIN TOP NAVIGATION BAR -->
+	<!-- BEGIN TOP NAVIGATION BAR -->
 
-		<div class="navbar-inner">
+	<div class="navbar-inner">
 
-			<div class="container">
+		<div class="container">
 
-				<!-- BEGIN LOGO -->
-				<a class="brand" href="/index.php">Linux</a>
-				<!-- END LOGO -->
-				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
-				<div class="nav-collapse collapse">
+			<!-- BEGIN LOGO -->
+			<a class="brand" href="/index.php">Linux</a>
+			<!-- END LOGO -->
+			<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+			<div class="nav-collapse collapse">
 				<ul class="nav">
-                <li><a href="/index.php"><b class="icon-home"></b>首页</a></li>
-                <li><a href="#about"><b class="icon-comment"></b>课程简介</a></li>
-                <li><a href="#contact"><b class="icon-envelope"></b>项目信息</a></li>
-                <li><a href="#contact"><b class="icon-bell"></b>课程通知</a></li>
-                <li><a href="#contact"><b class="icon-book"></b>相关文章</a></li>
-                <li><a href="#contact"><b class="icon-download"></b>资源下载</a></li>
-                </ul>
+					<li><a href="/index.php"><b class="icon-home"></b>首页</a></li>
+					<li><a
+						href="/controller/system_information/handler.php?type=introduction"><b
+							class="icon-comment"></b>课程简介</a></li>
+					<li><a
+						href="/controller/system_information/handler.php?type=project"><b
+							class="icon-envelope"></b>项目信息</a></li>
+					<li><a
+						href="/controller/system_information/handler.php?type=notice"><b
+							class="icon-bell"></b>课程通知</a></li>
+					<li><a
+						href="/controller/system_information/handler.php?type=article"><b
+							class="icon-book"></b>相关文章</a></li>
+					<li><a
+						href="/controller/system_information/handler.php?type=download"><b
+							class="icon-download"></b>资源下载</a></li>
+				</ul>
 				<!-- END RESPONSIVE MENU TOGGLER -->
 				<!-- BEGIN TOP NAVIGATION MENU -->
 				<ul class="nav pull-right">
@@ -238,9 +249,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<li class="dropdown user"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown"> <img alt=""
 							src="/photoes/<?php echo $_SESSION['user']['imgurl'];?>
-" style="width:30px;height:30px"/> <span
-							class="username"><?php echo $_SESSION['user']['realname'];?>
-</span> <i class="icon-angle-down"></i>
+"
+							style="width: 30px; height: 30px" /> <span class="username"><?php echo $_SESSION['user']['realname'];?>
+</span>
+							<i class="icon-angle-down"></i>
 
 					</a>
 
@@ -254,7 +266,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 							<li><a href="inbox.html"><i class="icon-envelope"></i>
 									My Inbox(3)</a></li>
 
-							<li><a href="/controller/user/userHandler.php?type=profile"><i class="icon-tasks"></i>个人信息</a></li>
+							<li><a href="/controller/user/userHandler.php?type=profile"><i
+									class="icon-tasks"></i>个人信息</a></li>
 
 							<li class="divider"></li>
 							<li><a href="/controller/user/userHandler.php?type=lock"><i
@@ -268,15 +281,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<!-- END USER LOGIN DROPDOWN -->
 
 				</ul>
-</div>
-				<!-- END TOP NAVIGATION MENU -->
-
 			</div>
+			<!-- END TOP NAVIGATION MENU -->
 
 		</div>
 
-		<!-- END TOP NAVIGATION BAR -->
-
 	</div>
 
-	<!-- END HEADER --><?php }} ?>
+	<!-- END TOP NAVIGATION BAR -->
+
+</div>
+
+<!-- END HEADER --><?php }} ?>

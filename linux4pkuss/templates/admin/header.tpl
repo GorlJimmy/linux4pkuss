@@ -1,24 +1,35 @@
-	<div class="header navbar navbar-fixed-top">
 
-		<!-- BEGIN TOP NAVIGATION BAR -->
+<div class="header navbar navbar-fixed-top">
 
-		<div class="navbar-inner">
+	<!-- BEGIN TOP NAVIGATION BAR -->
 
-			<div class="container">
+	<div class="navbar-inner">
 
-				<!-- BEGIN LOGO -->
-				<a class="brand" href="/index.php">Linux</a>
-				<!-- END LOGO -->
-				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
-				<div class="nav-collapse collapse">
+		<div class="container">
+
+			<!-- BEGIN LOGO -->
+			<a class="brand" href="/index.php">Linux</a>
+			<!-- END LOGO -->
+			<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+			<div class="nav-collapse collapse">
 				<ul class="nav">
-                <li><a href="/index.php"><b class="icon-home"></b>首页</a></li>
-                <li><a href="#about"><b class="icon-comment"></b>课程简介</a></li>
-                <li><a href="#contact"><b class="icon-envelope"></b>项目信息</a></li>
-                <li><a href="#contact"><b class="icon-bell"></b>课程通知</a></li>
-                <li><a href="#contact"><b class="icon-book"></b>相关文章</a></li>
-                <li><a href="#contact"><b class="icon-download"></b>资源下载</a></li>
-                </ul>
+					<li><a href="/index.php"><b class="icon-home"></b>首页</a></li>
+					<li><a
+						href="/controller/system_information/handler.php?type=introduction"><b
+							class="icon-comment"></b>课程简介</a></li>
+					<li><a
+						href="/controller/system_information/handler.php?type=project"><b
+							class="icon-envelope"></b>项目信息</a></li>
+					<li><a
+						href="/controller/system_information/handler.php?type=notice"><b
+							class="icon-bell"></b>课程通知</a></li>
+					<li><a
+						href="/controller/system_information/handler.php?type=article"><b
+							class="icon-book"></b>相关文章</a></li>
+					<li><a
+						href="/controller/system_information/handler.php?type=download"><b
+							class="icon-download"></b>资源下载</a></li>
+				</ul>
 				<!-- END RESPONSIVE MENU TOGGLER -->
 				<!-- BEGIN TOP NAVIGATION MENU -->
 				<ul class="nav pull-right">
@@ -216,8 +227,9 @@
 
 					<li class="dropdown user"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown"> <img alt=""
-							src="/photoes/{$smarty.session.user['imgurl']}" style="width:30px;height:30px"/> <span
-							class="username">{$smarty.session.user['realname']}</span> <i class="icon-angle-down"></i>
+							src="/photoes/{$smarty.session.user['imgurl']}"
+							style="width: 30px; height: 30px" /> <span class="username">{$smarty.session.user['realname']}</span>
+							<i class="icon-angle-down"></i>
 
 					</a>
 
@@ -231,7 +243,8 @@
 							<li><a href="inbox.html"><i class="icon-envelope"></i>
 									My Inbox(3)</a></li>
 
-							<li><a href="/controller/user/userHandler.php?type=profile"><i class="icon-tasks"></i>个人信息</a></li>
+							<li><a href="/controller/user/userHandler.php?type=profile"><i
+									class="icon-tasks"></i>个人信息</a></li>
 
 							<li class="divider"></li>
 							<li><a href="/controller/user/userHandler.php?type=lock"><i
@@ -245,15 +258,15 @@
 					<!-- END USER LOGIN DROPDOWN -->
 
 				</ul>
-</div>
-				<!-- END TOP NAVIGATION MENU -->
-
 			</div>
+			<!-- END TOP NAVIGATION MENU -->
 
 		</div>
 
-		<!-- END TOP NAVIGATION BAR -->
-
 	</div>
 
-	<!-- END HEADER -->
+	<!-- END TOP NAVIGATION BAR -->
+
+</div>
+
+<!-- END HEADER -->
