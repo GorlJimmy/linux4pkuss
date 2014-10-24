@@ -47,6 +47,6 @@ if ('list' == $type) {
 	header ( "location:themeHandler.php?type=list&msg=success" );
 } else if ('theme_list' == $type) {
 	$themeService = new ThemeService ();
-	$allThemes = $themeService->getAllTheme ();
+	$allThemes = $themeService->getThemeByProject ($_POST['project_id']);
 	echo json_encode ( $allThemes );
 }

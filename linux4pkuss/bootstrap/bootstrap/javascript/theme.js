@@ -21,7 +21,7 @@ $(function() {
 		{
 			var themes = eval('(' + themes + ')');
 			theme.children().remove();
-			$("<option value=''>请选择主题</option>").appendTo(theme);
+			$("<option value='0'>请选择主题</option>").appendTo(theme);
 			for (var i = 0; i < themes.length; i++) {
 				$('<option value=' + themes[i].id + '>'
 								+ themes[i].name + '</option>').appendTo(theme);

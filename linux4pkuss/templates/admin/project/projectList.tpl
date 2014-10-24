@@ -64,13 +64,14 @@
 
 <script src="/bootstrap/bootstrap/js/jquery.dataTables.js"></script>
 <script src="/bootstrap/bootstrap/js/form-components.js"></script>
-
+<script src="/bootstrap/bootstrap/javascript/public-openModalDialog.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		App.init();
 		TableManaged.init();
 		FormComponents.init();
 	});
+	
 </script>
 
 
@@ -467,61 +468,6 @@
 				<div class="row-fluid profile">
 
 					<div class="span12">
-						<div id="addProject" class="modal hide fade" tabindex="-1"
-							role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"
-									aria-hidden="true"></button>
-								<h3>添加項目</h3>
-							</div>
-							<div class="portlet-body form">
-								<form action="/controller/project/projectHandler.php?type=add"
-									class="form-horizontal" method="post">
-									<div class="control-group">
-
-										<label class="control-label">項目名称</label>
-
-										<div class="controls">
-
-											<input type="text" placeholder="请输入标题" class="m-wrap span8"
-												name="name" /> <span class="help-inline"></span>
-
-										</div>
-
-									</div>
-									<div class="control-group">
-
-										<label class="control-label">页面路径</label>
-
-										<div class="controls">
-
-											<input type="text" placeholder="请输入页面路径" class="m-wrap span8"
-												name="path" /> <span class="help-inline"></span>
-
-										</div>
-
-									</div>
-									<div class="control-group">
-
-										<label class="control-label">項目说明</label>
-
-										<div class="controls">
-
-											<textarea class="span8 m-wrap" name="description"></textarea>
-
-										</div>
-
-									</div>
-									<div class="modal-footer">
-										<button class="btn red" data-dismiss="modal"
-											aria-hidden="true">取消</button>
-										<button class="btn green" type="submit">提交</button>
-									</div>
-								</form>
-							</div>
-
-						</div>
-
 						<div class="portlet box light-grey">
 
 							<div class="portlet-title">
@@ -529,25 +475,16 @@
 								<div class="caption">
 									<i class="icon-user"></i>项目信息
 								</div>
-
 								<div class="actions">
-									<a href="#addProject" role="button" class="btn blue"
-										data-toggle="modal"><i class="icon-pencil"></i> 添加</a>
-
+									<a href="#" role="button" class="btn blue" data-toggle="modal"
+										onClick="addProject()"><i class="icon-pencil"></i> 添加</a>
 									<div class="btn-group">
-
 										<a class="btn green" href="#" data-toggle="dropdown"> <i
 											class="icon-cogs"></i> 工具 <i class="icon-angle-down"></i>
-
 										</a>
-
 										<ul class="dropdown-menu pull-right">
-
-
 											<li><a href="#"><i class="icon-print"></i> 打印</a></li>
-
 											<li><a href="#"><i class="icon-pencil"></i> 编辑</a></li>
-
 											<li><a href="#"><i class="icon-ban-circle"></i>
 													导出EXCEL</a></li>
 

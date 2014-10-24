@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-16 10:05:27
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-24 12:28:26
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/admin/theme/themeList.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:108177560554111b8d58da96-66105371%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '95b130f3206f2be603327ee1a132c37bf6be7c1f' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/admin/theme/themeList.tpl',
-      1 => 1413468322,
+      1 => 1414167925,
       2 => 'file',
     ),
   ),
@@ -90,13 +90,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <script src="/bootstrap/bootstrap/js/jquery.dataTables.js"></script>
 <script src="/bootstrap/bootstrap/js/form-components.js"></script>
-
+<script src="/bootstrap/bootstrap/javascript/public-openModalDialog.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		App.init();
 		TableManaged.init();
 		FormComponents.init();
 	});
+	
 </script>
 
 
@@ -495,72 +496,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<div class="row-fluid profile">
 
 					<div class="span12">
-						<div id="addTheme" class="modal hide fade" tabindex="-1"
-							role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"
-									aria-hidden="true"></button>
-								<h3>添加主题</h3>
-							</div>
-							<div class="portlet-body form">
-								<form action="/controller/theme/themeHandler.php?type=add"
-									class="form-horizontal" method="post">
-									<div class="control-group">
-
-										<label class="control-label">主题名称</label>
-
-										<div class="controls">
-
-											<input type="text" placeholder="请输入标题" class="m-wrap span8"
-												name="name" /> <span class="help-inline"></span>
-
-										</div>
-
-									</div>
-									<div class="control-group">
-
-										<label class="control-label">页面路径</label>
-
-										<div class="controls">
-
-											<input type="text" placeholder="请输入页面路径" class="m-wrap span8"
-												name="path" /> <span class="help-inline"></span>
-
-										</div>
-
-									</div>
-									<div class="control-group">
-
-										<label class="control-label">主题说明</label>
-
-										<div class="controls">
-
-											<textarea class="span8 m-wrap" name="description"></textarea>
-
-										</div>
-
-									</div>
-									<div class="modal-footer">
-										<button class="btn red" data-dismiss="modal"
-											aria-hidden="true">取消</button>
-										<button class="btn green" type="submit">提交</button>
-									</div>
-								</form>
-							</div>
-
-						</div>
-
 						<div class="portlet box light-grey">
-
 							<div class="portlet-title">
-
 								<div class="caption">
 									<i class="icon-user"></i>项目主题信息
 								</div>
 
 								<div class="actions">
-									<a href="#addTheme" role="button" class="btn blue"
-										data-toggle="modal"><i class="icon-pencil"></i> 添加</a>
+									<a href="#" role="button" class="btn blue"
+										data-toggle="modal" onClick="themeCreate()"><i class="icon-pencil"></i> 添加</a>
 
 									<div class="btn-group">
 
@@ -639,30 +583,16 @@ $_smarty_tpl->tpl_vars['theme']->_loop = true;
 									</tbody>
 
 								</table>
-
-
 							</div>
-
 						</div>
-
 					</div>
-
 				</div>
-
 				<!-- END PAGE CONTENT-->
-
 			</div>
-
 			<!-- END PAGE CONTAINER-->
-
 		</div>
-
-		<!-- END PAGE -->
-
 	</div>
-
 	<!-- END CONTAINER -->
-
 	<!-- BEGIN FOOTER -->
 	<div class="footer"><?php echo $_smarty_tpl->getSubTemplate ("../../footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 </div>

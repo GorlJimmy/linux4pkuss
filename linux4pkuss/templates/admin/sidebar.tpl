@@ -1,8 +1,5 @@
-
 <div class="page-sidebar nav-collapse collapse">
-
 	<!-- BEGIN SIDEBAR MENU -->
-
 	<ul class="page-sidebar-menu">
 		<li class="start "><a
 			href="/controller/user/userHandler.php?type=admin&num={$smarty.session.user.num}">
@@ -39,8 +36,8 @@
 		</a>
 
 			<ul class="sub-menu">
-				<li><a href="/controller/project/projectHandler.php?type=list">项目管理</a></li>
-				<li><a href="/controller/theme/themeHandler.php?type=list">主题管理</a></li>
+				<li><a href="/controller/attactment/attactmentHandler.php?type=list">资源管理</a></li>
+				<li><a href="#" onClick="uploadAttactment()">上传资源</a></li>
 			</ul></li>
 
 

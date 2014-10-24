@@ -70,7 +70,7 @@ class ThemeService {
 		$num = time () . rand ( 1, 10000 );
 		$now = date ( 'Y-m-d h:m:s', time () );
 		$user_id = intval ( $user ['id'] );
-		$sql = "insert into theme_tb (num,name,createdate,description,path,user_id,parent_id) values('$num','$theme[name]','$now','$theme[description]','$theme[path]',$user_id,0)";
+		$sql = "insert into theme_tb (num,name,createdate,description,path,user_id,parent_id,project_id) values('$num','$theme[name]','$now','$theme[description]','$theme[path]',$user_id,$theme[theme_id],$theme[project_id])";
 		$result = $db->exec_other ( $sql );
 		
 		return $result > 0 ? true : false;

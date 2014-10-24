@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-17 13:24:14
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-24 12:27:56
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/admin/sidebar.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1231954597540fe49140b9c0-28075644%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e3504a384f4270f64bfafa1824e5485d16c54175' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/admin/sidebar.tpl',
-      1 => 1413566640,
+      1 => 1414167829,
       2 => 'file',
     ),
   ),
@@ -19,11 +19,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_540fe491410b66_16350539',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_540fe491410b66_16350539')) {function content_540fe491410b66_16350539($_smarty_tpl) {?>
-<div class="page-sidebar nav-collapse collapse">
-
+<?php if ($_valid && !is_callable('content_540fe491410b66_16350539')) {function content_540fe491410b66_16350539($_smarty_tpl) {?><div class="page-sidebar nav-collapse collapse">
 	<!-- BEGIN SIDEBAR MENU -->
-
 	<ul class="page-sidebar-menu">
 		<li class="start "><a
 			href="/controller/user/userHandler.php?type=admin&num=<?php echo $_SESSION['user']['num'];?>
@@ -61,8 +58,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</a>
 
 			<ul class="sub-menu">
-				<li><a href="/controller/project/projectHandler.php?type=list">项目管理</a></li>
-				<li><a href="/controller/theme/themeHandler.php?type=list">主题管理</a></li>
+				<li><a href="/controller/attactment/attactmentHandler.php?type=list">资源管理</a></li>
+				<li><a href="#" onClick="uploadAttactment()">上传资源</a></li>
 			</ul></li>
 
 

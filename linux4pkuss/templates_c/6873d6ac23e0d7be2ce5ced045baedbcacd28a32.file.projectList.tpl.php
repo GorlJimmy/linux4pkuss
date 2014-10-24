@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-16 10:11:55
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-24 12:28:00
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/admin/project/projectList.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:624236265543fc4fb9f0601-98682773%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6873d6ac23e0d7be2ce5ced045baedbcacd28a32' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/admin/project/projectList.tpl',
-      1 => 1413468711,
+      1 => 1414167949,
       2 => 'file',
     ),
   ),
@@ -90,13 +90,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <script src="/bootstrap/bootstrap/js/jquery.dataTables.js"></script>
 <script src="/bootstrap/bootstrap/js/form-components.js"></script>
-
+<script src="/bootstrap/bootstrap/javascript/public-openModalDialog.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		App.init();
 		TableManaged.init();
 		FormComponents.init();
 	});
+	
 </script>
 
 
@@ -495,61 +496,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<div class="row-fluid profile">
 
 					<div class="span12">
-						<div id="addProject" class="modal hide fade" tabindex="-1"
-							role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"
-									aria-hidden="true"></button>
-								<h3>添加項目</h3>
-							</div>
-							<div class="portlet-body form">
-								<form action="/controller/project/projectHandler.php?type=add"
-									class="form-horizontal" method="post">
-									<div class="control-group">
-
-										<label class="control-label">項目名称</label>
-
-										<div class="controls">
-
-											<input type="text" placeholder="请输入标题" class="m-wrap span8"
-												name="name" /> <span class="help-inline"></span>
-
-										</div>
-
-									</div>
-									<div class="control-group">
-
-										<label class="control-label">页面路径</label>
-
-										<div class="controls">
-
-											<input type="text" placeholder="请输入页面路径" class="m-wrap span8"
-												name="path" /> <span class="help-inline"></span>
-
-										</div>
-
-									</div>
-									<div class="control-group">
-
-										<label class="control-label">項目说明</label>
-
-										<div class="controls">
-
-											<textarea class="span8 m-wrap" name="description"></textarea>
-
-										</div>
-
-									</div>
-									<div class="modal-footer">
-										<button class="btn red" data-dismiss="modal"
-											aria-hidden="true">取消</button>
-										<button class="btn green" type="submit">提交</button>
-									</div>
-								</form>
-							</div>
-
-						</div>
-
 						<div class="portlet box light-grey">
 
 							<div class="portlet-title">
@@ -557,25 +503,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								<div class="caption">
 									<i class="icon-user"></i>项目信息
 								</div>
-
 								<div class="actions">
-									<a href="#addProject" role="button" class="btn blue"
-										data-toggle="modal"><i class="icon-pencil"></i> 添加</a>
-
+									<a href="#" role="button" class="btn blue" data-toggle="modal"
+										onClick="addProject()"><i class="icon-pencil"></i> 添加</a>
 									<div class="btn-group">
-
 										<a class="btn green" href="#" data-toggle="dropdown"> <i
 											class="icon-cogs"></i> 工具 <i class="icon-angle-down"></i>
-
 										</a>
-
 										<ul class="dropdown-menu pull-right">
-
-
 											<li><a href="#"><i class="icon-print"></i> 打印</a></li>
-
 											<li><a href="#"><i class="icon-pencil"></i> 编辑</a></li>
-
 											<li><a href="#"><i class="icon-ban-circle"></i>
 													导出EXCEL</a></li>
 
