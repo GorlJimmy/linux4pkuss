@@ -22,6 +22,7 @@ if('province_list'==$type){
 	
 	echo json_encode($cities);
 }else if('area_list'==$type){
+	
 	$as=new AreaService();
 	$city_code=$_POST['city_code'];
 	$areas=$as->getAreaList($city_code);
