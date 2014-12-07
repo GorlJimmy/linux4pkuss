@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-12-07 12:46:45
+<?php /* Smarty version Smarty-3.1.19, created on 2014-12-07 13:26:19
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/panel/project.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:144598104454848e43c70f86-69624411%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'abed76e2768900273a91b3e1954dffbf19997ccf' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/panel/project.tpl',
-      1 => 1417974400,
+      1 => 1417976710,
       2 => 'file',
     ),
   ),
@@ -71,6 +71,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <script src="/bootstrap/bootstrap/js/app.js"></script>
 <script src="/bootstrap/bootstrap/js/ui-general.js"></script>
 <script src="/bootstrap/bootstrap/javascript/index.js"></script>
+<script src="/bootstrap/bootstrap/javascript/project.js"></script>
 <script>
 	jQuery(document).ready(function() {
 		App.init();
@@ -238,36 +239,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 											</div>
 
 											<div class="timeline-body">
-
 												<h2>ICT 2013 20th International Conference</h2>
-
-												<div class="timeline-content">
-
-													<img class="timeline-img pull-left" src="media/image/2.jpg"
-														alt=""> Ricebean black-eyed pea maize scallion green
-													bean spinach cabbage jicama bell pepper carrot onion corn
-													plantain garbanzo. Winter purslane courgette pumpkin
-													quandong komatsuna fennel green bean cucumber watercress.
-													Parsley amaranth tigernut silver beet maize fennel spinach.
-													Ricebean black-eyed pea maize scallion green bean spinach
-													cabbage jicama bell pepper carrot onion corn plantain
-													garbanzo.
-
+												<div class="timeline-content" id=“section_1”>
 												</div>
-
 												<div class="timeline-footer">
-
 													<a href="#" class="nav-link pull-right"> Read more <i
 														class="m-icon-swapright m-icon-white"></i>
-
 													</a>
-
 												</div>
-
 											</div>
-
 										</li>
-
 										<li class="timeline-blue">
 
 											<div class="timeline-time">
@@ -284,18 +265,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 												<h2>Management Meeting</h2>
 
-												<div class="timeline-content">
-
-													<img class="timeline-img pull-right"
-														src="media/image/1.jpg" alt=""> Caulie dandelion
-													maize lentil collard greens radish arugula sweet pepper
-													water spinach kombu courgette lettuce. Celery coriander
-													bitterleaf epazote radicchio shallot winter collard greens
-													spring onion squash lentil. Artichoke salad bamboo shoot
-													black-eyed pea brussels sprout garlic kohlrabi purslane
-													collard greens spring onion squash lentil. Artichoke salad
-													bamboo shoot black-eyed pea brussels sprout garlic
-													kohlrabi..
+												<div class="timeline-content" id=“season_two”>
 
 												</div>
 
@@ -328,15 +298,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 												<h2>New Project Launch</h2>
 
-												<div class="timeline-content">
-
-													<img class="timeline-img pull-left" src="media/image/3.jpg"
-														alt=""> Winter purslane courgette pumpkin quandong
-													komatsuna fennel green bean cucumber watercress. Pea
-													sprouts wattle seed rutabaga okra yarrow cress avocado
-													grape radish bush tomato ricebean. Pea sprouts wattle seed
-													rutabaga okra yarrow cress avocado grape radish bush tomato
-													ricebean.
+												<div class="timeline-content" id=“season_three”>
 
 												</div>
 
