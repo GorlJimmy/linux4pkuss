@@ -115,7 +115,7 @@
 				</div>
 
 			</div>
-			<div class="span6"></div>
+			<div class="span6">
 
 			<div class="portlet box grey">
 

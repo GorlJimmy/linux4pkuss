@@ -5,11 +5,11 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li><a href="/index.php"><b class="icon-home"></b>首页</a></li>
-     <li><a href="/controller/system_information/handler.php?type=introduction"><b class="icon-comment"></b>课程简介</a></li>
-                <li><a href="/controller/system_information/handler.php?type=project"><b class="icon-envelope"></b>项目信息</a></li>
-                <li><a href="/controller/system_information/handler.php?type=notice"><b class="icon-bell"></b>课程通知</a></li>
-                <li><a href="/controller/system_information/handler.php?type=article"><b class="icon-book"></b>相关文章</a></li>
-                <li><a href="/controller/system_information/handler.php?type=download"><b class="icon-download"></b>资源下载</a></li>
+     <li><a href="/controller/panel/handler.php?type=introduction"><b class="icon-comment"></b>课程简介</a></li>
+                <li><a href="/controller/panel/handler.php?type=project"><b class="icon-envelope"></b>项目信息</a></li>
+                <li><a href="/controller/panel/handler.php?type=notice"><b class="icon-bell"></b>课程通知</a></li>
+                <li><a href="/controller/panel/handler.php?type=article"><b class="icon-book"></b>相关文章</a></li>
+                <li><a href="/controller/panel/handler.php?type=download"><b class="icon-download"></b>资源下载</a></li>
                 {if isset($smarty.session.user)}
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th-large"></i>个人中心<b class="caret"></b></a>
@@ -28,8 +28,8 @@
                 <ul class="nav pull-right">
                 <li class="divider-vertical"></li>
                 {if isset($smarty.session.user)}
-                <li><a href="/controller/system_information/handler.php?type=about"><b class="icon-bell"></b>关于我们</a></li>
-                <li><a href="/controller/system_information/handler.php?type=contact"><b class="icon-pencil"></b>联系我们</a></li>
+                <li><a href="/controller/panel/handler.php?type=about"><b class="icon-bell"></b>关于我们</a></li>
+                <li><a href="/controller/panel/handler.php?type=contact"><b class="icon-pencil"></b>联系我们</a></li>
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="/controller/user/userHandler.php?type=profile"><i class="icon-cog"></i>{$smarty.session.user['username']}</a>
                   <ul class="dropdown-menu">
