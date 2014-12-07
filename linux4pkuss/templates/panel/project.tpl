@@ -222,7 +222,7 @@
 												<div  class="content"></div>
 												</div>
 												<div class="timeline-footer">
-													<a href="#" class="nav-link pull-right"> Read more <i
+													<a href="#" class="nav-link pull-right">查看更多信息 <i
 														class="m-icon-swapright m-icon-white"></i>
 													</a>
 												</div>
@@ -248,7 +248,7 @@
 
 												<div class="timeline-footer">
 
-													<a href="#" class="nav-link"> Read more <i
+													<a href="#" class="nav-link pull-right"> 查看更多信息<i
 														class="m-icon-swapright m-icon-white"></i>
 
 													</a>
@@ -277,7 +277,7 @@
 												<div  class="content"></div>
 												</div>
 												<div class="timeline-footer">
-													<a href="#" class="nav-link"> Read more <i
+													<a href="#" class="nav-link pull-right"> 查看更多信息 <i
 														class="m-icon-swapright m-icon-white"></i>
 													</a>
 												</div>
