@@ -13,10 +13,10 @@ class ProjectService {
 		}
 		return $value;
 	}
-	public function projectList($level) {
+	public function projectList($level,$num) {
 		require_once $this->PATH . '/util/DBHelper.class.php';
 		$db = new DBHelper ();
-		$sql = "select * from project_tb where parent_id=$level order by id desc";
+		$sql = "select * from project_tb where parent_id=$level order by id asc limit $num";
 		$result = $db->exec_query ( $sql );
 		return $result;
 	}

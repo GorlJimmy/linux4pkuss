@@ -12,16 +12,15 @@ $type = $_GET ['type'] . trim ();
 $num = $_GET ['num'] . trim ();
 $user = $_SESSION ['user'];
 
-if (1 != $user ['role_id']) {
-	header ( "location:/index.php?msg=auth_failure" );
-	return;
-}
+// if (1 != $user ['role_id']) {
+// 	header ( "location:/index.php?msg=auth_failure" );
+// 	return;
+// }
 
 if ('list' == $type) {
 	$projectService = new ProjectService ();
-	$topProjects = $projectService->projectList ( 0 );
-	$smarty->assign ( 'topProjects', $topProjects );
-	$smarty->display ( 'admin/project/projectList.tpl' );
+	$topProjects = $projectService->projectList ( 0,3 );
+	echo json_encode($topProjects);
 } else if ('add' == $type) {
 	$projectService = new ProjectService ();
 	$isSuccess = $projectService->createProject ( $_POST, $user );
