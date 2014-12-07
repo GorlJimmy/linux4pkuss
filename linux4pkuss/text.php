@@ -7,4 +7,5 @@ exit();
 }
 printf("Host information: %s\n", $mysqli->host_info);
 /* close connection */
+
 $mysqli->close();
