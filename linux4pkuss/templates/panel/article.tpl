@@ -116,17 +116,12 @@
 
 			</div>
 			<div class="span6">
-
 			<div class="portlet box grey">
-
 				<div class="portlet-title">
-
 					<div class="caption">
 						<i class="icon-cogs"></i>课程简介
 					</div>
-
 					<div class="tools">
-
 						<a href="javascript:;" class="collapse"></a> <a
 							href="#portlet-config" data-toggle="modal" class="config"></a> <a
 							href="javascript:;" class="reload"></a> <a href="javascript:;"
