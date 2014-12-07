@@ -291,27 +291,24 @@
 								<div class="tab-pane" id="portlet_tab2"><ul class="timeline">
 										<li class="timeline-red">
 											<div class="timeline-time">
-												<span class="date">4/16/13</span> <span class="time">一阶段</span>
+												<span class="date">4/16/13</span> <span class="time">简介</span>
 											</div>
 											<div class="timeline-icon">
 												<i class="icon-rss"></i>
 											</div>
 											<div class="timeline-body">
-												<h2>Daily Feeds</h2>
+												<h2>软件介绍</h2>
 												<div class="timeline-content">
-													<img class="timeline-img pull-left" src="media/image/5.jpg"
-														alt=""> Parsley amaranth tigernut silver beet maize
-													fennel spinach. Ricebean black-eyed pea maize scallion
-													green bean spinach cabbage jicama bell pepper carrot onion
-													corn plantain garbanzo. Sierra leone bologi komatsuna
-													celery peanut swiss chard silver beet squash dandelion
-													maize chicory burdock tatsoi dulse radish wakame beetroot.
+中科院软件所主导，北京大学软件与微电子学院承做的Linux内核交互式图解软件，为Linux学习者提供了准确而便捷的途径，同时也为高级用户提供了深入探讨Linux内核的平台，有着非常广泛的应用前景。<br />
+<br />
+本交互式图解软件既可以为初学者在Linux学习上提供帮助，也可以为精通者在Linux内核工作上上提供指引。本交互式图解软件是围绕Linux内核的编译选项来设计的，整个图解的核心也是编译选项，使用户清楚的了解到内核各个模块的编译配置，以及编译配置所需要的具体文件。<br />
+<br />
+使用本交互式图解软件，首先通过主页可以清晰的了解到Linux内核的逻辑模块划分，点击进入任一具体模块，可以查看此模块的子模块以及模块下包涵的编译选项。点击进入编译选项逐层细化，可以方便的查看编译选项包涵的文件，以及文件内的函数、变量、结构体等。同时，本交互式图解软件也清晰的展示了不同粒度之间的关系，例如可以方便地查看某一函数被哪些编译选项和模块所使用。使用本交互式图解软件，可以从细节上理清Linux的代码，并查看软件实例验证验证想法。需要对Linux内核进行定制的使用者更是可以通过交互式图解软件从宏观上的大模块，到层层细化到小模块、编译选项、文件、函数上去快速的认识Linux内核。<br />
+<br />
+Linux内核交互式图解软件目前已经完成三个季度。各个季度的具体任务如下：<br />
+<br />
 												</div>
 												<div class="timeline-footer">
-													<a href="#" class="btn green pull-right"> Read more <i
-														class="m-icon-swapright m-icon-white"></i>
-													</a>
-
 												</div>
 
 											</div>
@@ -322,7 +319,7 @@
 
 											<div class="timeline-time">
 
-												<span class="date">4/17/13</span> <span class="time">二阶段</span>
+												<span class="date">4/17/13</span> <span class="time">一阶段</span>
 
 											</div>
 
@@ -332,71 +329,72 @@
 
 											<div class="timeline-body">
 
-												<h2>Staff Meeting</h2>
+												<h2>第一季度</h2>
 
-												<div class="timeline-content">Caulie dandelion maize
-													lentil collard greens radish arugula sweet pepper water
-													spinach kombu courgette lettuce. Celery coriander
-													bitterleaf epazote radicchio shallot winter purslane
-													collard greens spring onion squash lentil. Artichoke salad
-													bamboo shoot black-eyed pea brussels sprout garlic
-													kohlrabi.</div>
+												<div class="timeline-content">
+开发动态交互式图解软件，并与“在线源码协同分析平台”和社区集成在线展示Linux体系构架的分析成果，主要功能至少包括：<br />
+<br />
+a)&nbsp;&nbsp; 以层次图的方式展现Linux系统各模块的整体构架及模块内部及模块之间的全局变量、数据结构、接口调用等关系关系；<br />
+<br />
+b)&nbsp;&nbsp; 提供导航和Zoom功能，可以多层次多粒度的展现模块内部及模块之间的关系，宏观可以看到Linux的全局构架，微观可以看到某个模块内部的结构；<br />
+<br />
+可以动态的对分析模块进行扩展、提供源代码索引和分析统计等扩展接口。<br />
+<br />
+&nbsp;<br />
+<br /></div>
 
 												<div class="timeline-footer">
-
-													<a href="#" class="nav-link pull-right"> Read more <i
-														class="m-icon-swapright m-icon-white"></i>
-
-													</a>
-
 												</div>
-
 											</div>
-
 										</li>
 
 										<li class="timeline-blue">
-
 											<div class="timeline-time">
-
-												<span class="date">4/18/13</span> <span class="time">三阶段</span>
-
+												<span class="date">4/18/13</span> <span class="time">二阶段</span>
 											</div>
-
 											<div class="timeline-icon">
 												<i class="icon-bar-chart"></i>
 											</div>
-
 											<div class="timeline-body">
-
-												<h2>Demo Europe 2013</h2>
-
+												<h2>第二季度</h2>
 												<div class="timeline-content">
-
-													<img class="timeline-img pull-left" src="media/image/2.jpg"
-														alt=""> Parsnip lotus root celery yarrow seakale
-													tomato collard greens tigernut epazote ricebean melon
-													tomatillo soybean chicory broccoli beet greens peanut
-													salad. Lotus root burdock bell pepper chickweed shallot
-													groundnut pea sprouts welsh onion wattle seed pea salsify
-													turnip scallion peanut arugula bamboo shoot onion swiss
-													chard.
-
+基于分析结果，提供内核功能模块静态依赖和运行时依赖关系交互式索引软件，并与“在线源码协同分析平台”集成和社区在线展示Linux内核功能模块间关系的分析成果，主要功能至少包括：<br />
+<br />
+a)&nbsp;&nbsp; 以图表方式清晰描述Linux系统内核模块之间的静态和动态依赖关系，包括编译依赖和运行时序等；<br />
+<br />
+b)&nbsp;&nbsp; 提供依赖关系导入、导出和导航功能；可以动态的对分析模块进行扩展。<br />
+<br />
+&nbsp;<br />
+<br />
 												</div>
-
 												<div class="timeline-footer">
-
-													<a href="#" class="nav-link"> Read more <i
-														class="m-icon-swapright m-icon-white"></i>
-
-													</a>
-
+												</div>
+											</div>
+										</li>
+<li class="timeline-green">
+											<div class="timeline-time">
+												<span class="date">4/18/13</span> <span class="time">三阶段</span>
+											</div>
+											<div class="timeline-icon">
+												<i class="icon-bar-chart"></i>
+											</div>
+											<div class="timeline-body">
+												<h2>第三季度</h2>
+												<div class="timeline-content">
+进一步完善图解软件，展示编译选项对应的模块间关系。包括：<br />
+<br />
+a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 根据编译菜单，完整的展现内核各个模块。<br />
+<br />
+b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 分析内核源码，深入剖析各个模块之间的关系，在图解软件上展示出来。分析模块间依赖关系的具体来源并展示，包括函数、结构体和变量等。<br />
+<br />
+c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 全面地展现模块间依赖关系定义的分支结构
+												</div>
+												<div class="timeline-footer">
 												</div>
 
 											</div>
 
 										</li>
-
 									</ul></div>
 
 							</div>
