@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-12-07 13:26:19
+<?php /* Smarty version Smarty-3.1.19, created on 2014-12-07 13:49:51
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/panel/project.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:144598104454848e43c70f86-69624411%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'abed76e2768900273a91b3e1954dffbf19997ccf' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/panel/project.tpl',
-      1 => 1417976710,
+      1 => 1417978163,
       2 => 'file',
     ),
   ),
@@ -238,9 +238,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 												<i class="icon-trophy"></i>
 											</div>
 
-											<div class="timeline-body">
-												<h2>ICT 2013 20th International Conference</h2>
-												<div class="timeline-content" id=“section_1”>
+											<div class="timeline-body" id="section_1">
+												<h2 class="title"></h2>
+												<div class="timeline-content">
+												<div  class="content"></div>
 												</div>
 												<div class="timeline-footer">
 													<a href="#" class="nav-link pull-right"> Read more <i
@@ -261,12 +262,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 												<i class="icon-facetime-video"></i>
 											</div>
 
-											<div class="timeline-body">
-
-												<h2>Management Meeting</h2>
-
-												<div class="timeline-content" id=“season_two”>
-
+											<div class="timeline-body" id="section_2">
+												<h2 class="title"></h2>
+												<div class="timeline-content">
+												<div  class="content"></div>
 												</div>
 
 												<div class="timeline-footer">
@@ -294,21 +293,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 												<i class="icon-comments"></i>
 											</div>
 
-											<div class="timeline-body">
-
-												<h2>New Project Launch</h2>
-
-												<div class="timeline-content" id=“season_three”>
-
+											<div class="timeline-body" id="section_3">
+												<h2 class="title"></h2>
+												<div class="timeline-content">
+												<div  class="content"></div>
 												</div>
-
 												<div class="timeline-footer">
-
 													<a href="#" class="nav-link"> Read more <i
 														class="m-icon-swapright m-icon-white"></i>
-
 													</a>
-
 												</div>
 
 											</div>
