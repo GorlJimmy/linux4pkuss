@@ -107,19 +107,19 @@ $(function() {
 	.post(
 			'/controller/link/linkHandler.php?type=newLink',
 			{},
-			function(articles, statu) {
-				var articles = eval('(' + articles + ')');
+			function(links, statu) {
+				var links = eval('(' + links + ')');
 				link.children().remove();
-				if (articles == null) {
+				if (links == null) {
 					$(
 							"<p>暂时无数据</p>")
 							.appendTo(link);
 
 				} else {
 
-					for (var i = 0; i < articles.length; i++) {
+					for (var i = 0; i < links.length; i++) {
 						$(
-								"<p><a href='"+link[i].url+"'>"+link[i].name+"</a></p>")
+								"<p><a href='"+links[i].url+"'>"+links[i].name+"</a></p>")
 								.appendTo(link);
 					}
 				}
