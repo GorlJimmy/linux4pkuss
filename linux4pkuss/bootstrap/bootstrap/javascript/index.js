@@ -105,7 +105,7 @@ $(function() {
 	var link=$("#newLink");
 	$
 	.post(
-			'/controller/article/articleHandler.php?type=newArticle',
+			'/controller/link/linkHandler.php?type=newLink',
 			{},
 			function(articles, statu) {
 				var articles = eval('(' + articles + ')');

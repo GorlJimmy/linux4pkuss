@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-12-07 11:18:37
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-09 17:21:55
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:198850713753fbf76d1b5e73-05369178%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '564cf7b4493f0d9f807ad162cc629a9bc3748ff9' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/index.tpl',
-      1 => 1417969112,
+      1 => 1425934758,
       2 => 'file',
     ),
   ),
@@ -182,7 +182,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 										<p>领域方向： 软件工程</p>
 										<p>学时和学分： 48学时； 3学分</p>
 										<p>主讲： 荆琦</p>
-										<p>上课信息： 周三 （0:00- 0:00） （教室号）
+										<p>上课信息： 周4 （13:00- 17:00） （教室号：3202）
 										<p>
 									</div>
 									<div class="tab-pane" id="tab7">
