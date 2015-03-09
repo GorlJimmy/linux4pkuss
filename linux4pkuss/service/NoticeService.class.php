@@ -3,7 +3,11 @@
 /*
  * author:Gao Xiaoning
  */
+<<<<<<< HEAD
 class NoticeService {
+=======
+class LinkService {
+>>>>>>> branch 'master' of https://github.com/GorlJimmy/linux4pkuss
 	private $PATH;
 	function __construct() {
 		$this->PATH = $_SERVER ['DOCUMENT_ROOT'];
