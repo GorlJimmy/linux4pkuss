@@ -119,7 +119,7 @@ $(function() {
 
 					for (var i = 0; i < articles.length; i++) {
 						$(
-								"<p><a href='/controller/article/articleHandler.php?type=query&num="+articles[i].num+"'>"+articles[i].title+"</a></p>")
+								"<p><a href='"+link[i].url+"'>"+link[i].name+"</a></p>")
 								.appendTo(link);
 					}
 				}
