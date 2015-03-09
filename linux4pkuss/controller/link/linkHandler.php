@@ -65,6 +65,7 @@ if ('list' == $type) {
 	
 	header ( 'location:articleHandler.php?type=query' );
 }else if('newLink'==$type){
+	
 	$linkService = new LinkService ();
 	$links = $linkService->linkList ();
 	echo json_encode($links);
