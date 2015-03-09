@@ -15,6 +15,27 @@ class ArticleService {
 		$result = $db->exec_query ( $sql );
 		return $result;
 	}
+	public function articleListPage() {
+		require_once $this->PATH . '/util/DBHelper.class.php';
+		$sql = "select * from article_tb order by id desc";
+		$db = new DBHelper ();
+		$result = $db->exec_query ( $sql );
+		return $result;
+	}
+	public function articleListByTheme($num) {
+		require_once $this->PATH . '/util/DBHelper.class.php';
+		$sql = "select * from article_tb where theme_id=$num order by id";
+		$db = new DBHelper ();
+		$result = $db->exec_query ( $sql );
+		return $result;
+	}
+	public function articleAccountByTheme($num) {
+		require_once $this->PATH . '/util/DBHelper.class.php';
+		$sql = "select count(*) from article_tb where theme_id=$num";
+		$db = new DBHelper ();
+		$result = $db->exec_query ( $sql );
+		return $result;
+	}
 	// 发表文章，默认审核标志为0
 	public function createArticle($article, $user) {
 		require_once $this->PATH . '/util/DBHelper.class.php';
@@ -26,12 +47,12 @@ class ArticleService {
 		$result = $db->exec_other ( $sql );
 		return $result > 0 ? true : false;
 	}
-	public function queryArticle($num){
+	public function queryArticle($num) {
 		require_once $this->PATH . '/util/DBHelper.class.php';
 		$sql = "select * from article_tb where num=$num order by id asc";
 		$db = new DBHelper ();
 		$result = $db->exec_query ( $sql );
-		return $result[0];
+		return $result [0];
 	}
 	// 文章列表中显示经过审核的文章
 	public function article_queryAll() {

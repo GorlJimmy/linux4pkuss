@@ -13,14 +13,25 @@ $num = $_GET ['num'] . trim ();
 $user = $_SESSION ['user'];
 
 // if (1 != $user ['role_id']) {
-// 	header ( "location:/index.php?msg=auth_failure" );
-// 	return;
+// header ( "location:/index.php?msg=auth_failure" );
+// return;
 // }
 if ('list' == $type) {
 	$articleService = new ArticleService ();
 	$articles = $articleService->articleList ();
 	$smarty->assign ( 'articles', $articles );
 	$smarty->display ( 'admin/article/articleList.tpl' );
+} elseif ("listPage" == $type) {
+	$articleService = new ArticleService ();
+	$articles = $articleService->articleListPage ();
+	$smarty->assign ( 'articles', $articles );
+	$smarty->display ( 'panel/article.tpl' );
+} elseif ("listTheme" == $type) {
+	$themeId = $_GET ['themeId'] . trim ();
+	$articleService = new ArticleService ();
+	$articles = $articleService->articleListByTheme($themeId);
+	$smarty->assign ( 'articles', $articles );
+	$smarty->display ( 'panel/article.tpl' );
 } elseif ("showAddTpl" == $type) {
 	$smarty->display ( 'admin/article/articleAdd.tpl' );
 } else if ("add" == $type) {
@@ -47,7 +58,7 @@ if ('list' == $type) {
 } else if ("query" == $type) {
 	
 	$articleService = new ArticleService ();
-	$article = $articleService->queryArticle ($num);
+	$article = $articleService->queryArticle ( $num );
 	
 	$smarty->assign ( 'article', $article );
 	
@@ -64,9 +75,9 @@ if ('list' == $type) {
 	$rst = $articleadd->article_upt ( $id, $title, $createdate, $content, $theme_id );
 	
 	header ( 'location:articleHandler.php?type=query' );
-}else if('newArticle'==$type){
+} else if ('newArticle' == $type) {
 	$articleService = new ArticleService ();
 	$articles = $articleService->articleList ();
-	echo json_encode($articles);
+	echo json_encode ( $articles );
 }
 

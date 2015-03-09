@@ -52,7 +52,7 @@ $(function() {
 
 	);
 	//初始化课程通知板块
-	var course=$("#newNotice");
+	var course=$("#newCourse");
 	$
 	.post(
 			'/controller/notice/noticeHandler.php?type=newNotice',

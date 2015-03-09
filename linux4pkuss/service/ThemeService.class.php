@@ -20,6 +20,13 @@ class ThemeService {
 		$result = $db->exec_query ( $sql );
 		return $result;
 	}
+	public function themeListByProject($level) {
+		require_once $this->PATH . '/util/DBHelper.class.php';
+		$db = new DBHelper ();
+		$sql = "select * from theme_tb where project_id=$level order by id desc";
+		$result = $db->exec_query ( $sql );
+		return $result;
+	}
 	public function getAllTheme() {
 		require_once $this->PATH . '/util/DBHelper.class.php';
 		$db = new DBHelper ();

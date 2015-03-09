@@ -21,7 +21,14 @@ if ('list' == $type) {
 	$topThemes = $themeService->themeList ( 0 );
 	$smarty->assign ( 'topThemes', $topThemes );
 	$smarty->display ( 'admin/theme/themeList.tpl' );
-} else if ('add' == $type) {
+} elseif ('listPage'==$type){
+	$projectId=$_GET['projectId'].trim();
+	$themeService = new ThemeService ();
+	$themes = $themeService->themeListByProject($projectId);
+	$smarty->assign ( 'themes', $themes );
+	$smarty->display ( 'article/theme.tpl' );
+	
+}else if ('add' == $type) {
 	$themeService = new ThemeService ();
 	$isSuccess = $themeService->createTheme ( $_POST, $user );
 	if ($isSuccess) {

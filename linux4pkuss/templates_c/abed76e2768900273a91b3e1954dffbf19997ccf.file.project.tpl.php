@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-12-07 14:29:10
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-25 20:57:23
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/panel/project.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:144598104454848e43c70f86-69624411%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'abed76e2768900273a91b3e1954dffbf19997ccf' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/panel/project.tpl',
-      1 => 1417980545,
+      1 => 1427330869,
       2 => 'file',
     ),
   ),
@@ -244,7 +244,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 												<div  class="content"></div>
 												</div>
 												<div class="timeline-footer">
-													<a href="#" class="nav-link pull-right">查看更多信息 <i
+													<a href="/controller/theme/themeHandler.php?type=listPage&projectId=15" class="nav-link pull-right">查看更多信息 <i
 														class="m-icon-swapright m-icon-white"></i>
 													</a>
 												</div>
@@ -270,7 +270,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 												<div class="timeline-footer">
 
-													<a href="#" class="nav-link pull-right"> 查看更多信息<i
+													<a href="/controller/theme/themeHandler.php?type=listPage&projectId=16" class="nav-link pull-right"> 查看更多信息<i
 														class="m-icon-swapright m-icon-white"></i>
 
 													</a>
@@ -299,7 +299,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 												<div  class="content"></div>
 												</div>
 												<div class="timeline-footer">
-													<a href="#" class="nav-link pull-right"> 查看更多信息 <i
+													<a href="/controller/theme/themeHandler.php?type=listPage&projectId=15" class="nav-link pull-right"> 查看更多信息 <i
 														class="m-icon-swapright m-icon-white"></i>
 													</a>
 												</div>

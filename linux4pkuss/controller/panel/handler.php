@@ -21,7 +21,7 @@ if('about'==$type){
 }else if('notice'==$type){
 	$smarty->display('panel/notice.tpl');
 }else if('article'==$type){
-	$smarty->display('panel/article.tpl');
+	header ( 'location:/controller/article/articleHandler.php?type=listPage' );
 }else if('download'==$type){
 	$smarty->display('panel/download.tpl');
 }
