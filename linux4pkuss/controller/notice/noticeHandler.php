@@ -13,8 +13,8 @@ $num = $_GET ['num'] . trim ();
 $user = $_SESSION ['user'];
 
 // if (1 != $user ['role_id']) {
-// 	header ( "location:/index.php?msg=auth_failure" );
-// 	return;
+// header ( "location:/index.php?msg=auth_failure" );
+// return;
 // }
 if ('list' == $type) {
 	$articleService = new ArticleService ();
@@ -47,7 +47,7 @@ if ('list' == $type) {
 } else if ("query" == $type) {
 	
 	$articleService = new ArticleService ();
-	$article = $articleService->queryArticle ($num);
+	$article = $articleService->queryArticle ( $num );
 	
 	$smarty->assign ( 'article', $article );
 	
@@ -64,10 +64,12 @@ if ('list' == $type) {
 	$rst = $articleadd->article_upt ( $id, $title, $createdate, $content, $theme_id );
 	
 	header ( 'location:articleHandler.php?type=query' );
-}else if('newNotice'==$type){
+} else if ('newNotice' == $type) {
 	
 	$noticeService = new NoticeService ();
 	$notices = $noticeService->noticeList ();
-	echo json_encode($notices);
+	echo json_encode ( $notices );
+} else {
+	echo json_encode ( "hehehe" );
 }
 
