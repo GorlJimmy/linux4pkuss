@@ -52,24 +52,24 @@ $(function() {
 
 	);
 	//初始化课程通知板块
-	var course=$("#newCourse");
+	var course=$("#newNotice");
 	$
 	.post(
-			'/controller/article/articleHandler.php?type=newArticle',
+			'/controller/notice/noticeHandler.php?type=newNotice',
 			{},
-			function(articles, statu) {
-				var articles = eval('(' + articles + ')');
+			function(notices, statu) {
+				var notices = eval('(' + notices + ')');
 				course.children().remove();
-				if (articles == null) {
+				if (notices == null) {
 					$(
 							"<p>暂时无数据</p>")
 							.appendTo(course);
 
 				} else {
 
-					for (var i = 0; i < articles.length; i++) {
+					for (var i = 0; i < notices.length; i++) {
 						$(
-								"<p><a href='/controller/article/articleHandler.php?type=query&num="+articles[i].num+"'>"+articles[i].title+"</a></p>")
+								"<p><a href='/controller/notice/noticeHandler.php?type=query&num="+notices[i].num+"'>"+notices[i].title+"</a></p>")
 								.appendTo(course);
 					}
 				}
