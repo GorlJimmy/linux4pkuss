@@ -16,6 +16,10 @@ $user=$_COOKIE['user'];
 if (isset($_SESSION['user'])){
 	$smarty->display('home.tpl');
 }else{
-	$smarty->display('index.tpl');	
+	header ( 'location:/controller/article/articleHandler.php?type=listPage' );
+	/**
+	 * $smarty->display('index.tpl');	
+	 */
+	
 }
 
