@@ -12,11 +12,11 @@ $type = $_GET ['type'] . trim ();
 $num = $_GET ['num'] . trim ();
 $user = $_SESSION ['user'];
 
-// if (1 != $user ['role_id']) {
-// header ( "location:/index.php?msg=auth_failure" );
-// return;
-// }
 if ('list' == $type) {
+	if (1 != $user ['role_id']) {
+		header ( "location:/index.php?msg=auth_failure" );
+		return;
+	}
 	$articleService = new ArticleService ();
 	$articles = $articleService->articleList ();
 	$smarty->assign ( 'articles', $articles );
@@ -33,9 +33,16 @@ if ('list' == $type) {
 	$smarty->assign ( 'articles', $articles );
 	$smarty->display ( 'panel/article.tpl' );
 } elseif ("showAddTpl" == $type) {
+	if (1 != $user ['role_id']) {
+		header ( "location:/index.php?msg=auth_failure" );
+		return;
+	}
 	$smarty->display ( 'admin/article/articleAdd.tpl' );
 } else if ("add" == $type) {
-	
+	if (1 != $user ['role_id']) {
+		header ( "location:/index.php?msg=auth_failure" );
+		return;
+	}
 	$articleService = new ArticleService ();
 	$isSuccess = $articleService->createArticle ( $_POST, $user );
 	if ($isSuccess) {

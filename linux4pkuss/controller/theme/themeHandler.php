@@ -12,11 +12,12 @@ $type = $_GET ['type'] . trim ();
 $num = $_GET ['num'] . trim ();
 $user = $_SESSION ['user'];
 
-if (1 != $user ['role_id']) {
-	header ( "location:/index.php?msg=auth_failure" );
-	return;
-}
+
 if ('list' == $type) {
+	if (1 != $user ['role_id']) {
+		header ( "location:/index.php?msg=auth_failure" );
+		return;
+	}
 	$themeService = new ThemeService ();
 	$topThemes = $themeService->themeList ( 0 );
 	$smarty->assign ( 'topThemes', $topThemes );
@@ -29,6 +30,10 @@ if ('list' == $type) {
 	$smarty->display ( 'article/theme.tpl' );
 	
 }else if ('add' == $type) {
+	if (1 != $user ['role_id']) {
+		header ( "location:/index.php?msg=auth_failure" );
+		return;
+	}
 	$themeService = new ThemeService ();
 	$isSuccess = $themeService->createTheme ( $_POST, $user );
 	if ($isSuccess) {
@@ -37,7 +42,10 @@ if ('list' == $type) {
 		header ( "location:themeHandler.php?type=list&msg=failure" );
 	}
 } else if ('delete' == $type) {
-	
+	if (1 != $user ['role_id']) {
+		header ( "location:/index.php?msg=auth_failure" );
+		return;
+	}
 	$themeService = new ThemeService ();
 	$isSuccess = $themeService->deleteTheme ( $num );
 	if ($isSuccess) {
