@@ -27,7 +27,7 @@ class NoticeService {
 		$num = time () . rand ( 1, 10000 );
 		$now = date ( 'Y-m-d h:m:s', time () );
 		$user_id = intval ( $user ['id'] );
-		$sql = "insert into notice_tb(num,title,createdate,content,isshare,user_id,theme_id) values('$num','$article[title]','$now','$article[content]',0,$user_id,'$article[theme_id]')";
+		$sql = "insert into notice_tb(num,user_id,createtime,title,content) values('$num',$user_id,'$now','$notice[title]','$notice[content]')";
 		$db = new DBHelper ();
 		$result = $db->exec_other ( $sql );
 		return $result > 0 ? true : false;

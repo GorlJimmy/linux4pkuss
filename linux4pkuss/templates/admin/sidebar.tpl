@@ -24,8 +24,8 @@
 				<span class="title">资源信息</span> <span class="arrow "></span>
 		</a>
 			<ul class="sub-menu">
-				<li><a href="/controller/attactment/attactmentHandler.php?type=list">资源管理</a></li>
-				<li><a href="/controller/attactment/attactmentHandler.php?type=add">上传资源</a></li>
+				<li><a href="/controller/attachment/attachHandler.php?type=list">资源管理</a></li>
+				<li><a href="/controller/attachment/attachHandler.php?type=add">上传资源</a></li>
 			</ul></li>
 		<li class=""><a href="javascript:;"> <i
 				class="icon-briefcase"></i> <span class="title">文章信息</span> <span
@@ -86,7 +86,7 @@
 				class="arrow "></span>
 		</a>
 			<ul class="sub-menu">
-				<li><a href="/controller/link/linkHandler.php?type=add">添加鏈接</a></li>
+				<li><a href="/controller/link/linkHandler.php?type=showAddTpl">添加鏈接</a></li>
 				<li><a href="/controller/link/linkHandler.php?type=list">鏈接管理</a></li>
 			</ul></li>
 	</ul>

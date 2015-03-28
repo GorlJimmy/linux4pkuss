@@ -22,12 +22,12 @@ class AttachService {
 		$result = $db->exec_query ( $sql );
 		return $result;
 	}
-	public function createAttach($notice, $user) {
+	public function createAttach($attach, $user) {
 		require_once $this->PATH . '/util/DBHelper.class.php';
 		$num = time () . rand ( 1, 10000 );
 		$now = date ( 'Y-m-d h:m:s', time () );
 		$user_id = intval ( $user ['id'] );
-		$sql = "insert into attachment_tb(num,title,createdate,content,isshare,user_id,theme_id) values('$num','$article[title]','$now','$article[content]',0,$user_id,'$article[theme_id]')";
+		$sql = "insert into attachment_tb(num,createdate,name,path,isshare,istop,description,downloadcount,user_id,theme_id) values('$num','$now','$attach[name]','$attach[path]',0,0,'$attach[description]',0,$user_id,'$attach[theme_id]')";
 		$db = new DBHelper ();
 		$result = $db->exec_other ( $sql );
 		return $result > 0 ? true : false;

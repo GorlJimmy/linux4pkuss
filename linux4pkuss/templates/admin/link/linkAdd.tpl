@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>上传资源</title>
+<title>鏈接添加</title>
 <link href="/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="/bootstrap/bootstrap/css/bootstrap-responsive.css"
 	rel="stylesheet">
@@ -117,42 +117,12 @@
 <script src="/bootstrap/bootstrap/js/form-samples.js"></script>
 <script src="/bootstrap/bootstrap/javascript/theme.js"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
-<!--kindeditor  -->
-<link rel="stylesheet"
-	href="/kindeditor-4.1.10/themes/default/default.css" />
-<link rel="stylesheet"
-	href="/kindeditor-4.1.10/plugins/code/prettify.css" />
-<script charset="utf-8" src="/kindeditor-4.1.10/kindeditor.js"></script>
-<script charset="utf-8" src="/kindeditor-4.1.10/lang/zh-CN.js"></script>
-<script charset="utf-8"
-	src="/kindeditor-4.1.10/plugins/code/prettify.js"></script>
 <script>
 	jQuery(document).ready(function() {
 		App.init();
 		FormSamples.init();
 	});
-	KindEditor.ready(function(K) {
-		var editor1 = K.create('textarea[name="description"]', {
-			cssPath : '/kindeditor-4.1.10/plugins/code/prettify.css',
-			uploadJson : '/kindeditor-4.1.10/php/upload_json.php',
-			fileManagerJson : '/kindeditor-4.1.10/php/file_manager_json.php',
-			allowFileManager : true,
-			afterCreate : function() {
-				var self = this;
-				K.ctrl(document, 13, function() {
-					self.sync();
-					document.forms['uploadAttach'].submit();
-				});
-				K.ctrl(self.edit.doc, 13, function() {
-					self.sync();
-					document.forms['uploadAttach'].submit();
-				});
-			}
-		});
-		prettyPrint();
-	});
 </script>
-
 </head>
 <body class="page-header-fixed">
 	<header> {include file="admin/header.tpl"} </header>
@@ -186,41 +156,24 @@
 						<div class="portlet box light-grey">
 							<div class="portlet-title">
 								<div class="caption">
-									<i class="icon-user"></i>资源信息
+									<i class="icon-user"></i>鏈接信息
 								</div>
 							</div>
 							<div class="portlet-body ">
-								<form name="uploadAttach" method="post"
-									action="/controller/attachment/attachHandler.php?type=add"
-									id="articleCon">
+								<form name="addLink" method="post"
+									action="/controller/link/linkHandler.php?type=add" id="linkCon">
 									<div class="control-group">
-										<label class="control-label">资源名称</label>
+										<label class="control-label">鏈接标题</label>
 										<div class="controls">
-											<input name="name" type="text" placeholder="请输入资源名称"
+											<input name="title" type="text" placeholder="请输入鏈接标题"
 												class="m-wrap span12" />
 										</div>
 									</div>
 									<div class="control-group">
-										<label class="control-label">资源路径</label>
+										<label class="control-label">鏈接內容</label>
 										<div class="controls">
-											<input name="path" type="text" placeholder="请输入资源路径"
+											<input name="content" type="text" placeholder="请输入鏈接地址"
 												class="m-wrap span12" />
-										</div>
-									</div>
-									<div class="control-group">
-										<label class="control-label">资源主題</label>
-										<div class="controls">
-											<select class="m-wrap span6" id="project_list">
-												
-											</select> <select class="m-wrap span6" name="theme_id" id="theme_list">
-												
-											</select>
-										</div>
-									</div>
-									<div class="control-group">
-										<label class="control-label">资源描述</label>
-										<div class="controls">
-											<textarea name="description" class="span12" rows="15"></textarea>
 										</div>
 									</div>
 									<div class="actions">

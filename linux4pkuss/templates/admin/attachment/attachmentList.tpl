@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>文章管理</title>
+<title>资源管理</title>
 <link href="/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="/bootstrap/bootstrap/css/bootstrap-responsive.css"
 	rel="stylesheet">
@@ -116,12 +116,12 @@
 							<div class="portlet-title">
 
 								<div class="caption">
-									<i class="icon-user"></i>项目文章信息
+									<i class="icon-user"></i>资源信息
 								</div>
 
 								<div class="actions">
-									<a href="/controller/article/articleHandler.php?type=showAddTpl" role="button" class="btn blue"
-										data-toggle="modal" target="_blank"><i class="icon-pencil"></i> 添加</a>
+									<a href="/controller/attachment/attachHandler.php?type=showAddTpl" role="button" class="btn blue"
+										data-toggle="modal" target="_blank"><i class="icon-pencil"></i> 上传资源</a>
 
 									<div class="btn-group">
 
@@ -159,27 +159,27 @@
 											<th style="width: 8px;"><input type="checkbox"
 												class="group-checkable" data-set="#sample_1 .checkboxes" /></th>
 
-											<th>文章名称</th>
-											<th class="hidden-480">文章编号</th>
+											<th>资源名称</th>
+											<th class="hidden-480">资源编号</th>
 											<th class="hidden-480">创建时间</th>
 											<th class="hidden-480">创建人</th>
-											<th colspan="3"><span class="label label-success">文章操作</span></th>
+											<th colspan="3"><span class="label label-success">操作</span></th>
 										</tr>
 									</thead>
 									<tbody>
-										{foreach from=$articles item=article}
+										{foreach from=$attachs item=attach}
 										<tr class="odd gradeX">
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-											<td>{$article.title}</td>
-											<td class="hidden-480">{$article.num}</td>
-											<td class="hidden-480">{$article.createdate}</td>
-											<td class="hidden-480">{$article.user_id}</td>
+											<td>{$attach.name}</td>
+											<td class="hidden-480">{$attach.num}</td>
+											<td class="hidden-480">{$attach.createdate}</td>
+											<td class="hidden-480">{$attach.user_id}</td>
 											<td><a
-												href="/controller/article/articleHandler.php?type=query&num={$article.num}"
+												href="/controller/attachment/attachHandler.php?type=query&num={$attach.num}"
 												title="详情"><i class="icon-envelope-alt"></i></a> &nbsp;<a
-												href="/controller/article/articleHandler.php?type=edit&num={$article.num}"
+												href="/controller/attachment/attachHandler.php?type=edit&num={$attach.num}"
 												title="编辑"><i class=icon-edit></i></a> &nbsp;<a
-												href="/controller/article/articleHandler.php?type=delete&num={$article.num}"
+												href="/controller/attachment/attachHandler.php?type=delete&num={$attach.num}"
 												title="删除"><i class="icon-trash"></i></a></td>
 
 										</tr>

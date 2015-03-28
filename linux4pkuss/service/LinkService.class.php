@@ -27,7 +27,7 @@ class LinkService {
 		$num = time () . rand ( 1, 10000 );
 		$now = date ( 'Y-m-d h:m:s', time () );
 		$user_id = intval ( $user ['id'] );
-		$sql = "insert into link_tb(num,title,createdate,content,isshare,user_id,theme_id) values('$num','$article[title]','$now','$article[content]',0,$user_id,'$article[theme_id]')";
+		$sql = "insert into link_tb(name,url,createdate,user_id) values('$link[title]','$link[content]','$now',$user_id)";
 		$db = new DBHelper ();
 		$result = $db->exec_other ( $sql );
 		return $result > 0 ? true : false;
@@ -54,6 +54,3 @@ class LinkService {
 		return $result > 0 ? true : false;
 	}
 }
-
-
-

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 14:20:32
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 14:49:54
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/admin/notice/noticeAdd.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:102429465516f04d9922f8-17741656%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c269e8328b9a9001f9831ff79c83388493496c57' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/admin/notice/noticeAdd.tpl',
-      1 => 1427566825,
+      1 => 1427566891,
       2 => 'file',
     ),
   ),
@@ -214,9 +214,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								</div>
 							</div>
 							<div class="portlet-body ">
-								<form name="addArticle" method="post"
-									action="/controller/article/articleHandler.php?type=add"
-									id="articleCon">
+								<form name="addNotice" method="post"
+									action="/controller/notice/noticeHandler.php?type=add"
+									id="noticeCon">
 									<div class="control-group">
 										<label class="control-label">通知标题</label>
 										<div class="controls">
@@ -225,7 +225,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 										</div>
 									</div>
 									<div class="control-group">
-										<label class="control-label">文章內容</label>
+										<label class="control-label">通知內容</label>
 										<div class="controls">
 											<textarea name="content" class="span12" rows="15"></textarea>
 										</div>

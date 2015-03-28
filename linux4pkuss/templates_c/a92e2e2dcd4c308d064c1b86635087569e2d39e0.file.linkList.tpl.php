@@ -1,4 +1,30 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 15:03:29
+         compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/admin/link/linkList.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:18404552265516fb01637d09-80404965%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'a92e2e2dcd4c308d064c1b86635087569e2d39e0' => 
+    array (
+      0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/admin/link/linkList.tpl',
+      1 => 1427569382,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '18404552265516fb01637d09-80404965',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'links' => 0,
+    'link' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_5516fb01693305_99681471',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5516fb01693305_99681471')) {function content_5516fb01693305_99681471($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -76,11 +102,14 @@
 
 
 <body class="page-header-fixed">
-	<header> {include file="admin/header.tpl"} </header>
+	<header> <?php echo $_smarty_tpl->getSubTemplate ("admin/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+ </header>
 	<!-- BEGIN CONTAINER -->
 	<div class="page-container row-fluid">
 		<!-- BEGIN SIDEBAR -->
-		{include file="admin/sidebar.tpl"}
+
+		<?php echo $_smarty_tpl->getSubTemplate ("admin/sidebar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 		<!-- END SIDEBAR -->
 		<!-- BEGIN PAGE -->
 		<div class="page-content">
@@ -162,23 +191,34 @@
 										</tr>
 									</thead>
 									<tbody>
-										{foreach from=$links item=link}
+										<?php  $_smarty_tpl->tpl_vars['link'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['link']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['links']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['link']->key => $_smarty_tpl->tpl_vars['link']->value) {
+$_smarty_tpl->tpl_vars['link']->_loop = true;
+?>
 										<tr class="odd gradeX">
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-											<td>{$link.name}</td>
-											<td class="hidden-480">{$link.url}</td>
-											<td class="hidden-480">{$link.createdate}</td>
-											<td class="hidden-480">{$link.user_id}</td>
+											<td><?php echo $_smarty_tpl->tpl_vars['link']->value['name'];?>
+</td>
+											<td class="hidden-480"><?php echo $_smarty_tpl->tpl_vars['link']->value['url'];?>
+</td>
+											<td class="hidden-480"><?php echo $_smarty_tpl->tpl_vars['link']->value['createdate'];?>
+</td>
+											<td class="hidden-480"><?php echo $_smarty_tpl->tpl_vars['link']->value['user_id'];?>
+</td>
 											<td><a
-												href="{$link.url}"
+												href="<?php echo $_smarty_tpl->tpl_vars['link']->value['url'];?>
+"
 												title="详情"><i class="icon-envelope-alt"></i></a> &nbsp;<a
-												href="/controller/link/linkHandler.php?type=edit&num={$link.num}"
+												href="/controller/link/linkHandler.php?type=edit&num=<?php echo $_smarty_tpl->tpl_vars['link']->value['num'];?>
+"
 												title="编辑"><i class=icon-edit></i></a> &nbsp;<a
-												href="/controller/link/linkHandler.php?type=delete&num={$link.id}"
+												href="/controller/link/linkHandler.php?type=delete&num=<?php echo $_smarty_tpl->tpl_vars['link']->value['id'];?>
+"
 												title="删除"><i class="icon-trash"></i></a></td>
 
 										</tr>
-										{/foreach}
+										<?php } ?>
 									</tbody>
 
 								</table>
@@ -207,6 +247,7 @@
 	<!-- END CONTAINER -->
 
 	<!-- BEGIN FOOTER -->
-	<div class="footer">{include file="../../footer.tpl"}</div>
+	<div class="footer"><?php echo $_smarty_tpl->getSubTemplate ("../../footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+</div>
 	<!-- END FOOTER -->
-</html>
+</html><?php }} ?>

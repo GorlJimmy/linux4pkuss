@@ -1,8 +1,29 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 16:21:31
+         compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/admin/link/linkAdd.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:8714498915516fb22b49781-44873921%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '610313f20ba95a847d94a3a7d777c136315e60d3' => 
+    array (
+      0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/admin/link/linkAdd.tpl',
+      1 => 1427574021,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '8714498915516fb22b49781-44873921',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_5516fb22b83886_59501053',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5516fb22b83886_59501053')) {function content_5516fb22b83886_59501053($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>文章添加</title>
+<title>鏈接添加</title>
 <link href="/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="/bootstrap/bootstrap/css/bootstrap-responsive.css"
 	rel="stylesheet">
@@ -117,51 +138,22 @@
 <script src="/bootstrap/bootstrap/js/form-samples.js"></script>
 <script src="/bootstrap/bootstrap/javascript/theme.js"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
-<!--kindeditor  -->
-<link rel="stylesheet"
-	href="/kindeditor-4.1.10/themes/default/default.css" />
-<link rel="stylesheet"
-	href="/kindeditor-4.1.10/plugins/code/prettify.css" />
-<script charset="utf-8" src="/kindeditor-4.1.10/kindeditor.js"></script>
-<script charset="utf-8" src="/kindeditor-4.1.10/lang/zh-CN.js"></script>
-<script charset="utf-8"
-	src="/kindeditor-4.1.10/plugins/code/prettify.js"></script>
 <script>
 	jQuery(document).ready(function() {
 		App.init();
 		FormSamples.init();
 	});
-	KindEditor.ready(function(K) {
-		var editor1 = K.create('textarea[name="content"]', {
-
-			cssPath : '/kindeditor-4.1.10/plugins/code/prettify.css',
-			uploadJson : '/kindeditor-4.1.10/php/upload_json.php',
-			fileManagerJson : '/kindeditor-4.1.10/php/file_manager_json.php',
-			allowFileManager : true,
-			afterCreate : function() {
-				var self = this;
-				K.ctrl(document, 13, function() {
-					self.sync();
-					document.forms['addArticle'].submit();
-				});
-				K.ctrl(self.edit.doc, 13, function() {
-					self.sync();
-					document.forms['addArticle'].submit();
-				});
-			}
-		});
-		prettyPrint();
-	});
 </script>
-
 </head>
 <body class="page-header-fixed">
-	<header> {include file="admin/header.tpl"} </header>
+	<header> <?php echo $_smarty_tpl->getSubTemplate ("admin/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+ </header>
 	<!-- BEGIN CONTAINER -->
 	<div class="page-container row-fluid">
 		<!-- BEGIN SIDEBAR -->
 
-		{include file="admin/sidebar.tpl"}
+		<?php echo $_smarty_tpl->getSubTemplate ("admin/sidebar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 		<!-- END SIDEBAR -->
 		<!-- BEGIN PAGE -->
 		<div class="page-content">
@@ -187,34 +179,24 @@
 						<div class="portlet box light-grey">
 							<div class="portlet-title">
 								<div class="caption">
-									<i class="icon-user"></i>项目文章信息
+									<i class="icon-user"></i>鏈接信息
 								</div>
 							</div>
 							<div class="portlet-body ">
-								<form name="addArticle" method="post"
-									action="/controller/article/articleHandler.php?type=add"
-									id="articleCon">
+								<form name="addLink" method="post"
+									action="/controller/link/linkHandler.php?type=add" id="linkCon">
 									<div class="control-group">
-										<label class="control-label">文章标题</label>
+										<label class="control-label">鏈接标题</label>
 										<div class="controls">
-											<input name="title" type="text" placeholder="请输入文章标题"
+											<input name="title" type="text" placeholder="请输入鏈接标题"
 												class="m-wrap span12" />
 										</div>
 									</div>
 									<div class="control-group">
-										<label class="control-label">文章主題</label>
+										<label class="control-label">鏈接內容</label>
 										<div class="controls">
-											<select class="m-wrap span6" id="project_list">
-												
-											</select> <select class="m-wrap span6" name="theme_id" id="theme_list">
-												
-											</select>
-										</div>
-									</div>
-									<div class="control-group">
-										<label class="control-label">文章內容</label>
-										<div class="controls">
-											<textarea name="content" class="span12" rows="15"></textarea>
+											<input name="content" type="text" placeholder="请输入鏈接地址"
+												class="m-wrap span12" />
 										</div>
 									</div>
 									<div class="actions">
@@ -238,6 +220,8 @@
 	</div>
 	<!-- END CONTAINER -->
 	<!-- BEGIN FOOTER -->
-	<div class="footer">{include file="../../footer.tpl"}</div>
+	<div class="footer"><?php echo $_smarty_tpl->getSubTemplate ("../../footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+</div>
 	<!-- END FOOTER -->
 </html>
+<?php }} ?>
