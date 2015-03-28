@@ -181,7 +181,6 @@
 												title="编辑"><i class=icon-edit></i></a> &nbsp;<a
 												href="/controller/attachment/attachHandler.php?type=delete&num={$attach.num}"
 												title="删除"><i class="icon-trash"></i></a></td>
-
 										</tr>
 										{/foreach}
 									</tbody>
