@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 16:58:05
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 19:08:10
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/admin/attachment/attachmentList.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:941491464551710c9899847-69449547%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '68f58205a5cf26cc8a9a5af6d175f09ed7a16570' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/admin/attachment/attachmentList.tpl',
-      1 => 1427576281,
+      1 => 1427581681,
       2 => 'file',
     ),
   ),
@@ -220,7 +220,6 @@ $_smarty_tpl->tpl_vars['attach']->_loop = true;
 												href="/controller/attachment/attachHandler.php?type=delete&num=<?php echo $_smarty_tpl->tpl_vars['attach']->value['num'];?>
 "
 												title="删除"><i class="icon-trash"></i></a></td>
-
 										</tr>
 										<?php } ?>
 									</tbody>

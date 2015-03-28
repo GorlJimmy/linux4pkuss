@@ -30,21 +30,21 @@ $(function() {
 	var resource=$("#newResource");
 	$
 	.post(
-			'/controller/article/articleHandler.php?type=newArticle',
+			'/controller/attachment/attachHandler.php?type=newAttach',
 			{},
-			function(articles, statu) {
-				var articles = eval('(' + articles + ')');
+			function(attachments, statu) {
+				var attachments = eval('(' + attachments + ')');
 				resource.children().remove();
-				if (articles == null) {
+				if (attachments == null) {
 					$(
 							"<p>暂时无数据</p>")
 							.appendTo(resource);
 
 				} else {
 
-					for (var i = 0; i < articles.length; i++) {
+					for (var i = 0; i < attachments.length; i++) {
 						$(
-								"<p><a href='/controller/article/articleHandler.php?type=query&num="+articles[i].num+"'>"+articles[i].title+"</a></p>")
+								"<p><a href='/controller/attachment/attachHandler.php?type=query&num="+attachments[i].num+"'>"+attachments[i].name+"</a></p>")
 								.appendTo(resource);
 					}
 				}

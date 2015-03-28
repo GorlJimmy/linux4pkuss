@@ -20,7 +20,7 @@ function checkPriv() {
 }
 if ('newAttach' == $type) {
 	$attachService = new AttachService ();
-	$attachs = $AttachService->AttachList ();
+	$attachs = $attachService->attachList ();
 	echo json_encode ( $attachs );
 } elseif ('showAddTpl' == $type) {
 	checkPriv ();
@@ -34,12 +34,11 @@ if ('newAttach' == $type) {
 	} else {
 		header ( "location:attachHandler.php?type=list&msg=failure" );
 	}
-} elseif ('query' == type) {
-	checkPriv ();
+} elseif ('query' == $type) {
 	$attachService = new AttachService ();
-	$attach = $AttachService->queryAttach ( $num );
+	$attach = $attachService->queryAttach ( $num );
 	$smarty->assign ( 'attach', $attach );
-	$smarty->display ( 'attach/attachDetail.tpl' );
+	$smarty->display ( 'attachment/attachmentDetail.tpl' );
 } elseif ('list' == $type) {
 	checkPriv ();
 	$attachService = new AttachService ();

@@ -10,7 +10,7 @@ class ArticleService {
 	}
 	public function articleList() {
 		require_once $this->PATH . '/util/DBHelper.class.php';
-		$sql = "select * from article_tb order by id desc limit 15";
+		$sql = "select * from article_tb order by id desc limit 10";
 		$db = new DBHelper ();
 		$result = $db->exec_query ( $sql );
 		return $result;

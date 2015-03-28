@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>{$article.title}</title>
+<title>{$attach.name}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset=utf-8>
 <!-- Bootstrap -->
@@ -120,7 +120,7 @@
 					<div class="portlet-title">
 
 						<div class="caption">
-							<i class="icon-thumbs-up"></i>{$article.title}
+							<i class="icon-thumbs-up"></i>{$attach.name}
 						</div>
 
 						<div class="tools">
@@ -134,9 +134,9 @@
 
 						<div class="row-fluid">
 
-							<div class="span12">{$article.content}</div>
-							<div class="span12">{$article.createdate}</div>
-							<div class="span12">{$article.user_id}</div>
+							<div class="span12">{$attach.description}</div>
+							<div class="span12">{$attach.createdate}</div>
+							<div class="span12">{$attach.user_id}</div>
 						</div>
 					</div>
 

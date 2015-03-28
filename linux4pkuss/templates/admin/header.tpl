@@ -15,19 +15,19 @@
 				<ul class="nav">
 					<li><a href="/index.php"><b class="icon-home"></b>首页</a></li>
 					<li><a
-						href="/controller/system_information/handler.php?type=introduction"><b
+						href="/controller/panel/handler.php?type=introduction"><b
 							class="icon-comment"></b>课程简介</a></li>
 					<li><a
-						href="/controller/system_information/handler.php?type=project"><b
+						href="/controller/panel/handler.php?type=project"><b
 							class="icon-envelope"></b>项目信息</a></li>
 					<li><a
-						href="/controller/system_information/handler.php?type=notice"><b
+						href="/controller/panel/handler.php?type=notice"><b
 							class="icon-bell"></b>课程通知</a></li>
 					<li><a
-						href="/controller/system_information/handler.php?type=article"><b
+						href="/controller/panel/handler.php?type=article"><b
 							class="icon-book"></b>相关文章</a></li>
 					<li><a
-						href="/controller/system_information/handler.php?type=download"><b
+						href="/controller/panel/handler.php?type=download"><b
 							class="icon-download"></b>资源下载</a></li>
 				</ul>
 				<!-- END RESPONSIVE MENU TOGGLER -->
