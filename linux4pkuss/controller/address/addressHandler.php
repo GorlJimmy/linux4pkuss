@@ -10,7 +10,13 @@ require_once $ROOT.'/service/CityService.class.php';
 require_once $ROOT.'/service/AreaService.class.php';
 
 $type=$_POST['type'].trim();
-
+function checkPriv() {
+	$user = $_SESSION ['user'];
+	if (1 != $user ['role_id']) {
+		header ( "location:/index.php?msg=auth_failure" );
+		return;
+	}
+}
 if('province_list'==$type){
 	$ps=new ProvinceService();
 	$provinces=$ps->getAllProvinces();

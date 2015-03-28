@@ -3,57 +3,56 @@
 /*
  * author:Gao Xiaoning
  */
-class LinkService {
+class AttachService {
 	private $PATH;
 	function __construct() {
 		$this->PATH = $_SERVER ['DOCUMENT_ROOT'];
 	}
-	public function linkList() {
+	public function attachList() {
 		require_once $this->PATH . '/util/DBHelper.class.php';
-		$sql = "select * from link_tb order by id desc limit 15";
+		$sql = "select * from attachment_tb order by id desc limit 15";
 		$db = new DBHelper ();
 		$result = $db->exec_query ( $sql );
 		return $result;
 	}
-	public function linkListPage() {
+	public function attachListPage() {
 		require_once $this->PATH . '/util/DBHelper.class.php';
-		$sql = "select * from link_tb order by id desc";
+		$sql = "select * from attachment_tb order by id desc";
 		$db = new DBHelper ();
 		$result = $db->exec_query ( $sql );
 		return $result;
 	}
-	public function createLink($link, $user) {
+	public function createAttach($notice, $user) {
 		require_once $this->PATH . '/util/DBHelper.class.php';
 		$num = time () . rand ( 1, 10000 );
 		$now = date ( 'Y-m-d h:m:s', time () );
 		$user_id = intval ( $user ['id'] );
-		$sql = "insert into link_tb(num,title,createdate,content,isshare,user_id,theme_id) values('$num','$article[title]','$now','$article[content]',0,$user_id,'$article[theme_id]')";
+		$sql = "insert into attachment_tb(num,title,createdate,content,isshare,user_id,theme_id) values('$num','$article[title]','$now','$article[content]',0,$user_id,'$article[theme_id]')";
 		$db = new DBHelper ();
 		$result = $db->exec_other ( $sql );
 		return $result > 0 ? true : false;
 	}
-	public function queryLink($num){
+	public function queryAttach($num) {
 		require_once $this->PATH . '/util/DBHelper.class.php';
-		$sql = "select * from link_tb where num=$num order by id asc";
+		$sql = "select * from attachment_tb where num=$num order by id asc";
 		$db = new DBHelper ();
 		$result = $db->exec_query ( $sql );
-		return $result[0];
+		return $result [0];
 	}
-	public function updateLink($id, $title, $createdate, $content, $theme_id) {
+	// 修改更新文章
+	public function updateAttach($id, $title, $createdate, $content, $theme_id) {
 		require_once $this->PATH . '/util/DBHelper.class.php';
-		$sql = "update link_tb set title=" . "'" . $title . "'" . ",createdate=" . "'" . $createdate . "'" . ",content=" . "'" . $content . "'" . ",theme_id=" . $theme_id . " where id=" . $id;
+		$sql = "update attachment_tb set title=" . "'" . $title . "'" . ",createdate=" . "'" . $createdate . "'" . ",content=" . "'" . $content . "'" . ",theme_id=" . $theme_id . " where id=" . $id;
 		$db = new DBHelper ();
 		$result = $db->exec_other ( $sql );
 		return $result;
 	}
-	public function deleteLink($num) {
+	// 删除文章
+	public function deleteAttach($num) {
 		require_once $this->PATH . '/util/DBHelper.class.php';
-		$sql = "delete from link_tb where num in" . "(" . $num . ")";
+		$sql = "delete from attachment_tb where num in" . "(" . $num . ")";
 		$db = new DBHelper ();
 		$result = $db->exec_other ( $sql );
 		return $result > 0 ? true : false;
 	}
 }
-
-
-

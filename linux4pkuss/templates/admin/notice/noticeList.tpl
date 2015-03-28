@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>文章管理</title>
+<title>通知管理</title>
 <link href="/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="/bootstrap/bootstrap/css/bootstrap-responsive.css"
 	rel="stylesheet">
@@ -116,18 +116,15 @@
 							<div class="portlet-title">
 
 								<div class="caption">
-									<i class="icon-user"></i>项目文章信息
+									<i class="icon-user"></i>通知信息
 								</div>
 
 								<div class="actions">
-									<a href="/controller/article/articleHandler.php?type=showAddTpl" role="button" class="btn blue"
-										data-toggle="modal" target="_blank"><i class="icon-pencil"></i> 添加</a>
-
+									<a href="/controller/notice/noticeHandler.php?type=showAddTpl" role="button" class="btn blue"
+										data-toggle="modal" target="_blank"><i class="icon-pencil"></i> 发布通知</a>
 									<div class="btn-group">
-
 										<a class="btn green" href="#" data-toggle="dropdown"> <i
 											class="icon-cogs"></i> 工具 <i class="icon-angle-down"></i>
-
 										</a>
 
 										<ul class="dropdown-menu pull-right">
@@ -151,35 +148,31 @@
 							<div class="portlet-body ">
 								<table class="table table-striped table-bordered table-hover"
 									id="sample_1">
-
 									<thead>
-
 										<tr>
-
 											<th style="width: 8px;"><input type="checkbox"
 												class="group-checkable" data-set="#sample_1 .checkboxes" /></th>
-
-											<th>文章名称</th>
-											<th class="hidden-480">文章编号</th>
-											<th class="hidden-480">创建时间</th>
+											<th>名称</th>
+											<th class="hidden-480">编号</th>
+											<th class="hidden-480">时间</th>
 											<th class="hidden-480">创建人</th>
-											<th colspan="3"><span class="label label-success">文章操作</span></th>
+											<th colspan="3"><span class="label label-success">操作</span></th>
 										</tr>
 									</thead>
 									<tbody>
-										{foreach from=$articles item=article}
+										{foreach from=$notices item=notice}
 										<tr class="odd gradeX">
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-											<td>{$article.title}</td>
-											<td class="hidden-480">{$article.num}</td>
-											<td class="hidden-480">{$article.createdate}</td>
-											<td class="hidden-480">{$article.user_id}</td>
+											<td>{$notice.title}</td>
+											<td class="hidden-480">{$notice.num}</td>
+											<td class="hidden-480">{$notice.createtime}</td>
+											<td class="hidden-480">{$notice.user_id}</td>
 											<td><a
-												href="/controller/article/articleHandler.php?type=query&num={$article.num}"
+												href="/controller/notice/noticeHandler.php?type=query&num={$notice.num}"
 												title="详情"><i class="icon-envelope-alt"></i></a> &nbsp;<a
-												href="/controller/article/articleHandler.php?type=edit&num={$article.num}"
+												href="/controller/notice/noticeHandler.php?type=edit&num={$notice.num}"
 												title="编辑"><i class=icon-edit></i></a> &nbsp;<a
-												href="/controller/article/articleHandler.php?type=delete&num={$article.num}"
+												href="/controller/notice/noticeHandler.php?type=delete&num={$notice.num}"
 												title="删除"><i class="icon-trash"></i></a></td>
 
 										</tr>

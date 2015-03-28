@@ -10,14 +10,16 @@ $smarty->setCacheDir ( $ROOT . '/cache' );
 session_start ();
 $type = $_GET ['type'] . trim ();
 $num = $_GET ['num'] . trim ();
-$user = $_SESSION ['user'];
-
-
-if ('list' == $type) {
+function checkPriv() {
+	$user = $_SESSION ['user'];
 	if (1 != $user ['role_id']) {
-		header ( "location:/index.php?msg=auth_failure" );
+		header ( "location:/index.php?msg=auth_failure&id=".$user ['role_id'] );
 		return;
 	}
+}
+
+if ('list' == $type) {
+	checkPriv();
 	$themeService = new ThemeService ();
 	$topThemes = $themeService->themeList ( 0 );
 	$smarty->assign ( 'topThemes', $topThemes );
@@ -30,10 +32,7 @@ if ('list' == $type) {
 	$smarty->display ( 'article/theme.tpl' );
 	
 }else if ('add' == $type) {
-	if (1 != $user ['role_id']) {
-		header ( "location:/index.php?msg=auth_failure" );
-		return;
-	}
+	checkPriv();
 	$themeService = new ThemeService ();
 	$isSuccess = $themeService->createTheme ( $_POST, $user );
 	if ($isSuccess) {
@@ -42,10 +41,7 @@ if ('list' == $type) {
 		header ( "location:themeHandler.php?type=list&msg=failure" );
 	}
 } else if ('delete' == $type) {
-	if (1 != $user ['role_id']) {
-		header ( "location:/index.php?msg=auth_failure" );
-		return;
-	}
+	checkPriv();
 	$themeService = new ThemeService ();
 	$isSuccess = $themeService->deleteTheme ( $num );
 	if ($isSuccess) {
@@ -54,11 +50,13 @@ if ('list' == $type) {
 		header ( "location:themeHandler.php?type=list&msg=failure" );
 	}
 } else if ('query' == $type) {
+	checkPriv();
 	$themeService = new ThemeService ();
 	$theme = $themeService->findTheme ( $num );
 	$smarty->assign ( 'theme', $theme );
 	$smarty->display ( 'admin/theme/themeDetail.tpl' );
 } else if ('edit' == $type) {
+	checkPriv();
 	header ( "location:themeHandler.php?type=list&msg=success" );
 } else if ('theme_list' == $type) {
 	$themeService = new ThemeService ();

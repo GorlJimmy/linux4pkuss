@@ -1,8 +1,29 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 14:20:32
+         compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/admin/notice/noticeAdd.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:102429465516f04d9922f8-17741656%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'c269e8328b9a9001f9831ff79c83388493496c57' => 
+    array (
+      0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/admin/notice/noticeAdd.tpl',
+      1 => 1427566825,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '102429465516f04d9922f8-17741656',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_5516f04d9c8326_55284407',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5516f04d9c8326_55284407')) {function content_5516f04d9c8326_55284407($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>文章添加</title>
+<title>发布通知</title>
 <link href="/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="/bootstrap/bootstrap/css/bootstrap-responsive.css"
 	rel="stylesheet">
@@ -142,11 +163,11 @@
 				var self = this;
 				K.ctrl(document, 13, function() {
 					self.sync();
-					document.forms['addArticle'].submit();
+					document.forms['addNotice'].submit();
 				});
 				K.ctrl(self.edit.doc, 13, function() {
 					self.sync();
-					document.forms['addArticle'].submit();
+					document.forms['addNotice'].submit();
 				});
 			}
 		});
@@ -156,12 +177,14 @@
 
 </head>
 <body class="page-header-fixed">
-	<header> {include file="admin/header.tpl"} </header>
+	<header> <?php echo $_smarty_tpl->getSubTemplate ("admin/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+ </header>
 	<!-- BEGIN CONTAINER -->
 	<div class="page-container row-fluid">
 		<!-- BEGIN SIDEBAR -->
 
-		{include file="admin/sidebar.tpl"}
+		<?php echo $_smarty_tpl->getSubTemplate ("admin/sidebar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 		<!-- END SIDEBAR -->
 		<!-- BEGIN PAGE -->
 		<div class="page-content">
@@ -187,7 +210,7 @@
 						<div class="portlet box light-grey">
 							<div class="portlet-title">
 								<div class="caption">
-									<i class="icon-user"></i>项目文章信息
+									<i class="icon-user"></i>发布通知
 								</div>
 							</div>
 							<div class="portlet-body ">
@@ -195,20 +218,10 @@
 									action="/controller/article/articleHandler.php?type=add"
 									id="articleCon">
 									<div class="control-group">
-										<label class="control-label">文章标题</label>
+										<label class="control-label">通知标题</label>
 										<div class="controls">
 											<input name="title" type="text" placeholder="请输入文章标题"
 												class="m-wrap span12" />
-										</div>
-									</div>
-									<div class="control-group">
-										<label class="control-label">文章主題</label>
-										<div class="controls">
-											<select class="m-wrap span6" id="project_list">
-												
-											</select> <select class="m-wrap span6" name="theme_id" id="theme_list">
-												
-											</select>
 										</div>
 									</div>
 									<div class="control-group">
@@ -238,6 +251,8 @@
 	</div>
 	<!-- END CONTAINER -->
 	<!-- BEGIN FOOTER -->
-	<div class="footer">{include file="../../footer.tpl"}</div>
+	<div class="footer"><?php echo $_smarty_tpl->getSubTemplate ("../../footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+</div>
 	<!-- END FOOTER -->
 </html>
+<?php }} ?>

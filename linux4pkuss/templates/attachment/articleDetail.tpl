@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>2014红帽挑战比赛</title>
+<title>{$article.title}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset=utf-8>
 <!-- Bootstrap -->
@@ -47,6 +47,7 @@
 	src="/bootstrap/bootstrap/js/jquery.bootpag.min.js"></script>
 <script src="/bootstrap/bootstrap/js/app.js"></script>
 <script src="/bootstrap/bootstrap/js/ui-general.js"></script>
+<script src="/bootstrap/bootstrap/javascript/index.js"></script>
 <script>
 	jQuery(document).ready(function() {
 		App.init();
@@ -56,40 +57,10 @@
 </head>
 <body>
 	<header> {include file="header_nav.tpl"} </header>
-	<div class="container-fluid" style="padding: 60px 8% 0 8%">
+	<div class="container-fluid" style="padding: 4% 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
-				<div class="portlet box blue">
-					<div class="portlet-title">
-						<div class="caption">
-							<i class="icon-user"></i>快速注册
-						</div>
-						<div class="tools">
-							<a href="javascript:;" class="collapse"></a> <a
-								href="#portlet-config" data-toggle="modal" class="config"></a> <a
-								href="javascript:;" class="reload hidden-phone"></a> <a
-								href="javascript:;" class="remove hidden-phone"></a>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<ol>
-							<li>请填写真实邮箱，用于激活您的帐号；</li>
-							<li>包括 Gmail 在内很多邮件服务商会把<span class="label label-success">本站</span>发送的邮件识别为垃圾邮件；
-							</li>
-							<li>如果您使用<span class="label label-info">163邮箱</span>，那么邮件可能在您的订阅邮件列表中
-							</li>
-							<li>如果您没有收到<span class="label label-success">本站</span>发送的邮件，请注意查看您邮箱中的垃圾邮件；
-							</li>
-							<li>请将来自<span class="label label-success">本站</span>的邮件设置成不是垃圾邮件，以便接受本站邮件；
-							</li>
-							<li>如果您<span class="label label-important">忘记登录密码</span>，也可以通过此邮箱进行密码重置；
-							</li>
-						</ol>
-						<p style="text-align: right">
-							<a href="/controller/user/userHandler.php?type=regist">进入注册</a>
-						</p>
-					</div>
-				</div>
+
 				<div class="portlet box green">
 					<div class="portlet-title">
 						<div class="caption">
@@ -102,7 +73,7 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newArticle">
 						<p>
 							<a href="/controller/article/articleHandler.php?type=challenge">2014红帽挑战比赛</a>
 						</p>
@@ -121,14 +92,27 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newResource">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
 
 					</div>
 				</div>
-
+				<div class="portlet box green">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-user"></i>项目信息
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newProject"></div>
+				</div>
 			</div>
 			<div class="span6">
 				<div class="portlet box green">
@@ -136,7 +120,7 @@
 					<div class="portlet-title">
 
 						<div class="caption">
-							<i class="icon-thumbs-up"></i>2014红帽挑战赛
+							<i class="icon-thumbs-up"></i>{$article.title}
 						</div>
 
 						<div class="tools">
@@ -150,33 +134,9 @@
 
 						<div class="row-fluid">
 
-							<div class="span12">
-
-								<p>
-									红帽每年会推出针对在校生的竞赛，不需要参赛费用，只要拿出技术和热情。可参见 <br>
-									<a href="https://php-redhatchallenge.rhcloud.com/cn/rules.php"
-										target="_blank">https://php-redhatchallenge.rhcloud.com/cn/rules.php</a>
-								</p>
-								<p>附件中的文件是2014红帽挑战赛的相关参考文件。</p>
-								<p>其中包含：</p>
-								<p>比赛日程安排，比赛规则，以及指导学生如何将自己的作品放至Openshift等文件。</p>
-								<p>今年挑战赛的主题是“智能生活,智能家居”,参赛者可以围绕这个主题开发和构建任何应用。</p>
-								<p>决赛地点为：新加坡，冠军奖励为10,000美金。</p>
-								<p>与以往有较大不同，</p>
-								<p>还请各位合作伙伴认真阅读附件中文件，鼓励学生积极参加。</p>
-								<p>需要注意的是：为了给学生争取更长的时间准备本次大赛，故 附件中所涉及日期尚有不精准之处，请以以下时间作为参考：</p>
-								<p>注册及提交作品&nbsp; &nbsp; &nbsp; &nbsp; 2014年10月26日</p>
-								<p>初选投票 &nbsp; &nbsp; &nbsp; &nbsp; 2014年27日-31日</p>
-								<p>复赛RHCSA考试 &nbsp; &nbsp; &nbsp; &nbsp; 2014年11月1日-16日</p>
-								<p>公布决赛名单&nbsp; &nbsp; &nbsp; &nbsp;  2014年11月17日</p>
-								<p>决赛（新加坡）&nbsp; &nbsp; &nbsp; &nbsp;  2014年12月15日（当周）</p>
-								<p>报名截止时间：2014年10月12日</p>
-								<p>联系人：孙蕾，</p>
-								<p>电话：18600768864，</p>
-								<p>QQ：1297494752， 邮箱：sunlei3425@126.com。</p>
-								<p>ps：这个比赛的范围是亚洲，决赛在新加坡，据说得奖应该不是特别难~</p>
-								<p align="right"><a href="/upload/2014_redhat_cha.zip">附件下载</a></p>
-							</div>
+							<div class="span12">{$article.content}</div>
+							<div class="span12">{$article.createdate}</div>
+							<div class="span12">{$article.user_id}</div>
 						</div>
 					</div>
 
@@ -195,7 +155,7 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newCourse">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
@@ -214,12 +174,26 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body">
+					<div class="portlet-body" id="newDown">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
 
 					</div>
+				</div>
+				<div class="portlet box blue">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-user"></i>友情链接
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newLink"></div>
 				</div>
 			</div>
 		</div>

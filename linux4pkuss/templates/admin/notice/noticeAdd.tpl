@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>文章添加</title>
+<title>发布通知</title>
 <link href="/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="/bootstrap/bootstrap/css/bootstrap-responsive.css"
 	rel="stylesheet">
@@ -142,11 +142,11 @@
 				var self = this;
 				K.ctrl(document, 13, function() {
 					self.sync();
-					document.forms['addArticle'].submit();
+					document.forms['addNotice'].submit();
 				});
 				K.ctrl(self.edit.doc, 13, function() {
 					self.sync();
-					document.forms['addArticle'].submit();
+					document.forms['addNotice'].submit();
 				});
 			}
 		});
@@ -187,32 +187,22 @@
 						<div class="portlet box light-grey">
 							<div class="portlet-title">
 								<div class="caption">
-									<i class="icon-user"></i>项目文章信息
+									<i class="icon-user"></i>发布通知
 								</div>
 							</div>
 							<div class="portlet-body ">
-								<form name="addArticle" method="post"
-									action="/controller/article/articleHandler.php?type=add"
-									id="articleCon">
+								<form name="addNotice" method="post"
+									action="/controller/notice/noticeHandler.php?type=add"
+									id="noticeCon">
 									<div class="control-group">
-										<label class="control-label">文章标题</label>
+										<label class="control-label">通知标题</label>
 										<div class="controls">
 											<input name="title" type="text" placeholder="请输入文章标题"
 												class="m-wrap span12" />
 										</div>
 									</div>
 									<div class="control-group">
-										<label class="control-label">文章主題</label>
-										<div class="controls">
-											<select class="m-wrap span6" id="project_list">
-												
-											</select> <select class="m-wrap span6" name="theme_id" id="theme_list">
-												
-											</select>
-										</div>
-									</div>
-									<div class="control-group">
-										<label class="control-label">文章內容</label>
+										<label class="control-label">通知內容</label>
 										<div class="controls">
 											<textarea name="content" class="span12" rows="15"></textarea>
 										</div>

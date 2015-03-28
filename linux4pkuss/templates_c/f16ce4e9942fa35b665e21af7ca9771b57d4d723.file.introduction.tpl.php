@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-12-07 12:28:32
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 12:39:40
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/panel/introduction.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:67123633754848e40b18362-99806485%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f16ce4e9942fa35b665e21af7ca9771b57d4d723' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/panel/introduction.tpl',
-      1 => 1417969199,
+      1 => 1425934798,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
   'unifunc' => 'content_54848e40b56814_08004024',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54848e40b56814_08004024')) {function content_54848e40b56814_08004024($_smarty_tpl) {?><!DOCTYPE html>
 <html>
@@ -178,7 +178,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 										<p>领域方向： 软件工程</p>
 										<p>学时和学分： 48学时； 3学分</p>
 										<p>主讲： 荆琦</p>
-										<p>上课信息： 周三 （0:00- 0:00） （教室号）
+										<p>上课信息： 周4 （13:00- 17:00） （教室号:3202）
 										<p>
 									</div>
 									<div class="tab-pane" id="tab7">

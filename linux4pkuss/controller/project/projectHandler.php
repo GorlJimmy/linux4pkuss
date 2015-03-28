@@ -10,18 +10,26 @@ $smarty->setCacheDir ( $ROOT . '/cache' );
 session_start ();
 $type = $_GET ['type'] . trim ();
 $num = $_GET ['num'] . trim ();
-$user = $_SESSION ['user'];
-
-// if (1 != $user ['role_id']) {
-// 	header ( "location:/index.php?msg=auth_failure" );
-// 	return;
-// }
-
+function checkPriv() {
+	$user = $_SESSION ['user'];
+	if (1 != $user ['role_id']) {
+		header ( "location:/index.php?msg=auth_failure&id=".$user ['role_id'] );
+		return;
+	}
+}
 if ('list' == $type) {
+	checkPriv();
+	$projectService = new ProjectService ();
+	$topProjects = $projectService->projectList ( 0,3 );
+	$smarty->assign ( 'topProjects', $topProjects );
+	$smarty->display ( 'admin/project/projectList.tpl' );
+	echo json_encode($topProjects);
+}if ('listPage' == $type) {
 	$projectService = new ProjectService ();
 	$topProjects = $projectService->projectList ( 0,3 );
 	echo json_encode($topProjects);
 } else if ('add' == $type) {
+	checkPriv();
 	$projectService = new ProjectService ();
 	$isSuccess = $projectService->createProject ( $_POST, $user );
 	if ($isSuccess) {
@@ -30,7 +38,7 @@ if ('list' == $type) {
 		header ( "location:projectHandler.php?type=list&msg=failure" );
 	}
 } else if ('delete' == $type) {
-	
+	checkPriv();
 	$projectService = new ProjectService ();
 	$isSuccess = $projectService->deleteProject ( $num );
 	if ($isSuccess) {
@@ -39,11 +47,13 @@ if ('list' == $type) {
 		header ( "location:projectHandler.php?type=list&msg=failure" );
 	}
 } else if ('query' == $type) {
+	checkPriv();
 	$themeService = new ThemeService ();
 	$theme = $themeService->findTheme ( $num );
 	$smarty->assign ( 'theme', $theme );
 	$smarty->display ( 'admin/theme/themeDetail.tpl' );
 } else if ('edit' == $type) {
+	checkPriv();
 	header ( "location:themeHandler.php?type=list&msg=success" );
 } else if ('project_list' == $type) {
 	$projectService = new ProjectService ();

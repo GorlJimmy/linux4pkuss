@@ -1,6 +1,6 @@
 $(function(){
 	//初始化最新文章列表板块
-	$.post('/controller/project/projectHandler.php?type=list',{},
+	$.post('/controller/project/projectHandler.php?type=listPage',{},
 					function(_projects, statu) {
 						var projects = eval('(' + _projects + ')');
 						if (projects == null) {
