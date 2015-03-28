@@ -76,6 +76,7 @@ $(function() {
 			}
 
 	);
+	/**
 	//初始化热门下载板块
 	var downLoad=$("#newDown");
 	$
@@ -101,6 +102,7 @@ $(function() {
 			}
 
 	);
+	*/
 	//初始化友情链接板块
 	var link=$("#newLink");
 	$

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-12-07 12:47:31
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 19:47:01
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/panel/download.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1616900469548492b3caa964-96331768%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a628f7e541d3f9d236ed13fa85ce93c8082577a9' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/panel/download.tpl',
-      1 => 1417969284,
+      1 => 1427586262,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
   'unifunc' => 'content_548492b3cddfa9_79639198',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_548492b3cddfa9_79639198')) {function content_548492b3cddfa9_79639198($_smarty_tpl) {?><!DOCTYPE html>
 <html>
@@ -83,7 +83,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div class="container-fluid" style="padding: 4% 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
-				<div class="portlet box blue">
+				<!--
+				<div class="portlet box yellow">
 					<div class="portlet-title">
 						<div class="caption">
 							<i class="icon-cogs"></i>热门下载
@@ -95,9 +96,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
+					
 					<div class="portlet-body" id="newDown">
+						<p>
+							<a href="#">Linux内存管理心得</a>
+						</p>
+
 					</div>
-				</div>
+					
+				</div>-->
 				<div class="portlet box green">
 					<div class="portlet-title">
 						<div class="caption">

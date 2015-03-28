@@ -160,10 +160,11 @@
 
 					</div>
 				</div>
+				<!--
 				<div class="portlet box yellow">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-download-alt"></i>热门下载
+							<i class="icon-cogs"></i>热门下载
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -172,13 +173,15 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
+					
 					<div class="portlet-body" id="newDown">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
 
 					</div>
-				</div>
+					
+				</div>-->
 				<div class="portlet box blue">
 					<div class="portlet-title">
 						<div class="caption">

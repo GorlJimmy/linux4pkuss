@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-25 21:04:14
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 19:46:51
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/panel/article.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:54019165054848e45caaef2-83935832%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5c7959170f2177591f512be0b98dd452b5d0285f' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/panel/article.tpl',
-      1 => 1427330510,
+      1 => 1427586368,
       2 => 'file',
     ),
   ),
@@ -134,25 +134,28 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<div class="portlet-body" id="newLink"></div>
 				</div>
 			
-			<div class="portlet box yellow">
-				<div class="portlet-title">
-					<div class="caption">
-						<i class="icon-cogs"></i>热门下载
+			<!--
+				<div class="portlet box yellow">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-cogs"></i>热门下载
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
 					</div>
-					<div class="tools">
-						<a href="javascript:;" class="collapse"></a> <a
-							href="#portlet-config" data-toggle="modal" class="config"></a> <a
-							href="javascript:;" class="reload hidden-phone"></a> <a
-							href="javascript:;" class="remove hidden-phone"></a>
-					</div>
-				</div>
-				<div class="portlet-body" id="newDown">
-					<p>
-						<a href="#">Linux内存管理心得</a>
-					</p>
+					
+					<div class="portlet-body" id="newDown">
+						<p>
+							<a href="#">Linux内存管理心得</a>
+						</p>
 
-				</div>
-			</div>
+					</div>
+					
+				</div>-->
 			</div>
 			<div class="span9">
 			<div class="portlet box grey">

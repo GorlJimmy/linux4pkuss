@@ -107,25 +107,28 @@
 					<div class="portlet-body" id="newLink"></div>
 				</div>
 			
-			<div class="portlet box yellow">
-				<div class="portlet-title">
-					<div class="caption">
-						<i class="icon-cogs"></i>热门下载
+			<!--
+				<div class="portlet box yellow">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-cogs"></i>热门下载
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
 					</div>
-					<div class="tools">
-						<a href="javascript:;" class="collapse"></a> <a
-							href="#portlet-config" data-toggle="modal" class="config"></a> <a
-							href="javascript:;" class="reload hidden-phone"></a> <a
-							href="javascript:;" class="remove hidden-phone"></a>
-					</div>
-				</div>
-				<div class="portlet-body" id="newDown">
-					<p>
-						<a href="#">Linux内存管理心得</a>
-					</p>
+					
+					<div class="portlet-body" id="newDown">
+						<p>
+							<a href="#">Linux内存管理心得</a>
+						</p>
 
-				</div>
-			</div>
+					</div>
+					
+				</div>-->
 			</div>
 			<div class="span9">
 			<div class="portlet box grey">

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 14:43:12
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 19:47:29
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/notice/noticeDetail.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2670743925516f6408d8599-86826171%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'adec63d110095c29a4a4c59e2519e94e5ec37f58' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/notice/noticeDetail.tpl',
-      1 => 1427567756,
+      1 => 1427586272,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_5516f64091a3b4_19541544',
   'variables' => 
   array (
     'notice' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5516f64091a3b4_19541544',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5516f64091a3b4_19541544')) {function content_5516f64091a3b4_19541544($_smarty_tpl) {?><!DOCTYPE html>
 <html>
@@ -191,10 +191,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 					</div>
 				</div>
+				<!--
 				<div class="portlet box yellow">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-download-alt"></i>热门下载
+							<i class="icon-cogs"></i>热门下载
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -203,13 +204,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
+					
 					<div class="portlet-body" id="newDown">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
 
 					</div>
-				</div>
+					
+				</div>-->
 				<div class="portlet box blue">
 					<div class="portlet-title">
 						<div class="caption">

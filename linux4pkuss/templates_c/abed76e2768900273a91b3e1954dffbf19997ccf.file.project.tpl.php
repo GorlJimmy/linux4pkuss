@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-25 20:57:23
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 19:43:13
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/panel/project.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:144598104454848e43c70f86-69624411%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'abed76e2768900273a91b3e1954dffbf19997ccf' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/panel/project.tpl',
-      1 => 1427330869,
+      1 => 1427586181,
       2 => 'file',
     ),
   ),
@@ -168,6 +168,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 					</div>
 				</div>
+				<!--
 				<div class="portlet box yellow">
 					<div class="portlet-title">
 						<div class="caption">
@@ -180,13 +181,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
+					
 					<div class="portlet-body" id="newDown">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
 
 					</div>
-				</div>
+					
+				</div>-->
 				<div class="portlet box green">
 					<div class="portlet-title">
 						<div class="caption">

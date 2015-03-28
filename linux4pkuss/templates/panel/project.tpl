@@ -146,6 +146,7 @@
 
 					</div>
 				</div>
+				<!--
 				<div class="portlet box yellow">
 					<div class="portlet-title">
 						<div class="caption">
@@ -158,13 +159,15 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
+					
 					<div class="portlet-body" id="newDown">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
 
 					</div>
-				</div>
+					
+				</div>-->
 				<div class="portlet box green">
 					<div class="portlet-title">
 						<div class="caption">

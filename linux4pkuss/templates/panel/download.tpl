@@ -61,7 +61,8 @@
 	<div class="container-fluid" style="padding: 4% 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
-				<div class="portlet box blue">
+				<!--
+				<div class="portlet box yellow">
 					<div class="portlet-title">
 						<div class="caption">
 							<i class="icon-cogs"></i>热门下载
@@ -73,9 +74,15 @@
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
+					
 					<div class="portlet-body" id="newDown">
+						<p>
+							<a href="#">Linux内存管理心得</a>
+						</p>
+
 					</div>
-				</div>
+					
+				</div>-->
 				<div class="portlet box green">
 					<div class="portlet-title">
 						<div class="caption">

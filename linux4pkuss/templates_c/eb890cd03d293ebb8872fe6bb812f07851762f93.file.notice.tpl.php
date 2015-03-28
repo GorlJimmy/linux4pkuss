@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-12-07 12:28:36
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 19:46:48
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/panel/notice.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20634035254848e44d69142-32620028%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'eb890cd03d293ebb8872fe6bb812f07851762f93' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/panel/notice.tpl',
-      1 => 1417969225,
+      1 => 1427586234,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
   'unifunc' => 'content_54848e44da4540_71259815',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54848e44da4540_71259815')) {function content_54848e44da4540_71259815($_smarty_tpl) {?><!DOCTYPE html>
 <html>
@@ -164,6 +164,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						
 					</div>
 				</div>
+				<!--
 				<div class="portlet box yellow">
 					<div class="portlet-title">
 						<div class="caption">
@@ -176,13 +177,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
+					
 					<div class="portlet-body" id="newDown">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
-						
+
 					</div>
-				</div>
+					
+				</div>-->
 			</div>
 		</div>
 	</div>
