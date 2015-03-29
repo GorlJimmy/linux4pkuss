@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 16:36:10
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-29 07:34:57
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/admin/sidebar.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1231954597540fe49140b9c0-28075644%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e3504a384f4270f64bfafa1824e5485d16c54175' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/admin/sidebar.tpl',
-      1 => 1427574964,
+      1 => 1427627931,
       2 => 'file',
     ),
   ),
@@ -47,7 +47,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</a>
 			<ul class="sub-menu">
 				<li><a href="/controller/attachment/attachHandler.php?type=list">资源管理</a></li>
-				<li><a href="/controller/attachment/attachHandler.php?type=add">上传资源</a></li>
+				<li><a href="/controller/attachment/attachHandler.php?type=showAddTpl">上传资源</a></li>
 			</ul></li>
 		<li class=""><a href="javascript:;"> <i
 				class="icon-briefcase"></i> <span class="title">文章信息</span> <span

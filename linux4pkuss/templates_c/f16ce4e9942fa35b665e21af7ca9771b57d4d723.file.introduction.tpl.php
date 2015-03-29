@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 19:46:41
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-29 07:37:09
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/panel/introduction.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:67123633754848e40b18362-99806485%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f16ce4e9942fa35b665e21af7ca9771b57d4d723' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/panel/introduction.tpl',
-      1 => 1427586244,
+      1 => 1427627488,
       2 => 'file',
     ),
   ),
@@ -95,9 +95,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</div>
 					</div>
 					<div class="portlet-body" id="newCourse">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
 					</div>
 				</div>
 				<div class="portlet box green">
@@ -113,32 +110,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</div>
 					</div>
 					<div class="portlet-body" id="newArticle">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-
 					</div>
 				</div>
-				<div class="portlet box purple">
-					<div class="portlet-title">
-						<div class="caption">
-							<i class="icon-cogs"></i>最新资源
-						</div>
-						<div class="tools">
-							<a href="javascript:;" class="collapse"></a> <a
-								href="#portlet-config" data-toggle="modal" class="config"></a> <a
-								href="javascript:;" class="reload hidden-phone"></a> <a
-								href="javascript:;" class="remove hidden-phone"></a>
-						</div>
-					</div>
-					<div class="portlet-body" id="newResource">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-
-					</div>
-				</div>
-
 			</div>
 			<div class="span6">
 				<div class="portlet box grey">
@@ -336,10 +309,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</div>
 					</div>
 					<div class="portlet-body" id="newLink">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-
+					</div>
+				</div>
+				<div class="portlet box purple">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-cogs"></i>最新资源
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newResource">
 					</div>
 				</div>
 				<!--

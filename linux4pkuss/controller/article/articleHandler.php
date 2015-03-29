@@ -64,19 +64,22 @@ if ('list' == $type) {
 	$smarty->display ( 'article/articleDetail.tpl' );
 } else if ("edit" == $type) {
 	checkPriv ();
-	$id = $_POST ['id'];
-	$title = $_POST ['title'];
-	$createdate = date ( "Y-m-d h:i:s" );
-	$content = $_POST ['content'];
-	$theme_id = $_POST ['theme_id'];
-	
-	$articleadd = new ArticleService ();
-	$rst = $articleadd->article_upt ( $id, $title, $createdate, $content, $theme_id );
-	
-	header ( 'location:articleHandler.php?type=query' );
+	$articleService = new ArticleService ();
+	$article = $articleService->queryArticle ( $num );
+	$smarty->assign ( 'article', $article );
+	$smarty->display ( 'admin/article/articleEdit.tpl' );
 } else if ('newArticle' == $type) {
 	$articleService = new ArticleService ();
 	$articles = $articleService->articleList ();
 	echo json_encode ( $articles );
+}elseif ('update'==$type){
+	checkPriv ();
+	$articleService = new ArticleService ();
+	$isSuccess = $articleService->updateArticle ( $_POST, $user );
+	if ($isSuccess) {
+		header ( 'location:articleHandler.php?type=list&msg=success' );
+	} else {
+		header ( 'location:articleHandler.php?type=list&msg=failure' );
+	}
 }
 
