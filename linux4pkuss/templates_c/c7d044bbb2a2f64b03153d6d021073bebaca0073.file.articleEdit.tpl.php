@@ -1,8 +1,34 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-29 08:21:53
+         compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/admin/article/articleEdit.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:16994419835517e6a19a4ec6-21583915%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'c7d044bbb2a2f64b03153d6d021073bebaca0073' => 
+    array (
+      0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/admin/article/articleEdit.tpl',
+      1 => 1427631676,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '16994419835517e6a19a4ec6-21583915',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_5517e6a19fbfe3_54780998',
+  'variables' => 
+  array (
+    'article' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5517e6a19fbfe3_54780998')) {function content_5517e6a19fbfe3_54780998($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>{$article.title}</title>
+<title><?php echo $_smarty_tpl->tpl_vars['article']->value['title'];?>
+</title>
 <link href="/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="/bootstrap/bootstrap/css/bootstrap-responsive.css"
 	rel="stylesheet">
@@ -156,12 +182,14 @@
 
 </head>
 <body class="page-header-fixed">
-	<header> {include file="admin/header.tpl"} </header>
+	<header> <?php echo $_smarty_tpl->getSubTemplate ("admin/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+ </header>
 	<!-- BEGIN CONTAINER -->
 	<div class="page-container row-fluid">
 		<!-- BEGIN SIDEBAR -->
 
-		{include file="admin/sidebar.tpl"}
+		<?php echo $_smarty_tpl->getSubTemplate ("admin/sidebar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 		<!-- END SIDEBAR -->
 		<!-- BEGIN PAGE -->
 		<div class="page-content">
@@ -198,15 +226,19 @@
 										<label class="control-label">文章标题</label>
 										<div class="controls">
 											<input name="title" type="text"
-												placeholder="{$article.title}" value="{$article.title}"
+												placeholder="<?php echo $_smarty_tpl->tpl_vars['article']->value['title'];?>
+" value="<?php echo $_smarty_tpl->tpl_vars['article']->value['title'];?>
+"
 												class="m-wrap span12" /> <input name="num" type="hidden"
-												value="{$article.num}" />
+												value="<?php echo $_smarty_tpl->tpl_vars['article']->value['num'];?>
+" />
 										</div>
 									</div>
 									<div class="control-group">
 										<label class="control-label">文章內容</label>
 										<div class="controls">
-											<textarea name="content" class="span12" rows="15">{$article.content}</textarea>
+											<textarea name="content" class="span12" rows="15"><?php echo $_smarty_tpl->tpl_vars['article']->value['content'];?>
+</textarea>
 										</div>
 									</div>
 									<div class="actions">
@@ -230,6 +262,8 @@
 	</div>
 	<!-- END CONTAINER -->
 	<!-- BEGIN FOOTER -->
-	<div class="footer">{include file="../../footer.tpl"}</div>
+	<div class="footer"><?php echo $_smarty_tpl->getSubTemplate ("../../footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+</div>
 	<!-- END FOOTER -->
 </html>
+<?php }} ?>
