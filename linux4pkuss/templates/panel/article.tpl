@@ -73,6 +73,24 @@
 	<div class="container-fluid" style="padding: 4% 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
+			<div class="portlet box blue">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-cogs"></i>课程通知
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newCourse">
+						<p>
+							<a href="#">Linux内存管理心得</a>
+						</p>
+					</div>
+				</div>
 				<div class="portlet box green">
 					<div class="portlet-title">
 						<div class="caption">
