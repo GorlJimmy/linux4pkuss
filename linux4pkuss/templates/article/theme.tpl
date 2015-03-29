@@ -73,6 +73,35 @@
 	<div class="container-fluid" style="padding: 4% 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
+				<div class="portlet box red">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-comments-alt"></i>课程通知
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newCourse">
+					</div>
+				</div>
+				<div class="portlet box purple">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-download"></i>最新资源
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newResource"></div>
+				</div>
 				<div class="portlet box green">
 					<div class="portlet-title">
 						<div class="caption">
@@ -106,8 +135,8 @@
 					</div>
 					<div class="portlet-body" id="newLink"></div>
 				</div>
-			
-			<!--
+
+				<!--
 				<div class="portlet box yellow">
 					<div class="portlet-title">
 						<div class="caption">
@@ -131,23 +160,23 @@
 				</div>-->
 			</div>
 			<div class="span9">
-			<div class="portlet box grey">
-				<div class="portlet-title">
-					<div class="caption">
-						<i class="icon-cogs"></i>相关文章
+				<div class="portlet box grey">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-cogs"></i>相关文章
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload"></a> <a href="javascript:;"
+								class="remove"></a>
+						</div>
 					</div>
-					<div class="tools">
-						<a href="javascript:;" class="collapse"></a> <a
-							href="#portlet-config" data-toggle="modal" class="config"></a> <a
-							href="javascript:;" class="reload"></a> <a href="javascript:;"
-							class="remove"></a>
-					</div>
-				</div>
-				<div class="portlet-body">
-					
-					<div class="row-fluid">
-						<div class="span12">
-							<table class="table table-striped table-bordered table-hover"
+					<div class="portlet-body">
+
+						<div class="row-fluid">
+							<div class="span12">
+								<table class="table table-striped table-bordered table-hover"
 									id="sample_1">
 
 									<thead>
@@ -168,29 +197,30 @@
 										{foreach from=$themes item=theme}
 										<tr class="odd gradeX">
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-											<td><a href="/controller/article/articleHandler.php?type=listTheme&themeId={$theme.id}"
+											<td><a
+												href="/controller/article/articleHandler.php?type=listTheme&themeId={$theme.id}"
 												title="详情">{$theme.name}</a></td>
 											<td class="hidden-480">{$theme.num}</td>
 											<td class="hidden-480">{$theme.createdate}</td>
 											<td class="hidden-480">{$theme.user_id}</td>
 											<td><a
 												href="/controller/article/articleHandler.php?type=listTheme&themeId={$theme.id}"
-												title="详情"><i class="icon-envelope-alt"></i></a> 
+												title="详情"><i class="icon-envelope-alt"></i></a>
 										</tr>
 										{/foreach}
 									</tbody>
 
 								</table>
-		
+
+							</div>
 						</div>
 					</div>
+
 				</div>
 
+
 			</div>
-
-
 		</div>
-	</div>
 	</div>
 	<div class="footer">{include file="../footer.tpl"}</div>
 </body>

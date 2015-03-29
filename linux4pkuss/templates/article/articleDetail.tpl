@@ -93,9 +93,6 @@
 						</div>
 					</div>
 					<div class="portlet-body" id="newResource">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
 
 					</div>
 				</div>

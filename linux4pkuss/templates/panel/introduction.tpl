@@ -73,9 +73,6 @@
 						</div>
 					</div>
 					<div class="portlet-body" id="newCourse">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
 					</div>
 				</div>
 				<div class="portlet box green">
@@ -91,32 +88,8 @@
 						</div>
 					</div>
 					<div class="portlet-body" id="newArticle">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-
 					</div>
 				</div>
-				<div class="portlet box purple">
-					<div class="portlet-title">
-						<div class="caption">
-							<i class="icon-cogs"></i>最新资源
-						</div>
-						<div class="tools">
-							<a href="javascript:;" class="collapse"></a> <a
-								href="#portlet-config" data-toggle="modal" class="config"></a> <a
-								href="javascript:;" class="reload hidden-phone"></a> <a
-								href="javascript:;" class="remove hidden-phone"></a>
-						</div>
-					</div>
-					<div class="portlet-body" id="newResource">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-
-					</div>
-				</div>
-
 			</div>
 			<div class="span6">
 				<div class="portlet box grey">
@@ -314,10 +287,21 @@
 						</div>
 					</div>
 					<div class="portlet-body" id="newLink">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-
+					</div>
+				</div>
+				<div class="portlet box purple">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-cogs"></i>最新资源
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newResource">
 					</div>
 				</div>
 				<!--

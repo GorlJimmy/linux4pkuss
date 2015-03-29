@@ -1,28 +1,33 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-29 07:12:45
-         compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/panel/download.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1616900469548492b3caa964-96331768%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-29 06:21:06
+         compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/attachment/attachmentDetail.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:70299546755173762caf627-55973461%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'a628f7e541d3f9d236ed13fa85ce93c8082577a9' => 
+    'd783479e5ff3018806063947afa545d77656bcf9' => 
     array (
-      0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/panel/download.tpl',
-      1 => 1427627420,
+      0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/attachment/attachmentDetail.tpl',
+      1 => 1427586313,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1616900469548492b3caa964-96331768',
+  'nocache_hash' => '70299546755173762caf627-55973461',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_548492b3cddfa9_79639198',
+  'unifunc' => 'content_55173762cf5b88_02499452',
+  'variables' => 
+  array (
+    'attach' => 0,
+  ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_548492b3cddfa9_79639198')) {function content_548492b3cddfa9_79639198($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_55173762cf5b88_02499452')) {function content_55173762cf5b88_02499452($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
-<title>资源下载</title>
+<title><?php echo $_smarty_tpl->tpl_vars['attach']->value['name'];?>
+</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset=utf-8>
 <!-- Bootstrap -->
@@ -69,7 +74,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <script src="/bootstrap/bootstrap/js/app.js"></script>
 <script src="/bootstrap/bootstrap/js/ui-general.js"></script>
 <script src="/bootstrap/bootstrap/javascript/index.js"></script>
-
 <script>
 	jQuery(document).ready(function() {
 		App.init();
@@ -83,7 +87,113 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div class="container-fluid" style="padding: 4% 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
-				<!--
+
+				<div class="portlet box green">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-book"></i>最新文章
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newArticle">
+						<p>
+							<a href="/controller/article/articleHandler.php?type=challenge">2014红帽挑战比赛</a>
+						</p>
+
+					</div>
+				</div>
+				<div class="portlet box purple">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-download"></i>最新资源
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newResource">
+						<p>
+							<a href="#">Linux内存管理心得</a>
+						</p>
+
+					</div>
+				</div>
+				<div class="portlet box green">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-user"></i>项目信息
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newProject"></div>
+				</div>
+			</div>
+			<div class="span6">
+				<div class="portlet box green">
+
+					<div class="portlet-title">
+
+						<div class="caption">
+							<i class="icon-thumbs-up"></i><?php echo $_smarty_tpl->tpl_vars['attach']->value['name'];?>
+
+						</div>
+
+						<div class="tools">
+
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload"></a>
+						</div>
+					</div>
+					<div class="portlet-body">
+
+						<div class="row-fluid">
+
+							<div class="span12"><?php echo $_smarty_tpl->tpl_vars['attach']->value['description'];?>
+</div>
+							<div class="span12"><?php echo $_smarty_tpl->tpl_vars['attach']->value['createdate'];?>
+</div>
+							<div class="span12"><?php echo $_smarty_tpl->tpl_vars['attach']->value['user_id'];?>
+</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="span3">
+				<div class="portlet box red">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-comments-alt"></i>课程通知
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newCourse">
+						<p>
+							<a href="#">Linux内存管理心得</a>
+						</p>
+
+					</div>
+				</div>
+			<!--
 				<div class="portlet box yellow">
 					<div class="portlet-title">
 						<div class="caption">
@@ -105,10 +215,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					</div>
 					
 				</div>-->
-				<div class="portlet box green">
+				<div class="portlet box blue">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-cogs"></i>最新文章
+							<i class="icon-user"></i>友情链接
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -117,65 +227,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
-					<div class="portlet-body" id="newArticle">
-					</div>
-				</div>
-				<div class="portlet box purple">
-					<div class="portlet-title">
-						<div class="caption">
-							<i class="icon-cogs"></i>最新资源
-						</div>
-						<div class="tools">
-							<a href="javascript:;" class="collapse"></a> <a
-								href="#portlet-config" data-toggle="modal" class="config"></a> <a
-								href="javascript:;" class="reload hidden-phone"></a> <a
-								href="javascript:;" class="remove hidden-phone"></a>
-						</div>
-					</div>
-					<div class="portlet-body" id="newResource">
-					</div>
-				</div>
-
-			</div>
-			<div class="span6">
-			</div>
-
-
-			<div class="span3">
-				<div class="portlet box red">
-					<div class="portlet-title">
-						<div class="caption">
-							<i class="icon-cogs"></i>课程通知
-						</div>
-						<div class="tools">
-							<a href="javascript:;" class="collapse"></a> <a
-								href="#portlet-config" data-toggle="modal" class="config"></a> <a
-								href="javascript:;" class="reload hidden-phone"></a> <a
-								href="javascript:;" class="remove hidden-phone"></a>
-						</div>
-					</div>
-					<div class="portlet-body" id="newCourse">
-					</div>
-				</div>
-				<div class="portlet box yellow">
-					<div class="portlet-title">
-						<div class="caption">
-							<i class="icon-cogs"></i>友情链接
-						</div>
-						<div class="tools">
-							<a href="javascript:;" class="collapse"></a> <a
-								href="#portlet-config" data-toggle="modal" class="config"></a> <a
-								href="javascript:;" class="reload hidden-phone"></a> <a
-								href="javascript:;" class="remove hidden-phone"></a>
-						</div>
-					</div>
-					<div class="portlet-body" id="newLink">
-					</div>
+					<div class="portlet-body" id="newLink"></div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="footer"><?php echo $_smarty_tpl->getSubTemplate ("../footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+	<div class="footer"><?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 </div>
 </body>
 </html>

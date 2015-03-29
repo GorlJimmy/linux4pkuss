@@ -25,7 +25,7 @@
 		</a>
 			<ul class="sub-menu">
 				<li><a href="/controller/attachment/attachHandler.php?type=list">资源管理</a></li>
-				<li><a href="/controller/attachment/attachHandler.php?type=add">上传资源</a></li>
+				<li><a href="/controller/attachment/attachHandler.php?type=showAddTpl">上传资源</a></li>
 			</ul></li>
 		<li class=""><a href="javascript:;"> <i
 				class="icon-briefcase"></i> <span class="title">文章信息</span> <span

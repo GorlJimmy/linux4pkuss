@@ -86,9 +86,6 @@
 						</div>
 					</div>
 					<div class="portlet-body" id="newCourse">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
 					</div>
 				</div>
 				<div class="portlet box green">
@@ -104,10 +101,6 @@
 						</div>
 					</div>
 					<div class="portlet-body" id="newArticle">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-
 					</div>
 				</div>
 				<div class="portlet box blue">
