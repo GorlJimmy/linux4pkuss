@@ -190,7 +190,6 @@
 									<i class="icon-user"></i>项目文章信息
 								</div>
 							</div>
-							
 							<div class="portlet-body ">
 								<form name="addArticle" method="post"
 									action="/controller/article/articleHandler.php?type=update"
