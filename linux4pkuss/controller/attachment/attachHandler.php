@@ -45,4 +45,9 @@ if ('newAttach' == $type) {
 	$attachs = $attachService->attachListPage ();
 	$smarty->assign ( 'attachs', $attachs );
 	$smarty->display ( 'admin/attachment/attachmentList.tpl' );
+} elseif ('listPage' == $type) {
+	$attachService = new AttachService ();
+	$attachs = $attachService->attachListPage ();
+	$smarty->assign ( 'attachs', $attachs );
+	$smarty->display ( 'attachment/attachmentList.tpl' );
 }

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-28 19:46:48
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-31 15:58:14
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/panel/notice.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20634035254848e44d69142-32620028%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'eb890cd03d293ebb8872fe6bb812f07851762f93' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/panel/notice.tpl',
-      1 => 1427586234,
+      1 => 1427627511,
       2 => 'file',
     ),
   ),
@@ -95,9 +95,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</div>
 					</div>
 					<div class="portlet-body" id="newCourse">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
 					</div>
 				</div>
 				<div class="portlet box green">
@@ -113,10 +110,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</div>
 					</div>
 					<div class="portlet-body" id="newArticle">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						
 					</div>
 				</div>
 				<div class="portlet box purple">
@@ -132,10 +125,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</div>
 					</div>
 					<div class="portlet-body" id="newReourse">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						
 					</div>
 				</div>
 
@@ -158,10 +147,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</div>
 					</div>
 					<div class="portlet-body" id="newLink">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-						
 					</div>
 				</div>
 				<!--

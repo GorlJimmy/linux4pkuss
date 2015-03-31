@@ -76,7 +76,7 @@ class ArticleService {
 		$num = time () . rand ( 1, 10000 );
 		$now = date ( 'Y-m-d h:m:s', time () );
 		$user_id = intval ( $user ['id'] );
-		$sql = "update article_tb set title=" . "'" . $article[title] . "'" . ",createdate=" . "'" . $now . "'" . ",content=" . "'" . $article[content] . "'" . ",user_id=" . $user_id . " where num=" . $article[num];
+		$sql = "update article_tb set title='$article[title]',createdate='$now',content='$article[content]',user_id=$user_id where num='$article[num]'";
 		$db = new DBHelper ();
 		$result = $db->exec_other ( $sql );
 		return $result > 0 ? true : false;

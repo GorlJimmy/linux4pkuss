@@ -45,4 +45,9 @@ if ('newNotice' == $type) {
 	$notices = $noticeService->noticeListPage ();
 	$smarty->assign ( 'notices', $notices );
 	$smarty->display ( 'admin/notice/noticeList.tpl' );
+}elseif ('listPage'==$type){
+	$noticeService = new NoticeService ();
+	$notices = $noticeService->noticeListPage ();
+	$smarty->assign ( 'notices', $notices );
+	$smarty->display ( 'notice/noticeList.tpl' );
 }
