@@ -264,7 +264,7 @@
 												<div  class="content"></div>
 												</div>
 												<div class="timeline-footer">
-													<a href="/controller/theme/themeHandler.php?type=listPage&projectId=15" class="nav-link pull-right"> 查看更多信息 <i
+													<a href="/controller/theme/themeHandler.php?type=listPage&projectId=17" class="nav-link pull-right"> 查看更多信息 <i
 														class="m-icon-swapright m-icon-white"></i>
 													</a>
 												</div>

@@ -8,7 +8,7 @@ session_start();
 $smarty->setTemplateDir($ROOT.'/templates');
 $smarty->setCompileDir($ROOT.'/templates_c');
 $smarty->setCacheDir($ROOT.'/cache');
-
+$user = $_SESSION ['user'];
 $type=$_GET['type'].trim();
 if('about'==$type){
 	$smarty->display('panel/about_us.tpl');
@@ -19,9 +19,9 @@ if('about'==$type){
 }else if('project'==$type){
 	$smarty->display('panel/project.tpl');
 }else if('notice'==$type){
-	$smarty->display('panel/notice.tpl');
+	header ( 'location:/controller/notice/noticeHandler.php?type=listPage' );
 }else if('article'==$type){
 	header ( 'location:/controller/article/articleHandler.php?type=listPage' );
 }else if('download'==$type){
-	$smarty->display('panel/download.tpl');
+	header ( 'location:/controller/attachment/attachHandler.php?type=listPage' );
 }

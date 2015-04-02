@@ -10,6 +10,7 @@ $smarty->setCompileDir ( $ROOT . '/templates_c' );
 $smarty->setCacheDir ( $ROOT . '/cache' );
 $type = $_GET ['type'] . trim ();
 $num = $_GET ['num'] . trim ();
+$user = $_SESSION ['user'];
 function checkPriv() {
 	$user = $_SESSION ['user'];
 	if (1 != $user ['role_id']) {

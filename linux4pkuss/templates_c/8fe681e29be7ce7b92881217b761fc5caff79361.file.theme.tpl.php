@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-25 21:07:07
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-31 15:30:15
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/article/theme.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:79479604655135976914fe7-91727572%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8fe681e29be7ce7b92881217b761fc5caff79361' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/article/theme.tpl',
-      1 => 1427331888,
+      1 => 1427626406,
       2 => 'file',
     ),
   ),
@@ -100,6 +100,35 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div class="container-fluid" style="padding: 4% 8% 0 8%">
 		<div class="row-fluid">
 			<div class="span3">
+				<div class="portlet box red">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-comments-alt"></i>课程通知
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newCourse">
+					</div>
+				</div>
+				<div class="portlet box purple">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-download"></i>最新资源
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					<div class="portlet-body" id="newResource"></div>
+				</div>
 				<div class="portlet box green">
 					<div class="portlet-title">
 						<div class="caption">
@@ -133,45 +162,48 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					</div>
 					<div class="portlet-body" id="newLink"></div>
 				</div>
-			
-			<div class="portlet box yellow">
-				<div class="portlet-title">
-					<div class="caption">
-						<i class="icon-cogs"></i>热门下载
-					</div>
-					<div class="tools">
-						<a href="javascript:;" class="collapse"></a> <a
-							href="#portlet-config" data-toggle="modal" class="config"></a> <a
-							href="javascript:;" class="reload hidden-phone"></a> <a
-							href="javascript:;" class="remove hidden-phone"></a>
-					</div>
-				</div>
-				<div class="portlet-body" id="newDown">
-					<p>
-						<a href="#">Linux内存管理心得</a>
-					</p>
 
-				</div>
-			</div>
+				<!--
+				<div class="portlet box yellow">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-cogs"></i>热门下载
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload hidden-phone"></a> <a
+								href="javascript:;" class="remove hidden-phone"></a>
+						</div>
+					</div>
+					
+					<div class="portlet-body" id="newDown">
+						<p>
+							<a href="#">Linux内存管理心得</a>
+						</p>
+
+					</div>
+					
+				</div>-->
 			</div>
 			<div class="span9">
-			<div class="portlet box grey">
-				<div class="portlet-title">
-					<div class="caption">
-						<i class="icon-cogs"></i>相关文章
+				<div class="portlet box grey">
+					<div class="portlet-title">
+						<div class="caption">
+							<i class="icon-cogs"></i>相关文章
+						</div>
+						<div class="tools">
+							<a href="javascript:;" class="collapse"></a> <a
+								href="#portlet-config" data-toggle="modal" class="config"></a> <a
+								href="javascript:;" class="reload"></a> <a href="javascript:;"
+								class="remove"></a>
+						</div>
 					</div>
-					<div class="tools">
-						<a href="javascript:;" class="collapse"></a> <a
-							href="#portlet-config" data-toggle="modal" class="config"></a> <a
-							href="javascript:;" class="reload"></a> <a href="javascript:;"
-							class="remove"></a>
-					</div>
-				</div>
-				<div class="portlet-body">
-					
-					<div class="row-fluid">
-						<div class="span12">
-							<table class="table table-striped table-bordered table-hover"
+					<div class="portlet-body">
+
+						<div class="row-fluid">
+							<div class="span12">
+								<table class="table table-striped table-bordered table-hover"
 									id="sample_1">
 
 									<thead>
@@ -196,7 +228,8 @@ $_smarty_tpl->tpl_vars['theme']->_loop = true;
 ?>
 										<tr class="odd gradeX">
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-											<td><a href="/controller/article/articleHandler.php?type=listTheme&themeId=<?php echo $_smarty_tpl->tpl_vars['theme']->value['id'];?>
+											<td><a
+												href="/controller/article/articleHandler.php?type=listTheme&themeId=<?php echo $_smarty_tpl->tpl_vars['theme']->value['id'];?>
 "
 												title="详情"><?php echo $_smarty_tpl->tpl_vars['theme']->value['name'];?>
 </a></td>
@@ -209,22 +242,22 @@ $_smarty_tpl->tpl_vars['theme']->_loop = true;
 											<td><a
 												href="/controller/article/articleHandler.php?type=listTheme&themeId=<?php echo $_smarty_tpl->tpl_vars['theme']->value['id'];?>
 "
-												title="详情"><i class="icon-envelope-alt"></i></a> 
+												title="详情"><i class="icon-envelope-alt"></i></a>
 										</tr>
 										<?php } ?>
 									</tbody>
 
 								</table>
-		
+
+							</div>
 						</div>
 					</div>
+
 				</div>
 
+
 			</div>
-
-
 		</div>
-	</div>
 	</div>
 	<div class="footer"><?php echo $_smarty_tpl->getSubTemplate ("../footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 </div>

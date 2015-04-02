@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-29 06:11:22
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-31 15:28:03
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/panel/article.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:54019165054848e45caaef2-83935832%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5c7959170f2177591f512be0b98dd452b5d0285f' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/panel/article.tpl',
-      1 => 1427587456,
+      1 => 1427627367,
       2 => 'file',
     ),
   ),
@@ -113,9 +113,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</div>
 					</div>
 					<div class="portlet-body" id="newCourse">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
 					</div>
 				</div>
 				<div class="portlet box green">
@@ -131,10 +128,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</div>
 					</div>
 					<div class="portlet-body" id="newArticle">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
-
 					</div>
 				</div>
 				<div class="portlet box blue">

@@ -8,7 +8,7 @@ $ROOT=$_SERVER['DOCUMENT_ROOT'];
 require_once $ROOT.'/service/ProvinceService.class.php';
 require_once $ROOT.'/service/CityService.class.php';
 require_once $ROOT.'/service/AreaService.class.php';
-
+$user = $_SESSION ['user'];
 $type=$_POST['type'].trim();
 function checkPriv() {
 	$user = $_SESSION ['user'];
