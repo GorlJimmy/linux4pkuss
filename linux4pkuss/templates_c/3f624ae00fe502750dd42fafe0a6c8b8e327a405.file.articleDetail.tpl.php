@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-17 11:23:30
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-29 07:59:30
          compiled from "/var/www/html/linux4pkuss/linux4pkuss/templates/article/articleDetail.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:146719093954411a29bdd7a4-79737206%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3f624ae00fe502750dd42fafe0a6c8b8e327a405' => 
     array (
       0 => '/var/www/html/linux4pkuss/linux4pkuss/templates/article/articleDetail.tpl',
-      1 => 1413559392,
+      1 => 1427626384,
       2 => 'file',
     ),
   ),
@@ -120,9 +120,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</div>
 					</div>
 					<div class="portlet-body" id="newResource">
-						<p>
-							<a href="#">Linux内存管理心得</a>
-						</p>
 
 					</div>
 				</div>
@@ -193,10 +190,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 					</div>
 				</div>
+				<!--
 				<div class="portlet box yellow">
 					<div class="portlet-title">
 						<div class="caption">
-							<i class="icon-download-alt"></i>热门下载
+							<i class="icon-cogs"></i>热门下载
 						</div>
 						<div class="tools">
 							<a href="javascript:;" class="collapse"></a> <a
@@ -205,13 +203,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								href="javascript:;" class="remove hidden-phone"></a>
 						</div>
 					</div>
+					
 					<div class="portlet-body" id="newDown">
 						<p>
 							<a href="#">Linux内存管理心得</a>
 						</p>
 
 					</div>
-				</div>
+					
+				</div>-->
 				<div class="portlet box blue">
 					<div class="portlet-title">
 						<div class="caption">
